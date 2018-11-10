@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"#\">Title</a>\n    <ul class=\"nav navbar-nav\">\n      <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact : true}\">\n        <a [routerLink]=\"['/']\">Trang chủ</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmhang']\">DM hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmkh']\">DM khách hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/hoadon']\">HÓA ĐƠN</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/giaonhan']\">GIAO NHẬN HÀNG</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a (click)=\"logout()\">{{ login? 'Login' : 'Logout' }}</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n      <div class=\"panel panel-primary\">\n        <!-- <div class=\"panel-heading\">\n          <h4 class=\"panel-title\" style=\"text-align: center\">HÒA VŨ RICE - 117 Nguyễn Đình Chiểu - Khóm 4 - TP.Châu Đốc - tỉnh An Giang (02963.867.749 - 0943.345.143)</h4>\n        </div> -->\n        <div class=\"panel-body\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"#\">Title</a>\n    <ul class=\"nav navbar-nav\">\n      <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact : true}\">\n        <a [routerLink]=\"['/']\">Trang chủ</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmhang']\">DM hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmkh']\">DM khách hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/hoadon']\">HÓA ĐƠN</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/giaonhan']\">GIAO NHẬN HÀNG</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a (click)=\"logout()\">{{ login? 'Login' : 'Logout' }}</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n      <div > <!-- class=\"panel panel-primary\" -->\n       <!--  <div class=\"panel-heading\">\n         <h4 class=\"panel-title\" style=\"text-align: center\">HÒA VŨ RICE - 117 Nguyễn Đình Chiểu - Khóm 4 - TP.Châu Đốc - tỉnh An Giang (02963.867.749 - 0943.345.143)</h4>\n       </div> -->\n        <div class=\"panel-body\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -71,7 +71,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AppComponent = /** @class */ (function () {
     function AppComponent(router) {
         this.router = router;
-        this.title = 'HOAVU';
+        /* title = 'HOAVU';*/
         this.login = false;
     }
     AppComponent.prototype.ngOnInit = function () {
@@ -1587,7 +1587,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"show_chua\">\n\t<input type=\"text\" name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"mahoadon\">\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"makhs\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh\">{{ item.tenkh }}</option>\n</select>\t\n</div>\n\n \n<div class=\"row\">\n\t<div *ngIf=\"show_chua\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN CHƯA GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tratien,item.conlai,item.tonghoadon,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<!-- Dong nay la chinh giua -->\n<div *ngIf=\"show\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\" style=\"width: 470px\">\n\t\t<div  class=\"panel panel-primary\">\n\t\t\t<div style=\"text-align: right;\">\n\t\t\t\t<label><h4>{{ ngay }}</h4></label>\n\t\t\t</div>\n\t\t\t<div style=\"text-align: right;\">\n\t\t\t\t<label><h3>{{ tenkhs }}</h3></label>\n\t\t\t</div>\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" (click)=\"onPrint()\">Chi tiết hóa đơn số: {{ mahd }} - ngày: {{ ngay }}</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t\n\t\t\t\t<tr><td>\n\t\t\t\t\t\t\t<table (click)=\"list_back(true,true,false)\" class=\"table table-bordered table-hover\" style=\"size: 14px\">\n\t\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t\t<tr style=\"text-align: center\">\n\t\t\t\t\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>ĐG</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>TT</th>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiethd | showChitiethd : mahd; let myId = index\">\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ myId + 1 }}</td>\n\t\t\t\t<td *ngFor=\"let tam of db_dmhang | tenhang : item.mahang\">{{ tam.tenhang }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.sl }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.DVT }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.dg }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: right;\">{{ item.tt }}</td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng toa:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5> {{ tongcong ==0 ? '' : tongcong | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tiền cũ:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: green; text-align: right;\"><h5> \n\t\t\t\t\t\t\t\t\t\t\t\t{{ test_conlai ==0 ? '' : test_conlai | number :'3.0-3'}}\n\t\t\t\t\t\t\t\t\t\t\t<!-- {{ test_conlai ==0 ? '' : test_conlai + thanhtoan - tongtt  | number :'3.0-3'}} --></h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng cộng:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: red; text-align: right;\"><b><h5>\n\t\t\t\t\t\t\t\t\t\t\t\t{{ test_tonghoadon ==0 ? '' : test_tonghoadon | number :'3.0-3'}}\n\t\t\t\t\t\t\t\t\t\t\t\t<!-- {{ test_tonghoadon ==0 ? '' : test_tonghoadon - test_tratien + thanhtoan | number :'3.0-3'}} --></h5></b></td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"thanhtoan\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Thanh toán:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: blue; text-align: right;\"><h5>{{ test_tratien==0 ? '' : test_tratien | number :'3.0-3'}}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"thanhtoan\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Còn lại:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5>{{ test_conlai==0 ? '' : test_conlai | number :'3.0-3' }}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t</td></tr>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n<!-- Dong nay la ben phai -->\n\t<div *ngIf=\"show_giao\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-success\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN ĐÃ GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : !kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tratien,item.conlai,item.tonghoadon,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!--  Dòng này thử -->\n\n<!-- \"id\": 8,\n      \"mahoadon\": \"03112018005\",\n      \"makh\": \"AP01\",\n      \"tonghoadon\": 5850000,\n      \"tratien\": 750000,\n      \"conlai\": 5100000,\n      \"kt\": false,\n      \"tinhtrang\": true -->\n"
+module.exports = "<div *ngIf=\"show_chua\">\n\t<input type=\"text\" name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"mahoadon\">\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"makhs\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh\">{{ item.tenkh }}</option>\n</select>\t\n</div>\n\n \n<div class=\"row\">\n\t<div *ngIf=\"show_chua\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN CHƯA GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tonghoadon,\n\t\t\t\t\t\t\titem.tratien,item.conlai,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<!-- Dong nay la chinh giua -->\n<div *ngIf=\"show\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\" style=\"width: 470px\">\n\t\t<div  ><!--  class=\"panel panel-primary\" -->\n\t\t\t<!-- <div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" (click)=\"onPrint()\">Chi tiết hóa đơn số: {{ mahd }} - ngày: {{ ngay }}</h3>\n\t\t\t</div> -->\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td width=\"220px\"></td>\n\t\t\t\t\t\t\t<td><h5>{{ ngay }}</h5></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td width=\"220px\"></td>\n\t\t\t\t\t\t\t<td><h4>{{ tenkhs }}</h4></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t</table>\n\t\t\t\t\n\t\t\t\t<tr><td>\n\t\t\t\t\t<!-- <font face=\"Courier New\" size=\"12\"> -->\n\t\t\t\t\t\t\t<table (click)=\"list_back(true,true,false)\" class=\"table table-bordered table -hover\"\n\t\t\t\t\t\t\t\tstyle=\"size: 15\"\n\t\t\t\t\t\t\t > <!-- class=\"table table-bordered table-hover\" -->\n\t\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t\t<tr style=\"text-align: center\">\n\t\t\t\t\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>ĐG</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>TT</th>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiethd | showChitiethd : mahd; let myId = index\">\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ myId + 1 }}</td>\n\t\t\t\t<td *ngFor=\"let tam of db_dmhang | tenhang : item.mahang\">{{ tam.tenhang }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.sl }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.DVT }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.dg }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: right;\">{{ item.tt }}</td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng toa:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5> {{ tongtt ==0 ? '' : tongtt | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_tratien\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Thanh toán:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: blue; text-align: right;\"><h5>{{ test_tratien==0 ? '' : test_tratien | number :'3.0-3'}}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tiền cũ:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: green; text-align: right;\"><h5> \n\t\t\t\t\t\t\t\t\t\t\t{{ tiencu ==0 ? '' : tiencu  | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng cộng:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: red; text-align: right;\"><h5>{{ test_tonghoadon ==0 ? '' : test_tonghoadon | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"thanhtoan\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Còn lại:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5>{{ test_conlai==0 ? '' : test_conlai | number :'3.0-3' }}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t\t<!-- </font> -->\n\t\t\t\t\t\t</td></tr>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n<!-- Dong nay la ben phai -->\n\t<div *ngIf=\"show_giao\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-success\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN ĐÃ GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : !kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tonghoadon,\n\t\t\t\t\t\t\titem.tratien,item.conlai,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!--  Dòng này thử -->\n\n<!-- \"id\": 8,\n      \"mahoadon\": \"03112018005\",\n      \"makh\": \"AP01\",\n      \"tonghoadon\": 5850000,\n      \"tratien\": 750000,\n      \"conlai\": 5100000,\n      \"kt\": false,\n      \"tinhtrang\": true -->\n"
 
 /***/ }),
 
@@ -1735,7 +1735,7 @@ var HoadonsComponent = /** @class */ (function () {
         //this.Update_Form();
         this.ngOnInit();
     };
-    HoadonsComponent.prototype.list_chitiethd = function (mahd, makh, id, thanhtoan, conlai, tonghoadon, chua, giao, show) {
+    HoadonsComponent.prototype.list_chitiethd = function (mahd, makh, id, tonghoadon, tratien, conlai, chua, giao, show) {
         this.mahd = mahd;
         this.ngay = mahd.slice(0, 2) + "/" + mahd.slice(2, 4) + "/" + mahd.slice(4, 8);
         for (var i = this.db_chitiethd.length - 1; i >= 0; i--) {
@@ -1745,16 +1745,21 @@ var HoadonsComponent = /** @class */ (function () {
             }
         }
         this.tiencu = 0;
-        this.tongcong = tonghoadon;
-        this.test_tonghoadon = conlai;
-        this.test_tratien = thanhtoan;
-        this.test_conlai = 0;
         for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
-            console.log(mahd + ' - ' + makh + ' - ' + this.tiencu + ' - ' + this.tongcong);
-            for (var i = this.db_dmkh.length - 1; i >= 0; i--) {
-                if (this.db_dmkh[i].makh == makh) {
-                    this.tenkhs = this.db_dmkh[i].tenkh;
-                }
+            if (this.db_hoadon[i].makh == makh && this.db_hoadon[i].id < id) {
+                this.tiencu = this.tiencu + this.db_hoadon[i].conlai;
+            }
+        }
+        // console.log(mahd + ' - ' + makh + ' - ' + id + ' - ' + tonghoadon + ' - ' +tratien + ' - ' + conlai);
+        this.tongtt = tonghoadon;
+        this.tongcong = 0;
+        this.test_tonghoadon = this.tiencu + this.tongtt - tratien;
+        this.test_tratien = tratien;
+        this.test_conlai = 0;
+        //console.log(this.tongtt + ' - ' + this.tiencu + ' - ' + this.tongcong + ' - ' + this.test_tonghoadon );
+        for (var i = this.db_dmkh.length - 1; i >= 0; i--) {
+            if (this.db_dmkh[i].makh == makh) {
+                this.tenkhs = this.db_dmkh[i].tenkh;
             }
         }
         //console.log(this.test_tonghoadon + ' - ' + this.test_tratien + ' - ' + this.test_conlai);
@@ -2327,6 +2332,23 @@ var ChitiethdService = /** @class */ (function () {
         this.http = http;
         this.API = 'http://localhost:3000/chitiethd';
     }
+    //List danh sách  các mặt hàng
+    /*getAllchitiethd() : Observable<chitiethd[]>{
+      return this.http.get(this.API);
+    }
+    getOnechitiethd(id: number) : Observable<chitiethd>{
+      return this.http.get(`${this.API}/${id}`);
+    }
+    add_chitiethd(chitiethd : chitiethd) : Observable<chitiethd>{
+      return this.http.post(this.API, chitiethd);
+    }
+     delete_chitiethd(id : number) : Observable<chitiethd>{
+        return this.http.delete(`${this.API}/${id}`);
+    }
+    uppdate_chitiethd(chitiethd : chitiethd) : Observable<chitiethd>{
+        return this.http.put(`${this.API}/${chitiethd.id}`,chitiethd);
+    }*/
+    //Chinh sua lai
     ChitiethdService.prototype.getAllchitiethd = function () {
         return this.http.get(this.API);
     };
@@ -2378,22 +2400,33 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 //import HttpClient vào để sử dụng
-/*import { HttpClient } from '@angular/common/http';*/
 
 var DmhangService = /** @class */ (function () {
     function DmhangService(http) {
         this.http = http;
         //Khai báo đường dẫn đến Server để lấy dl
-        /*  public API : string = 'http://localhost:3000/dmhang';
-         public API : string = 'http://localhost:3000/dmhang';
-        */
         this.API = 'http://localhost:3000/dmhang';
     }
     //List danh sách  các mặt hàng
+    /* getAlldmhang() : Observable<dmhang[]>{
+       return this.http.get(this.API);
+     }
+     getOnedmhang(id: number) : Observable<dmhang>{
+       return this.http.get(`${this.API}/${id}`);
+     }
+   
+     add_dmhang(dmhang : dmhang) : Observable<dmhang>{
+       return this.http.post(this.API, dmhang);
+     }
+      delete_dmhang(id : number) : Observable<dmhang>{
+         return this.http.delete(`${this.API}/${id}`);
+     }
+     uppdate_dmhang(dmhang : dmhang) : Observable<dmhang>{
+         return this.http.put(`${this.API}/${dmhang.id}`,dmhang);
+     }*/
+    //Chinh sua lai
     DmhangService.prototype.getAlldmhang = function () {
-        //console.log(this.API);
         return this.http.get(this.API);
-        /*.map((resp : Response) => <dmhang[]>resp.json());*/
     };
     DmhangService.prototype.getOnedmhang = function (id) {
         return this.http.get(this.API + "/" + id);
@@ -2408,9 +2441,9 @@ var DmhangService = /** @class */ (function () {
         return this.http.put(this.API + "/" + dmhang.id, dmhang);
     };
     DmhangService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])( /*{
-          providedIn: 'root'
-        }*/),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], DmhangService);
     return DmhangService;
@@ -2451,6 +2484,21 @@ var DmkhService = /** @class */ (function () {
         this.API = 'http://localhost:3000/dmkh';
     }
     //List danh sách  các mặt hàng
+    /*getAlldmkh() : Observable<dmkh[]>{
+      return this.http.get(this.API);
+    }
+    getOnedmkh(id: number) : Observable<dmkh>{
+      return this.http.get(`${this.API}/${id}`);
+    }
+    add_dmkh(dmkh : dmkh) : Observable<dmkh>{
+      return this.http.post(this.API, dmkh);
+    }
+     delete_dmkh(id : number) : Observable<dmkh>{
+        return this.http.delete(`${this.API}/${id}`);
+    }
+    uppdate_dmkh(dmkh : dmkh) : Observable<dmkh>{
+        return this.http.put(`${this.API}/${dmkh.id}`,dmkh);
+    }*/
     DmkhService.prototype.getAlldmkh = function () {
         return this.http.get(this.API);
     };
@@ -2558,6 +2606,21 @@ var HoadonService = /** @class */ (function () {
         this.API = 'http://localhost:3000/hoadon';
     }
     //List danh sách  các mặt hàng
+    /*getAllhoadon() : Observable<hoadon[]>{
+      return this.http.get(this.API);
+    }
+    getOnehoadon(id: number) : Observable<hoadon>{
+      return this.http.get(`${this.API}/${id}`);
+    }
+    add_hoadon(hoadon : hoadon) : Observable<hoadon>{
+      return this.http.post(this.API, hoadon);
+    }
+     delete_hoadon(id : number) : Observable<hoadon>{
+        return this.http.delete(`${this.API}/${id}`);
+    }
+    uppdate_hoadon(hoadon : hoadon) : Observable<hoadon>{
+        return this.http.put(`${this.API}/${hoadon.id}`,hoadon);
+    }*/
     HoadonService.prototype.getAllhoadon = function () {
         return this.http.get(this.API);
     };
