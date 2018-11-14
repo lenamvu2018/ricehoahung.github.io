@@ -1720,7 +1720,7 @@ var ChitiethdComponent = /** @class */ (function () {
     ChitiethdComponent.prototype.onClick = function (csdl) {
         this.Add_hoadon(this.mahoadon, this.txt_makh, this.tongtt, this.thanhtoan, this.conlai);
         for (var i = this.db_chitiet.length - 1; i >= 0; i--) {
-            if (this.db_chitiet[i].mahang != null) {
+            if (this.db_chitiet[i].tt != null) {
                 this.onAdd_chitiethd(this.mahoadon, this.db_chitiet[i].mahang, this.db_chitiet[i].sl, this.db_chitiet[i].DVT, this.db_chitiet[i].dg, this.db_chitiet[i].tt);
             }
         }
