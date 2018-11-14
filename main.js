@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"#\">Title</a>\n    <ul class=\"nav navbar-nav\">\n      <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact : true}\">\n        <a [routerLink]=\"['/']\">Trang chủ</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmhang']\">DM hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmkh']\">DM khách hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/hoadon']\">HÓA ĐƠN</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/giaonhan']\">GIAO NHẬN HÀNG</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a (click)=\"logout()\">{{ login? 'Login' : 'Logout' }}</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n      <div > <!-- class=\"panel panel-primary\" -->\n       <!--  <div class=\"panel-heading\">\n         <h4 class=\"panel-title\" style=\"text-align: center\">HÒA VŨ RICE - 117 Nguyễn Đình Chiểu - Khóm 4 - TP.Châu Đốc - tỉnh An Giang (02963.867.749 - 0943.345.143)</h4>\n       </div> -->\n        <div class=\"panel-body\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"#\">Title</a>\n    <ul class=\"nav navbar-nav\">\n      <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact : true}\">\n        <a [routerLink]=\"['/']\">Trang chủ</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmhang']\">DM hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmkh']\">DM khách hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/hoadon']\">HÓA ĐƠN</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/giaonhan']\">GIAO NHẬN HÀNG</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a (click)=\"logout()\">{{ login? 'Login' : 'Logout' }}</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n      <div class=\"panel panel-primary\">\n        <!-- <div class=\"panel-heading\">\n          <h4 class=\"panel-title\" style=\"text-align: center\">HÒA VŨ RICE - 117 Nguyễn Đình Chiểu - Khóm 4 - TP.Châu Đốc - tỉnh An Giang (02963.867.749 - 0943.345.143)</h4>\n        </div> -->\n        <div class=\"panel-body\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -71,7 +71,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AppComponent = /** @class */ (function () {
     function AppComponent(router) {
         this.router = router;
-        /* title = 'HOAVU';*/
+        this.title = 'HOAVU';
         this.login = false;
     }
     AppComponent.prototype.ngOnInit = function () {
@@ -149,6 +149,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pipes_tenkh_pipe__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./pipes/tenkh.pipe */ "./src/app/pipes/tenkh.pipe.ts");
 /* harmony import */ var _pipes_tenhang_pipe__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./pipes/tenhang.pipe */ "./src/app/pipes/tenhang.pipe.ts");
 /* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _pipes_dmhang_pipe__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./pipes/dmhang.pipe */ "./src/app/pipes/dmhang.pipe.ts");
+/* harmony import */ var _components_hoadon_hoadon_edit_hoadon_edit_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/hoadon/hoadon-edit/hoadon-edit.component */ "./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.ts");
+/* harmony import */ var _components_hoadon_chitiethd_edit_chitiethd_edit_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/hoadon/chitiethd-edit/chitiethd-edit.component */ "./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.ts");
+/* harmony import */ var _pipes_filter_chitiethd_pipe__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pipes/filter-chitiethd.pipe */ "./src/app/pipes/filter-chitiethd.pipe.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -165,6 +169,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 //import HttpModule
 
 //import ngModule
+
+
+
+
 
 
 
@@ -244,6 +252,14 @@ var appRoutes = [
             {
                 path: 'add',
                 component: _components_hoadon_chitiethd_chitiethd_component__WEBPACK_IMPORTED_MODULE_12__["ChitiethdComponent"]
+            },
+            {
+                path: ':id/edit',
+                component: _components_hoadon_hoadon_edit_hoadon_edit_component__WEBPACK_IMPORTED_MODULE_31__["HoadonEditComponent"]
+            },
+            {
+                path: ':id/editHD',
+                component: _components_hoadon_chitiethd_edit_chitiethd_edit_component__WEBPACK_IMPORTED_MODULE_32__["ChitiethdEditComponent"]
             }
         ]
     },
@@ -290,6 +306,10 @@ var AppModule = /** @class */ (function () {
                 _pipes_tenkh_pipe__WEBPACK_IMPORTED_MODULE_27__["TenkhPipe"],
                 _pipes_tenhang_pipe__WEBPACK_IMPORTED_MODULE_28__["TenhangPipe"],
                 _components_login_login_component__WEBPACK_IMPORTED_MODULE_29__["LoginComponent"],
+                _pipes_dmhang_pipe__WEBPACK_IMPORTED_MODULE_30__["DmhangPipe"],
+                _components_hoadon_hoadon_edit_hoadon_edit_component__WEBPACK_IMPORTED_MODULE_31__["HoadonEditComponent"],
+                _components_hoadon_chitiethd_edit_chitiethd_edit_component__WEBPACK_IMPORTED_MODULE_32__["ChitiethdEditComponent"],
+                _pipes_filter_chitiethd_pipe__WEBPACK_IMPORTED_MODULE_33__["FilterChitiethdPipe"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -330,7 +350,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form action=\"\" method=\"POST\" role=\"form\">\n\t<legend>THÊM MỚI MẶT HÀNG</legend>\n\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Mã hàng</label>\n\t\t<input type=\"text\" class=\"form-control\" \n\t\t[(ngModel)]=\"db.mahang\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Tên hàng</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.tenhang\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Xuất xứ</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.xuatxu\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\n\t<button type=\"submit\" class=\"btn btn-primary\" (click)=\"onAdd_dmhang()\">Lưu</button>\n</form>"
+module.exports = "<form action=\"\" method=\"POST\" role=\"form\">\n\t<legend>THÊM MỚI MẶT HÀNG</legend>\n\t<div class=\"form-group\">\n\t\t<select (click)=\"onClickTenhang()\" class=\"form-control\" [(ngModel)]=\"madiachi\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t\t\t\t<option value=\"GA\">Gạo</option>\n\t\t\t\t<option value=\"TT\">Tấm</option>\n\t\t\t\t<option value=\"NH\">Nếp hảo</option>\n\t\t\t\t<option value=\"NT\">Nếp thơm</option>\n\t\t\t\t<option value=\"DA\">Đậu</option>\n\t\t\t\t<option value=\"BA\">Bao</option>\n\t\t\t\t<option value=\"BB\">Bắp</option>\n\t\t\t\t<option value=\"ME\">Mè</option>\n\t\t\t</select>\t\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Mã hàng</label>\n\t\t<input type=\"text\" class=\"form-control\" \n\t\t[(ngModel)]=\"db.mahang\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Tên hàng</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.tenhang\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Xuất xứ</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.xuatxu\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\n\t<button type=\"submit\" class=\"btn btn-primary\" (click)=\"onAdd_dmhang()\">Lưu</button>\n</form>"
 
 /***/ }),
 
@@ -346,8 +366,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DmhangAddComponent", function() { return DmhangAddComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_dmhang_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../services/dmhang.service */ "./src/app/services/dmhang.service.ts");
-/* harmony import */ var _models_dmhang_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../models/dmhang.model */ "./src/app/models/dmhang.model.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../services/dmdiachi.service */ "./src/app/services/dmdiachi.service.ts");
+/* harmony import */ var _models_dmhang_model__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../../models/dmhang.model */ "./src/app/models/dmhang.model.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -361,17 +382,40 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var DmhangAddComponent = /** @class */ (function () {
-    function DmhangAddComponent(dmhangservice, routerService) {
+    function DmhangAddComponent(dmhangservice, dmdiachiservice, routerService) {
         this.dmhangservice = dmhangservice;
+        this.dmdiachiservice = dmdiachiservice;
         this.routerService = routerService;
+        this.dmhangs = [];
+        this.dem = 0;
     }
     DmhangAddComponent.prototype.ngOnInit = function () {
-        this.db = new _models_dmhang_model__WEBPACK_IMPORTED_MODULE_2__["dmhang"]();
+        var _this = this;
+        this.subscription = this.dmhangservice.getAlldmhang().subscribe(function (data) {
+            _this.dmhangs = data;
+        });
+        this.db = new _models_dmhang_model__WEBPACK_IMPORTED_MODULE_3__["dmhang"]();
     };
     DmhangAddComponent.prototype.ngOnDestroy = function () {
         if (this.subscription) {
             this.subscription.unsubscribe();
+        }
+    };
+    DmhangAddComponent.prototype.onClickTenhang = function () {
+        this.dem = 1;
+        console.log(this.madiachi);
+        for (var i = this.dmhangs.length - 1; i >= 0; i--) {
+            if (this.dmhangs[i].mahang.slice(0, 2) == this.madiachi) {
+                this.dem++;
+            }
+        }
+        if (this.dem < 10) {
+            this.db.mahang = this.madiachi + '0' + this.dem;
+        }
+        else {
+            this.db.mahang = this.madiachi + this.dem;
         }
     };
     DmhangAddComponent.prototype.onAdd_dmhang = function () {
@@ -390,7 +434,8 @@ var DmhangAddComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./dmhang-add.component.css */ "./src/app/components/dmhang/dmhang-add/dmhang-add.component.css")]
         }),
         __metadata("design:paramtypes", [_services_dmhang_service__WEBPACK_IMPORTED_MODULE_1__["DmhangService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+            _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_2__["DmdiachiService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], DmhangAddComponent);
     return DmhangAddComponent;
 }());
@@ -581,7 +626,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"panel panel-primary\">\n\t<div class=\"panel-heading\">\n\t\t<h3 class=\"panel-title\">DANH SÁCH CÁC MẶT HÀNG</h3>\n\t</div>\n\t<div class=\"panel-body\">\n\t\t<button type=\"button\" class=\"btn btn-success\" [routerLink]=\"['/dmhang/add']\">Thêm</button>\n\t\t<label>{{ txtchon }}</label>\n\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"txtchon\">\n\t\t\t<option value=\"{{ item.mahang }}\" *ngFor=\"let item of db\">{{ item.tenhang }}</option>\n\t\t</select>\n\t\t<label>{{ txtchonkh }}</label>\n\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"txtchonkh\">\n\t\t\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db\">{{ item.tenkh }}</option>\n\t\t</select>\n\t\t<table class=\"table table-bordered table-hover\" [style.margin-top.px]=\"10\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Mã hàng</th>\n\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t<th>Xuất xứ</th>\n\t\t\t\t\t<th>Action</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t<tr *ngFor=\"let item of db\">\n\t\t\t\t\t<td>{{ item.id }}</td>\n\t\t\t\t\t<td>{{ item.mahang }}</td>\n\t\t\t\t\t<td>{{ item.tenhang }}</td>\n\t\t\t\t\t<td>{{ item.xuatxu }}</td>\n\t\t\t\t\t<td>\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\"\n\t\t\t[routerLink]=\"['/dmhang', item.id, 'edit']\"\n\t\t>Edit</button>\n\t\t/<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onDelete_dmhang(item.id)\"\n\t\t>Delete</button>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n</div>"
+module.exports = "<div class=\"panel panel-primary\">\n\t<div class=\"panel-heading\">\n\t\t<h3 class=\"panel-title\">DANH SÁCH CÁC MẶT HÀNG</h3>\n\t</div>\n\t<div class=\"panel-body\">\n\t\t<div class=\"form-group\">\n\t\t<select class=\"form-control\" [(ngModel)]=\"madiachi\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t\t\t\t<option value=\"GA\">Gạo</option>\n\t\t\t\t<option value=\"TT\">Tấm</option>\n\t\t\t\t<option value=\"NH\">Nếp hảo</option>\n\t\t\t\t<option value=\"NT\">Nếp thơm</option>\n\t\t\t\t<option value=\"DA\">Đậu</option>\n\t\t\t\t<option value=\"BA\">Bao</option>\n\t\t\t\t<option value=\"BB\">Bắp</option>\n\t\t\t\t<option value=\"ME\">Mè</option>\n\t\t\t</select>\t\n\t</div>\n\t\t<button type=\"button\" class=\"btn btn-success\" [routerLink]=\"['/dmhang/add']\">Thêm</button>\n\t\t<!-- <label>{{ txtchon }}</label>\n\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"txtchon\">\n\t\t\t<option value=\"{{ item.mahang }}\" *ngFor=\"let item of db\">{{ item.tenhang }}</option>\n\t\t</select>\n\t\t<label>{{ txtchonkh }}</label>\n\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"txtchonkh\">\n\t\t\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db\">{{ item.tenkh }}</option>\n\t\t</select> -->\n\t\t<table class=\"table table-bordered table-hover\" [style.margin-top.px]=\"10\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Mã hàng</th>\n\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t<th>Xuất xứ</th>\n\t\t\t\t\t<th>Edit</th>\n\t\t\t\t\t<th>Delete</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t<tr *ngFor=\"let item of db | dmhang : madiachi; let i = index\">\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>{{ item.mahang }}</td>\n\t\t\t\t\t<td>{{ item.tenhang }}</td>\n\t\t\t\t\t<td>{{ item.xuatxu }}</td>\n\t\t\t\t\t<td>\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\"\n\t\t\t[routerLink]=\"['/dmhang', item.id, 'edit']\"\n\t\t>Edit</button>\n\t\t\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onDelete_dmhang(item.id)\"\n\t\t>Delete</button>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -671,7 +716,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\r\n<div class=\"row\">\r\n\t<div class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\r\n\t\t<div class=\"panel panel-danger\">\r\n\t\t\t<div class=\"panel-heading\">\r\n\t\t\t\t<h3 class=\"panel-title\">Panel title</h3>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"panel-body\">\r\n\t\t\t\t\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" value=\"\" [(ngModel)]=\"txtA\">\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" value=\"\" [(ngModel)]=\"txtB\">\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" value=\"{{ txtA * txtB }}\" [(ngModel)]=\"txtC\" >\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" value=\"\" [(ngModel)]=\"txtD\">\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" value=\"\" [(ngModel)]=\"txtE\">\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" value=\"{{ txtE * txtD }}\" [(ngModel)]=\"txtF\">\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" value=\"{{ txtC }}\" [(ngModel)]=\"txtG\">\r\n\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -734,7 +779,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form action=\"\" method=\"POST\" role=\"form\">\n\t<legend>THÊM MỚI MẶT HÀNG</legend>\n\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Mã khách hàng</label>\n\t\t<input type=\"text\" class=\"form-control\" \n\t\t[(ngModel)]=\"db.makh\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Tên khách hàng</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.tenkh\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Địa chỉ</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.diachi\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Phone</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.phone\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">STK</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.tk\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<button type=\"submit\" class=\"btn btn-primary\" (click)=\"onAdd_dmkh()\">Lưu</button>\n</form>"
+module.exports = "<form action=\"\" method=\"POST\" role=\"form\">\n\t<legend>THÊM MỚI MẶT HÀNG</legend>\n\t<div class=\"form-group\">\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" (click)=\"onClickTendiachi()\"\n[(ngModel)]=\"madiachi\" [ngModelOptions]=\"{standalone: true}\">\n\t\t\t<option value=\"{{item.madm}}\" *ngFor=\"let item of db_dmdiachi\">{{item.tendm}}</option>\n\t\t</select>\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Mã khách hàng</label>\n\t\t<input type=\"text\" class=\"form-control\" \n\t\t[(ngModel)]=\"db.makh\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Tên khách hàng</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.tenkh\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Địa chỉ</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.diachi\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Phone</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.phone\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">STK</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.tk\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<button type=\"submit\" class=\"btn btn-primary\" (click)=\"onAdd_dmkh()\">Lưu</button>\n</form>"
 
 /***/ }),
 
@@ -750,8 +795,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DmkhAddComponent", function() { return DmkhAddComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_dmkh_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../services/dmkh.service */ "./src/app/services/dmkh.service.ts");
-/* harmony import */ var _models_dmkh_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../models/dmkh.model */ "./src/app/models/dmkh.model.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../services/dmdiachi.service */ "./src/app/services/dmdiachi.service.ts");
+/* harmony import */ var _models_dmkh_model__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../../models/dmkh.model */ "./src/app/models/dmkh.model.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -765,17 +811,43 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var DmkhAddComponent = /** @class */ (function () {
-    function DmkhAddComponent(dmkhservice, routerService) {
+    function DmkhAddComponent(dmkhservice, dmdiachiservice, routerService) {
         this.dmkhservice = dmkhservice;
+        this.dmdiachiservice = dmdiachiservice;
         this.routerService = routerService;
+        this.db_dmdiachi = [];
+        this.db_khachhang = [];
+        this.dem = 0;
     }
     DmkhAddComponent.prototype.ngOnInit = function () {
-        this.db = new _models_dmkh_model__WEBPACK_IMPORTED_MODULE_2__["dmkh"]();
+        var _this = this;
+        this.db = new _models_dmkh_model__WEBPACK_IMPORTED_MODULE_3__["dmkh"]();
+        this.subscription = this.dmdiachiservice.getAlldmdiachi().subscribe(function (data) {
+            _this.db_dmdiachi = data;
+        });
+        this.subscription = this.dmkhservice.getAlldmkh().subscribe(function (data) {
+            _this.db_khachhang = data;
+        });
     };
     DmkhAddComponent.prototype.ngOnDestroy = function () {
         if (this.subscription) {
             this.subscription.unsubscribe();
+        }
+    };
+    DmkhAddComponent.prototype.onClickTendiachi = function () {
+        this.dem = 1;
+        for (var i = this.db_khachhang.length - 1; i >= 0; i--) {
+            if (this.db_khachhang[i].makh.slice(0, 2) == this.madiachi) {
+                this.dem++;
+            }
+        }
+        if (this.dem < 10) {
+            this.db.makh = this.madiachi + '0' + this.dem;
+        }
+        else {
+            this.db.makh = this.madiachi + this.dem;
         }
     };
     DmkhAddComponent.prototype.onAdd_dmkh = function () {
@@ -794,7 +866,8 @@ var DmkhAddComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./dmkh-add.component.css */ "./src/app/components/dmkh/dmkh-add/dmkh-add.component.css")]
         }),
         __metadata("design:paramtypes", [_services_dmkh_service__WEBPACK_IMPORTED_MODULE_1__["DmkhService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+            _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_2__["DmdiachiService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], DmkhAddComponent);
     return DmkhAddComponent;
 }());
@@ -985,7 +1058,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"panel panel-primary\">\n\t<div class=\"panel-heading\">\n\t\t<h3 class=\"panel-title\">DANH SÁCH CÁC KHÁCH HÀNG</h3>\n\t</div>\n\t<div class=\"panel-body\">\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t[routerLink]=\"['/dmkh/add']\"\n\t\t>THÊM</button>\n\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Mã khách hàng</th>\n\t\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t\t\t<th>Địa chỉ</th>\n\t\t\t\t\t<th>Phone</th>\n\t\t\t\t\t<th>STK</th>\n\t\t\t\t\t<th>Action</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t<tr *ngFor=\"let item of db; index as i\">\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>{{ item.makh }}</td>\n\t\t\t\t\t<td>{{ item.tenkh }}</td>\n\t\t\t\t\t<td>{{ item.diachi }}</td>\n\t\t\t\t\t<td>{{ item.phone }}</td>\n\t\t\t\t\t<td>{{ item.tk }}</td>\n\t\t\t\t\t<td>\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\" \n\t\t\t[routerLink]=\"['/dmkh', item.id, 'edit']\"\n\t\t>Edit</button>\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onDelete_dmkh(item.id)\"\n\t\t>Delete</button>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n</div>"
+module.exports = "<div class=\"panel panel-primary\">\n\t<div class=\"panel-heading\">\n\t\t<h3 class=\"panel-title\">DANH SÁCH CÁC KHÁCH HÀNG</h3>\n\t</div>\n\t<div class=\"panel-body\">\n\t\t<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"checkMadiachi\">\n\t\t\t<option value=\"{{item.madm}}\" *ngFor=\"let item of db_dmdiachi\">{{item.tendm}}</option>\n\t\t</select>\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t[routerLink]=\"['/dmkh/add']\">THÊM</button>\n\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Mã khách hàng</th>\n\t\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t\t\t<th>Địa chỉ</th>\n\t\t\t\t\t<th>Phone</th>\n\t\t\t\t\t<th>STK</th>\n\t\t\t\t\t<th>Edit</th>\n\t\t\t\t\t<th>Delete</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t<tr *ngFor=\"let item of db | tenkh : checkMadiachi ; index as i\">\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>{{ item.makh }}</td>\n\t\t\t\t\t<td>{{ item.tenkh }}</td>\n\t\t\t\t\t<td>{{ item.diachi }}</td>\n\t\t\t\t\t<td>{{ item.phone }}</td>\n\t\t\t\t\t<td>{{ item.tk }}</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\" \n\t\t\t\t\t\t[routerLink]=\"['/dmkh', item.id, 'edit']\"\n\t\t\t\t\t>Edit</button>\n\t\t\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onDelete_dmkh(item.id)\"\n\t\t>Delete</button>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -1001,6 +1074,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DmkhListComponent", function() { return DmkhListComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_dmkh_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../services/dmkh.service */ "./src/app/services/dmkh.service.ts");
+/* harmony import */ var _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../services/dmdiachi.service */ "./src/app/services/dmdiachi.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1012,15 +1086,21 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var DmkhListComponent = /** @class */ (function () {
-    function DmkhListComponent(dmkhservice) {
+    function DmkhListComponent(dmkhservice, dmdiachi) {
         this.dmkhservice = dmkhservice;
+        this.dmdiachi = dmdiachi;
         this.db = [];
+        this.db_dmdiachi = [];
     }
     DmkhListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.subscription = this.dmkhservice.getAlldmkh().subscribe(function (data) {
             _this.db = data;
+        });
+        this.subscription = this.dmdiachi.getAlldmdiachi().subscribe(function (data) {
+            _this.db_dmdiachi = data;
         });
     };
     DmkhListComponent.prototype.ngOnDestroy = function () {
@@ -1049,7 +1129,7 @@ var DmkhListComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./dmkh-list.component.html */ "./src/app/components/dmkh/dmkh-list/dmkh-list.component.html"),
             styles: [__webpack_require__(/*! ./dmkh-list.component.css */ "./src/app/components/dmkh/dmkh-list/dmkh-list.component.css")]
         }),
-        __metadata("design:paramtypes", [_services_dmkh_service__WEBPACK_IMPORTED_MODULE_1__["DmkhService"]])
+        __metadata("design:paramtypes", [_services_dmkh_service__WEBPACK_IMPORTED_MODULE_1__["DmkhService"], _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_2__["DmdiachiService"]])
     ], DmkhListComponent);
     return DmkhListComponent;
 }());
@@ -1247,10 +1327,10 @@ var NhanhangComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/hoadon/chitiethd/chitiethd.component.css":
-/*!*********************************************************************!*\
-  !*** ./src/app/components/hoadon/chitiethd/chitiethd.component.css ***!
-  \*********************************************************************/
+/***/ "./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.css":
+/*!*******************************************************************************!*\
+  !*** ./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.css ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1258,37 +1338,38 @@ module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/components/hoadon/chitiethd/chitiethd.component.html":
-/*!**********************************************************************!*\
-  !*** ./src/app/components/hoadon/chitiethd/chitiethd.component.html ***!
-  \**********************************************************************/
+/***/ "./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.html":
+/*!********************************************************************************!*\
+  !*** ./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.html ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<label>Mã hóa đơn: {{ mahoadon }} </label>\n<!-- <input type=\"text\" name=\"\" size=\"20\" value=\"\" \n\t\t\t\t\t\t\t\t[(ngModel)]=\"mahoadon\" disabled=\"true\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\"> -->\n<hr/>\n\n<label>Tên Khách hàng:</label>\n<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"txt_makh\" (click)=\"checkHoadon()\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh\">{{ item.tenkh }}</option>\n</select>\n<div class=\"row\">\n\t<div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class =\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/']\">CHI TIẾT ĐẶT HÀNG</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<!-- <tr *ngFor=\"let item of db_hoadon | chitiethd : mahoadon\">\n\t\t\t\t\t\t\t<td  colspan=\"6\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t</tr> -->\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t<th>Số lượng</th>\n\t\t\t\t\t\t\t<th>ĐVT</th>\n\t\t\t\t\t\t\t<th>Đơn giá</th>\n\t\t\t\t\t\t\t<th>Thành tiền</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<!-- Dong 1 -->\n\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiet\">\n\t\t\t\t\t\t\t<td>{{ item.id }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"item.mahang\">\n\t\t\t\t\t\t\t<option value=\"{{ item.mahang }}\" *ngFor=\"let item of db_dmhang\">{{ item.tenhang }}</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" value=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\"  [(ngModel)]=\"item.sl\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"valuechange(item)\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"item.DVT\">\n\t\t\t\t\t\t\t<option value=\"B\" >Bao</option>\n\t\t\t\t\t\t\t<option value=\"Kg\" >Kg</option>\n\t\t\t\t\t\t\t<option value=\"T\" >Túi</option>\n\t\t\t\t\t\t\t<option value=\"Thieng\" >Thiêng</option>\n\t\t\t\t\t\t\t<option value=\"C\" >Cục</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"item.dg\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"valuechange(item)\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" value=\"{{ item.sl * item.dg }}\" \n\t\t\t\t\t\t\t\t[(ngModel)]=\"item.tt\" disabled=\"true\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [required]=\"false\">\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</td>\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Thành tiền: </label>{{ tongtt==0 ? '' : tongtt | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Tiền cũ: </label>{{ tiencu==0 ? '' : tiencu | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Tổng thành tiền: </label>{{ tongcong==0 ? '' : tongcong | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Thanh toán: </label>\n\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"thanhtoan\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"Valuethanhtoan()\">\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Còn lại: </label>\n\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"conlai\"\n\t\t\t\t\t\t\t\tdisabled=\"true\">\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\"><button type=\"button\" class=\"btn btn-large btn-block btn-primary\" (click)=\"onClick(db_chitiet)\">Click me!!!</button>\n\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\" (click)=\"onCancel()\">Cancel</button>\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n"
+module.exports = "<table class=\"table table-hover\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Mã Hóa đơn</th>\n\t\t\t<th>Mã KH</th>\n\t\t\t<th>Tổng cộng</th>\n\t\t\t<th>Thanh toán</th>\n\t\t\t<th>Còn lại</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>{{ db.mahoadon }}</td>\n\t\t\t<td>{{ db.makh }}</td>\n\t\t\t<td>{{ db.tonghoadon }}</td>\n\t\t\t<td>{{ db.tratien }}</td>\n\t\t\t<td>{{ db.conlai }}</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<table class=\"table table-bordered table-hover\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>STT</th>\n\t\t\t<th>Chọn</th>\n\t\t\t<th>Mã hàng</th>\n\t\t\t<th>sl</th>\n\t\t\t<th>dvt</th>\n\t\t\t<th>dg</th>\n\t\t\t<th>tt</th>\n\t\t</tr>\n\t</thead>\n\t<tr *ngFor=\"let item of db_chitiethd | filterChitiethd : db.mahoadon; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td> \n\t\t\t\t\t\t\t<select style=\"width: 70px\" class=\"form-control\" [(ngModel)]=\"\n\t\t\t\t\t\t\t\titem.index\">\n\t\t\t\t\t\t\t\t\t\t<option value=\"GA\">Gạo</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"TT\">Tấm</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"NH\">Nếp hảo</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"NT\">Nếp thơm</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"DA\">Đậu</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"BA\">Bao</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"BB\">Bắp</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"ME\">Mè</option>\n\t\t\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t </td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<select style=\"width: 200px\" name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"item.mahang\">\n\t\t\t\t\t\t\t<option value=\"{{ item.mahang }}\" *ngFor=\"let item of db_dmhang | dmhang : item.index\">{{ item.tenhang }}</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input style=\"width: 70px\" type=\"number\" step=\"0.01\" name=\"\" value=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\"  [(ngModel)]=\"item.sl\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"valuechange(item)\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<select style=\"width: 90px\" name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"item.DVT\">\n\t\t\t\t\t\t\t<option value=\"B\" >Bao</option>\n\t\t\t\t\t\t\t<option value=\"Kg\" >Kg</option>\n\t\t\t\t\t\t\t<option value=\"T\" >Túi</option>\n\t\t\t\t\t\t\t<option value=\"Thieng\" >Thiêng</option>\n\t\t\t\t\t\t\t<option value=\"C\" >Cục</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input style=\"width: 70px\" type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"item.dg\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"valuechange(item)\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<input style=\"width: 100px\" type=\"number\" step=\"0.01\" name=\"\" value=\"{{ item.sl * item.dg }}\" \n\t\t\t\t\t\t\t\t[(ngModel)]=\"item.tt\" disabled=\"true\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [required]=\"false\">\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</td>\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t<tr><td colspan=\"76\" class=\"font-weight-bold\"><label>Thành tiền: </label>{{ tongtt==0 ? '' : tongtt | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"7\" class=\"font-weight-bold\"><label>Tiền cũ: </label>{{ tiencu==0 ? '' : tiencu | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"7\" class=\"font-weight-bold\"><label>Tổng thành tiền: </label>{{ tongcong==0 ? '' : tongcong | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"7\" class=\"font-weight-bold\"><label>Thanh toán: </label>\n\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\"\n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"thanhtoan\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"Valuethanhtoan()\">\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"7\" class=\"font-weight-bold\"><label>Còn lại: </label>\n\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\"  \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"conlai\"\n\t\t\t\t\t\t\t\tdisabled=\"true\">\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"7\"><button type=\"button\" class=\"btn btn-large btn-block btn-primary\" (click)=\"onClick(db_chitiethd)\">Update!!!</button>\n\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\" (click)=\"onCancel()\">Cancel</button>\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t</tbody>\n\t<!-- <tbody>\n\t\t<tr *ngFor=\"let item of db_chitiethd | filterChitiethd : db.mahoadon\">\n\t\t\t<td>{{ item.mahoadon }}</td>\n\t\t\t<td>{{ item.mahang }}</td>\n\t\t\t<td>{{ item.sl }}</td>\n\t\t\t<td>{{ item.DVT }}</td>\n\t\t\t<td>{{ item.dg }}</td>\n\t\t\t<td>{{ item.tt }}</td>\n\t\t</tr>\n\t</tbody> -->\n</table>\n<!-- \n<label>Mã hóa đơn: {{ mahoadon }} </label>\n<input type=\"text\" name=\"\" size=\"20\" value=\"\" \n\t\t\t\t\t\t\t\t[(ngModel)]=\"mahoadon\" disabled=\"true\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\">\n<hr/>\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"check_huyen\">\n\t<option value=\"{{ item.madm }}\" *ngFor=\"let item of db_dmdiachi\">{{ item.tendm }}</option>\n</select>\n<label>Tên Khách hàng:</label>\n<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"txt_makh\" (click)=\"checkHoadon()\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh | tenkh : check_huyen\">{{ item.tenkh }}</option>\n</select>\n<div class=\"row\">\n\t<div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class =\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/']\">CHI TIẾT ĐẶT HÀNG</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : mahoadon\">\n\t\t\t\t\t\t\t<td  colspan=\"6\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t<th>Số lượng</th>\n\t\t\t\t\t\t\t<th>ĐVT</th>\n\t\t\t\t\t\t\t<th>Đơn giá</th>\n\t\t\t\t\t\t\t<th>Thành tiền</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\tDong 1\n\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiet ; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<select class=\"form-control\" [(ngModel)]=\"\n\t\t\t\t\t\t\t\titem.index\">\n\t\t\t\t\t\t\t\t\t\t<option value=\"GA\">Gạo</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"TT\">Tấm</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"NH\">Nếp hảo</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"NT\">Nếp thơm</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"DA\">Đậu</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"BA\">Bao</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"BB\">Bắp</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"ME\">Mè</option>\n\t\t\t\t\t\t\t\t\t</select>\t\n\t\t\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"item.mahang\">\n\t\t\t\t\t\t\t<option value=\"{{ item.mahang }}\" *ngFor=\"let item of db_dmhang | dmhang : item.index\">{{ item.tenhang }}</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" value=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\"  [(ngModel)]=\"item.sl\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"valuechange(item)\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"item.DVT\">\n\t\t\t\t\t\t\t<option value=\"B\" >Bao</option>\n\t\t\t\t\t\t\t<option value=\"Kg\" >Kg</option>\n\t\t\t\t\t\t\t<option value=\"T\" >Túi</option>\n\t\t\t\t\t\t\t<option value=\"Thieng\" >Thiêng</option>\n\t\t\t\t\t\t\t<option value=\"C\" >Cục</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"item.dg\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"valuechange(item)\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" value=\"{{ item.sl * item.dg }}\" \n\t\t\t\t\t\t\t\t[(ngModel)]=\"item.tt\" disabled=\"true\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [required]=\"false\">\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</td>\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Thành tiền: </label>{{ tongtt==0 ? '' : tongtt | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Tiền cũ: </label>{{ tiencu==0 ? '' : tiencu | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Tổng thành tiền: </label>{{ tongcong==0 ? '' : tongcong | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Thanh toán: </label>\n\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"thanhtoan\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"Valuethanhtoan()\">\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Còn lại: </label>\n\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"conlai\"\n\t\t\t\t\t\t\t\tdisabled=\"true\">\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\"><button type=\"button\" class=\"btn btn-large btn-block btn-primary\" (click)=\"onClick(db_chitiet)\">Click me!!!</button>\n\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\" (click)=\"onCancel()\">Cancel</button>\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n  -->"
 
 /***/ }),
 
-/***/ "./src/app/components/hoadon/chitiethd/chitiethd.component.ts":
-/*!********************************************************************!*\
-  !*** ./src/app/components/hoadon/chitiethd/chitiethd.component.ts ***!
-  \********************************************************************/
-/*! exports provided: ChitiethdComponent */
+/***/ "./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.ts":
+/*!******************************************************************************!*\
+  !*** ./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.ts ***!
+  \******************************************************************************/
+/*! exports provided: ChitiethdEditComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChitiethdComponent", function() { return ChitiethdComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChitiethdEditComponent", function() { return ChitiethdEditComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_dmhang_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../services/dmhang.service */ "./src/app/services/dmhang.service.ts");
 /* harmony import */ var _services_dmkh_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../services/dmkh.service */ "./src/app/services/dmkh.service.ts");
-/* harmony import */ var _services_chitiet_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../../services/chitiet.service */ "./src/app/services/chitiet.service.ts");
-/* harmony import */ var _services_chitiethd_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../services/chitiethd.service */ "./src/app/services/chitiethd.service.ts");
-/* harmony import */ var _services_hoadon_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../services/hoadon.service */ "./src/app/services/hoadon.service.ts");
-/* harmony import */ var _models_chitiethd_model__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../../models/chitiethd.model */ "./src/app/models/chitiethd.model.ts");
-/* harmony import */ var _models_hoadon_model__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../../models/hoadon.model */ "./src/app/models/hoadon.model.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../../services/dmdiachi.service */ "./src/app/services/dmdiachi.service.ts");
+/* harmony import */ var _services_chitiet_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../services/chitiet.service */ "./src/app/services/chitiet.service.ts");
+/* harmony import */ var _services_chitiethd_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../services/chitiethd.service */ "./src/app/services/chitiethd.service.ts");
+/* harmony import */ var _services_hoadon_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../../services/hoadon.service */ "./src/app/services/hoadon.service.ts");
+/* harmony import */ var _models_chitiethd_model__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../../models/chitiethd.model */ "./src/app/models/chitiethd.model.ts");
+/* harmony import */ var _models_hoadon_model__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../../../models/hoadon.model */ "./src/app/models/hoadon.model.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1308,10 +1389,12 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-var ChitiethdComponent = /** @class */ (function () {
-    function ChitiethdComponent(dmhangservice, dmkhservice, chitietservice, chitiethdservice, hoadonservice, routerService, activeRouterService, datePipe) {
+
+var ChitiethdEditComponent = /** @class */ (function () {
+    function ChitiethdEditComponent(dmhangservice, dmkhservice, dmdiachiservice, chitietservice, chitiethdservice, hoadonservice, routerService, activeRouterService, datePipe) {
         this.dmhangservice = dmhangservice;
         this.dmkhservice = dmkhservice;
+        this.dmdiachiservice = dmdiachiservice;
         this.chitietservice = chitietservice;
         this.chitiethdservice = chitiethdservice;
         this.hoadonservice = hoadonservice;
@@ -1320,6 +1403,235 @@ var ChitiethdComponent = /** @class */ (function () {
         this.datePipe = datePipe;
         this.db_dmhang = [];
         this.db_dmkh = [];
+        this.db_dmdiachi = [];
+        this.db_chitiet = [];
+        this.db_chitiethd = [];
+        this.db_hoadon = [];
+        this.today = Date.now();
+        this.fixedTimezone = this.today;
+        this.tongtt = 0;
+        this.dem = 1;
+        this.tiencu = 0;
+        this.tongcong = 0;
+        this.demhd = -1;
+    }
+    ChitiethdEditComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.subscription = this.dmhangservice.getAlldmhang().subscribe(function (data) {
+            _this.db_dmhang = data;
+        });
+        this.subscription = this.dmkhservice.getAlldmkh().subscribe(function (data) {
+            _this.db_dmkh = data;
+        });
+        this.subscription = this.dmdiachiservice.getAlldmdiachi().subscribe(function (data) {
+            _this.db_dmdiachi = data;
+        });
+        this.subscription = this.hoadonservice.getAllhoadon().subscribe(function (data) {
+            _this.db_hoadon = data;
+        });
+        //var date = new Date();
+        //this.mahoadon = this.datePipe.transform(date,"ddMMyyyy");
+        this.subscription = this.chitietservice.getAllchitiet().subscribe(function (data) {
+            _this.db_chitiet = data;
+        });
+        this.subscription = this.chitiethdservice.getAllchitiethd().subscribe(function (data) {
+            _this.db_chitiethd = data;
+        });
+        this.db = new _models_hoadon_model__WEBPACK_IMPORTED_MODULE_8__["hoadon"]();
+        this.loadData();
+        this.tongtt = this.db.tonghoadon;
+        this.thanhtoan = this.db.tratien;
+        this.conlai = this.db.conlai;
+    };
+    ChitiethdEditComponent.prototype.ngOnDestroy = function () {
+        if (this.subscription) {
+            this.subscription.unsubscribe();
+        }
+    };
+    ChitiethdEditComponent.prototype.loadData = function () {
+        var _this = this;
+        this.subscriptionParams = this.activeRouterService.params.subscribe(function (data) {
+            var id = data['id'];
+            _this.subscription = _this.hoadonservice.getOnehoadon(id).subscribe(function (hoadon) {
+                _this.db = hoadon;
+            });
+        });
+    };
+    ChitiethdEditComponent.prototype.valuechange = function (chitiet) {
+        this.tongcong = 0;
+        if (chitiet.sl != null && chitiet.dg != null) {
+            chitiet.tt = chitiet.sl * chitiet.dg;
+        }
+        else {
+            chitiet.tt = null;
+        }
+        this.tongtt = 0;
+        for (var i = this.db_chitiethd.length - 1; i >= 0; i--) {
+            if (this.db_chitiethd[i].mahoadon == this.db.mahoadon) {
+                this.tongtt = this.tongtt + (this.db_chitiethd[i].tt * 1000);
+            }
+        }
+        this.tiencu = 0;
+        for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
+            if (this.db_hoadon[i].makh == this.db.makh && this.db_hoadon[i].id < this.db.id) {
+                this.tiencu = this.tiencu + this.db_hoadon[i].conlai;
+            }
+        }
+        if (this.tongtt > 0) {
+            this.tongcong = this.tongtt + this.tiencu;
+        }
+        else {
+            this.tongcong = 0;
+        }
+        this.thanhtoan = this.db.tratien;
+        this.conlai = this.tongtt + this.tiencu - this.thanhtoan;
+    };
+    ChitiethdEditComponent.prototype.Valuethanhtoan = function () {
+        this.conlai = this.tongtt - this.thanhtoan;
+        this.tongcong = this.tongtt - this.thanhtoan + this.tiencu;
+    };
+    ChitiethdEditComponent.prototype.checkMahoadon = function () {
+        this.mahoadon = this.mahoadon.slice(0, 8);
+        this.dem = 1;
+        for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
+            if (this.db_hoadon[i].mahoadon.slice(0, 8) == this.mahoadon.slice(0, 8)) {
+                this.dem++;
+            }
+        }
+        if (this.dem < 10) {
+            this.mahoadon = this.mahoadon.slice(0, 8) + '00' + this.dem;
+        }
+        else if (this.dem < 100) {
+            this.mahoadon = this.mahoadon.slice(0, 8) + '0' + this.dem;
+        }
+        else {
+            this.mahoadon = this.mahoadon.slice(0, 8) + this.dem;
+        }
+    };
+    ChitiethdEditComponent.prototype.checkHoadon = function () {
+        this.tiencu = 0;
+        this.checkMahoadon();
+        for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
+            if (this.db_hoadon[i].kt == false && this.db_hoadon[i].makh == this.txt_makh) {
+                this.tiencu = this.tiencu + this.db_hoadon[i].conlai;
+            }
+        }
+    };
+    ChitiethdEditComponent.prototype.onEdit_chitiethd = function (mahoadon, mahang, sl, dvt, dg, tt) {
+        var _this = this;
+        this.new_chitiethd = new _models_chitiethd_model__WEBPACK_IMPORTED_MODULE_7__["chitiethd"]();
+        this.new_chitiethd.mahoadon = mahoadon;
+        this.new_chitiethd.mahang = mahang;
+        this.new_chitiethd.sl = sl;
+        this.new_chitiethd.DVT = dvt;
+        this.new_chitiethd.dg = dg;
+        this.new_chitiethd.tt = tt;
+        this.subscription = this.chitiethdservice.add_chitiethd(this.new_chitiethd).subscribe(function (data) {
+            if (data) {
+                _this.routerService.navigate(['hoadon']);
+            }
+        });
+    };
+    ChitiethdEditComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-chitiethd-edit',
+            template: __webpack_require__(/*! ./chitiethd-edit.component.html */ "./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.html"),
+            styles: [__webpack_require__(/*! ./chitiethd-edit.component.css */ "./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_dmhang_service__WEBPACK_IMPORTED_MODULE_1__["DmhangService"],
+            _services_dmkh_service__WEBPACK_IMPORTED_MODULE_2__["DmkhService"],
+            _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_3__["DmdiachiService"],
+            _services_chitiet_service__WEBPACK_IMPORTED_MODULE_4__["ChitietService"],
+            _services_chitiethd_service__WEBPACK_IMPORTED_MODULE_5__["ChitiethdService"],
+            _services_hoadon_service__WEBPACK_IMPORTED_MODULE_6__["HoadonService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_9__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_9__["ActivatedRoute"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_10__["DatePipe"]])
+    ], ChitiethdEditComponent);
+    return ChitiethdEditComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/hoadon/chitiethd/chitiethd.component.css":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/hoadon/chitiethd/chitiethd.component.css ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/hoadon/chitiethd/chitiethd.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/hoadon/chitiethd/chitiethd.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<label>Mã hóa đơn: {{ mahoadon }} </label>\n<!-- <input type=\"text\" name=\"\" size=\"20\" value=\"\" \n\t\t\t\t\t\t\t\t[(ngModel)]=\"mahoadon\" disabled=\"true\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\"> -->\n<hr/>\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"check_huyen\">\n\t<option value=\"{{ item.madm }}\" *ngFor=\"let item of db_dmdiachi\">{{ item.tendm }}</option>\n</select>\n<label>Tên Khách hàng:</label>\n<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"txt_makh\" (click)=\"checkHoadon()\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh | tenkh : check_huyen\">{{ item.tenkh }}</option>\n</select>\n<div class=\"row\">\n\t<div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class =\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/']\">CHI TIẾT ĐẶT HÀNG</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<!-- <tr *ngFor=\"let item of db_hoadon | chitiethd : mahoadon\">\n\t\t\t\t\t\t\t<td  colspan=\"6\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t</tr> -->\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t<th>Số lượng</th>\n\t\t\t\t\t\t\t<th>ĐVT</th>\n\t\t\t\t\t\t\t<th>Đơn giá</th>\n\t\t\t\t\t\t\t<th>Thành tiền</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<!-- Dong 1 -->\n\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiet ; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<select class=\"form-control\" [(ngModel)]=\"\n\t\t\t\t\t\t\t\titem.index\">\n\t\t\t\t\t\t\t\t\t\t<option value=\"GA\">Gạo</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"TT\">Tấm</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"NH\">Nếp hảo</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"NT\">Nếp thơm</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"DA\">Đậu</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"BA\">Bao</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"BB\">Bắp</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"ME\">Mè</option>\n\t\t\t\t\t\t\t\t\t</select>\t\n\t\t\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"item.mahang\">\n\t\t\t\t\t\t\t<option value=\"{{ item.mahang }}\" *ngFor=\"let item of db_dmhang | dmhang : item.index\">{{ item.tenhang }}</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" value=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\"  [(ngModel)]=\"item.sl\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"valuechange(item)\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"item.DVT\">\n\t\t\t\t\t\t\t<option value=\"B\" >Bao</option>\n\t\t\t\t\t\t\t<option value=\"Kg\" >Kg</option>\n\t\t\t\t\t\t\t<option value=\"T\" >Túi</option>\n\t\t\t\t\t\t\t<option value=\"Thieng\" >Thiêng</option>\n\t\t\t\t\t\t\t<option value=\"C\" >Cục</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"item.dg\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"valuechange(item)\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" value=\"{{ item.sl * item.dg }}\" \n\t\t\t\t\t\t\t\t[(ngModel)]=\"item.tt\" disabled=\"true\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [required]=\"false\">\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</td>\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Thành tiền: </label>{{ tongtt==0 ? '' : tongtt | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Tiền cũ: </label>{{ tiencu==0 ? '' : tiencu | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Tổng thành tiền: </label>{{ tongcong==0 ? '' : tongcong | number :'3.0-3' }}</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Thanh toán: </label>\n\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"thanhtoan\"\n\t\t\t\t\t\t\t\t(ngModelChange)=\"Valuethanhtoan()\">\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\" class=\"font-weight-bold\"><label>Còn lại: </label>\n\t\t\t\t\t\t<input type=\"number\" step=\"0.01\" name=\"\" \n\t\t\t\t\t\t\t\tid=\"input\" class=\"form-control\" [(ngModel)]=\"conlai\"\n\t\t\t\t\t\t\t\tdisabled=\"true\">\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t\t<tr><td colspan=\"6\"><button type=\"button\" class=\"btn btn-large btn-block btn-primary\" (click)=\"onClick(db_chitiet)\">Click me!!!</button>\n\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\" (click)=\"onCancel()\">Cancel</button>\n\t\t\t\t\t\t</td></tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/hoadon/chitiethd/chitiethd.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/components/hoadon/chitiethd/chitiethd.component.ts ***!
+  \********************************************************************/
+/*! exports provided: ChitiethdComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChitiethdComponent", function() { return ChitiethdComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_dmhang_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../services/dmhang.service */ "./src/app/services/dmhang.service.ts");
+/* harmony import */ var _services_dmkh_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../services/dmkh.service */ "./src/app/services/dmkh.service.ts");
+/* harmony import */ var _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../../services/dmdiachi.service */ "./src/app/services/dmdiachi.service.ts");
+/* harmony import */ var _services_chitiet_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../services/chitiet.service */ "./src/app/services/chitiet.service.ts");
+/* harmony import */ var _services_chitiethd_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../services/chitiethd.service */ "./src/app/services/chitiethd.service.ts");
+/* harmony import */ var _services_hoadon_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../../services/hoadon.service */ "./src/app/services/hoadon.service.ts");
+/* harmony import */ var _models_chitiethd_model__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../../models/chitiethd.model */ "./src/app/models/chitiethd.model.ts");
+/* harmony import */ var _models_hoadon_model__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../../../models/hoadon.model */ "./src/app/models/hoadon.model.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+var ChitiethdComponent = /** @class */ (function () {
+    function ChitiethdComponent(dmhangservice, dmkhservice, dmdiachiservice, chitietservice, chitiethdservice, hoadonservice, routerService, activeRouterService, datePipe) {
+        this.dmhangservice = dmhangservice;
+        this.dmkhservice = dmkhservice;
+        this.dmdiachiservice = dmdiachiservice;
+        this.chitietservice = chitietservice;
+        this.chitiethdservice = chitiethdservice;
+        this.hoadonservice = hoadonservice;
+        this.routerService = routerService;
+        this.activeRouterService = activeRouterService;
+        this.datePipe = datePipe;
+        this.db_dmhang = [];
+        this.db_dmkh = [];
+        this.db_dmdiachi = [];
         this.db_chitiet = [];
         this.db_hoadon = [];
         this.today = Date.now();
@@ -1336,6 +1648,9 @@ var ChitiethdComponent = /** @class */ (function () {
         });
         this.subscription = this.dmkhservice.getAlldmkh().subscribe(function (data) {
             _this.db_dmkh = data;
+        });
+        this.subscription = this.dmdiachiservice.getAlldmdiachi().subscribe(function (data) {
+            _this.db_dmdiachi = data;
         });
         this.subscription = this.chitietservice.getAllchitiet().subscribe(function (data) {
             _this.db_chitiet = data;
@@ -1414,7 +1729,7 @@ var ChitiethdComponent = /** @class */ (function () {
     };
     ChitiethdComponent.prototype.onAdd_chitiethd = function (mahoadon, mahang, sl, dvt, dg, tt) {
         var _this = this;
-        this.new_chitiethd = new _models_chitiethd_model__WEBPACK_IMPORTED_MODULE_6__["chitiethd"]();
+        this.new_chitiethd = new _models_chitiethd_model__WEBPACK_IMPORTED_MODULE_7__["chitiethd"]();
         this.new_chitiethd.mahoadon = mahoadon;
         this.new_chitiethd.mahang = mahang;
         this.new_chitiethd.sl = sl;
@@ -1429,7 +1744,7 @@ var ChitiethdComponent = /** @class */ (function () {
     };
     ChitiethdComponent.prototype.Add_hoadon = function (mahoadon, makh, tonghoadon, tratien, conlai) {
         var _this = this;
-        this.new_hoadon = new _models_hoadon_model__WEBPACK_IMPORTED_MODULE_7__["hoadon"]();
+        this.new_hoadon = new _models_hoadon_model__WEBPACK_IMPORTED_MODULE_8__["hoadon"]();
         this.new_hoadon.mahoadon = mahoadon;
         this.new_hoadon.makh = makh;
         this.new_hoadon.tonghoadon = tonghoadon;
@@ -1492,14 +1807,119 @@ var ChitiethdComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [_services_dmhang_service__WEBPACK_IMPORTED_MODULE_1__["DmhangService"],
             _services_dmkh_service__WEBPACK_IMPORTED_MODULE_2__["DmkhService"],
-            _services_chitiet_service__WEBPACK_IMPORTED_MODULE_3__["ChitietService"],
-            _services_chitiethd_service__WEBPACK_IMPORTED_MODULE_4__["ChitiethdService"],
-            _services_hoadon_service__WEBPACK_IMPORTED_MODULE_5__["HoadonService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_8__["Router"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_8__["ActivatedRoute"],
-            _angular_common__WEBPACK_IMPORTED_MODULE_9__["DatePipe"]])
+            _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_3__["DmdiachiService"],
+            _services_chitiet_service__WEBPACK_IMPORTED_MODULE_4__["ChitietService"],
+            _services_chitiethd_service__WEBPACK_IMPORTED_MODULE_5__["ChitiethdService"],
+            _services_hoadon_service__WEBPACK_IMPORTED_MODULE_6__["HoadonService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_9__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_9__["ActivatedRoute"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_10__["DatePipe"]])
     ], ChitiethdComponent);
     return ChitiethdComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.css":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.css ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.html":
+/*!**************************************************************************!*\
+  !*** ./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<form action=\"\" method=\"POST\" role=\"form\">\n\t<legend>CẬP NHẬT LẠI HÓA ĐƠN</legend>\n\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Mã Hóa đơn</label>\n\t\t<input type=\"text\" class=\"form-control\" \n\t\t[(ngModel)]=\"db.mahoadon\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Tổng tiền</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.tonghoadon\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Thanh toán</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.tratien\" \n\t\t[ngModelOptions]=\"{standalone: true}\" (ngModelChange)=\"Valuethanhtoan()\">\n\t</div>\n\t<div class=\"form-group\">\n\t\t<label for=\"\">Còn lại</label>\n\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"db.conlai\" \n\t\t[ngModelOptions]=\"{standalone: true}\">\n\t</div>\n\n\t<button type=\"submit\" class=\"btn btn-primary\" (click)=\"onEdit_hoadon()\">Lưu</button>\n</form>"
+
+/***/ }),
+
+/***/ "./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.ts ***!
+  \************************************************************************/
+/*! exports provided: HoadonEditComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HoadonEditComponent", function() { return HoadonEditComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_hoadon_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../services/hoadon.service */ "./src/app/services/hoadon.service.ts");
+/* harmony import */ var _models_hoadon_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../models/hoadon.model */ "./src/app/models/hoadon.model.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var HoadonEditComponent = /** @class */ (function () {
+    function HoadonEditComponent(dmhangservice, routerService, activeRouterService) {
+        this.dmhangservice = dmhangservice;
+        this.routerService = routerService;
+        this.activeRouterService = activeRouterService;
+    }
+    HoadonEditComponent.prototype.ngOnInit = function () {
+        this.db = new _models_hoadon_model__WEBPACK_IMPORTED_MODULE_2__["hoadon"]();
+        this.loadData();
+    };
+    HoadonEditComponent.prototype.loadData = function () {
+        var _this = this;
+        this.subscriptionParams = this.activeRouterService.params.subscribe(function (data) {
+            var id = data['id'];
+            _this.subscription = _this.dmhangservice.getOnehoadon(id).subscribe(function (hoadon) {
+                _this.db = hoadon;
+            });
+        });
+    };
+    HoadonEditComponent.prototype.ngOnDestroy = function () {
+        if (this.subscription) {
+            this.subscription.unsubscribe();
+        }
+        if (this.subscriptionParams) {
+            this.subscriptionParams.unsubscribe();
+        }
+    };
+    HoadonEditComponent.prototype.onEdit_hoadon = function () {
+        var _this = this;
+        this.subscription =
+            this.dmhangservice.uppdate_hoadon(this.db).subscribe(function (data) {
+                _this.routerService.navigateByUrl('hoadon');
+                //console.log(data);
+            });
+    };
+    HoadonEditComponent.prototype.Valuethanhtoan = function () {
+        this.db.conlai = this.db.tonghoadon - this.db.tratien;
+    };
+    HoadonEditComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-hoadon-edit',
+            template: __webpack_require__(/*! ./hoadon-edit.component.html */ "./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.html"),
+            styles: [__webpack_require__(/*! ./hoadon-edit.component.css */ "./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_hoadon_service__WEBPACK_IMPORTED_MODULE_1__["HoadonService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+    ], HoadonEditComponent);
+    return HoadonEditComponent;
 }());
 
 
@@ -1587,7 +2007,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"show_chua\">\n\t<input type=\"text\" name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"mahoadon\">\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"makhs\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh\">{{ item.tenkh }}</option>\n</select>\t\n</div>\n\n \n<div class=\"row\">\n\t<div *ngIf=\"show_chua\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN CHƯA GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tonghoadon,\n\t\t\t\t\t\t\titem.tratien,item.conlai,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<!-- Dong nay la chinh giua -->\n<div *ngIf=\"show\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\" style=\"width: 470px\">\n\t\t<div  ><!--  class=\"panel panel-primary\" -->\n\t\t\t<!-- <div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" (click)=\"onPrint()\">Chi tiết hóa đơn số: {{ mahd }} - ngày: {{ ngay }}</h3>\n\t\t\t</div> -->\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td width=\"220px\"></td>\n\t\t\t\t\t\t\t<td><h5>{{ ngay }}</h5></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td width=\"220px\"></td>\n\t\t\t\t\t\t\t<td><h4>{{ tenkhs }}</h4></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t</table>\n\t\t\t\t\n\t\t\t\t<tr><td>\n\t\t\t\t\t<!-- <font face=\"Courier New\" size=\"12\"> -->\n\t\t\t\t\t\t\t<table (click)=\"list_back(true,true,false)\" class=\"table table-bordered table -hover\"\n\t\t\t\t\t\t\t\tstyle=\"size: 15\"\n\t\t\t\t\t\t\t > <!-- class=\"table table-bordered table-hover\" -->\n\t\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t\t<tr style=\"text-align: center\">\n\t\t\t\t\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>ĐG</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>TT</th>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiethd | showChitiethd : mahd; let myId = index\">\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ myId + 1 }}</td>\n\t\t\t\t<td *ngFor=\"let tam of db_dmhang | tenhang : item.mahang\">{{ tam.tenhang }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.sl }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.DVT }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.dg }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: right;\">{{ item.tt }}</td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng toa:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5> {{ tongtt ==0 ? '' : tongtt | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_tratien\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Thanh toán:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: blue; text-align: right;\"><h5>{{ test_tratien==0 ? '' : test_tratien | number :'3.0-3'}}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tiền cũ:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: green; text-align: right;\"><h5> \n\t\t\t\t\t\t\t\t\t\t\t{{ tiencu ==0 ? '' : tiencu  | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng cộng:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: red; text-align: right;\"><h5>{{ test_tonghoadon ==0 ? '' : test_tonghoadon | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"thanhtoan\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Còn lại:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5>{{ test_conlai==0 ? '' : test_conlai | number :'3.0-3' }}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t\t<!-- </font> -->\n\t\t\t\t\t\t</td></tr>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n<!-- Dong nay la ben phai -->\n\t<div *ngIf=\"show_giao\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-success\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN ĐÃ GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : !kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tonghoadon,\n\t\t\t\t\t\t\titem.tratien,item.conlai,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!--  Dòng này thử -->\n\n<!-- \"id\": 8,\n      \"mahoadon\": \"03112018005\",\n      \"makh\": \"AP01\",\n      \"tonghoadon\": 5850000,\n      \"tratien\": 750000,\n      \"conlai\": 5100000,\n      \"kt\": false,\n      \"tinhtrang\": true -->\n"
+module.exports = "<div *ngIf=\"show_chua\">\n\t<input type=\"text\" name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"mahoadon\">\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"makhs\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh\">{{ item.tenkh }}</option>\n</select>\t\n</div>\n\n \n<div class=\"row\">\n\t<div *ngIf=\"show_chua\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN CHƯA GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tratien,item.conlai,item.tonghoadon,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td >{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'edit']\">{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td >\n\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<!-- Dong nay la chinh giua -->\n<div *ngIf=\"show\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\" style=\"width: 470px\">\n\t\t<div  class=\"panel panel-primary\">\n\t\t\t<div style=\"text-align: right;\">\n\t\t\t\t<label><h4>{{ ngay }}</h4></label>\n\t\t\t</div>\n\t\t\t<div style=\"text-align: right;\">\n\t\t\t\t<label><h3>{{ tenkhs }}</h3></label>\n\t\t\t</div>\n\t\t\t<!-- <div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" (click)=\"onPrint()\">Chi tiết hóa đơn số: {{ mahd }} - ngày: {{ ngay }}</h3>\n\t\t\t</div> -->\n\t\t\t<div class=\"panel-body\" align=\"center\">\n\t\t\t\t\n\t\t\t\t<tr align=\"center\"><td style=\"mar\">\n\t\t\t\t\t\t\t<table   (click)=\"list_back(true,true,false)\" class=\"table table-bordered table-hover\" style=\"size: 14px\">\n\t\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t\t<tr style=\"text-align: center\">\n\t\t\t\t\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>ĐG</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>TT</th>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiethd | showChitiethd : mahd; let myId = index\">\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ myId + 1 }}</td>\n\t\t\t\t<td *ngFor=\"let tam of db_dmhang | tenhang : item.mahang\">{{ tam.tenhang }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.sl }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.DVT }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.dg }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: right;\">{{ item.tt }}</td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng toa:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5> {{ tongcong ==0 ? '' : tongcong | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_conlai\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tiền cũ:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: green; text-align: right;\"><h5> \n\t\t\t\t\t\t\t\t\t\t\t\t{{ test_conlai ==0 ? '' : test_conlai | number :'3.0-3'}}\n\t\t\t\t\t\t\t\t\t\t\t<!-- {{ test_conlai ==0 ? '' : test_conlai + thanhtoan - tongtt  | number :'3.0-3'}} --></h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_conlai\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng cộng:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: red; text-align: right;\"><b><h5>\n\t\t\t\t\t\t\t\t\t\t\t\t{{ test_tonghoadon ==0 ? '' : test_tonghoadon | number :'3.0-3'}}\n\t\t\t\t\t\t\t\t\t\t\t\t<!-- {{ test_tonghoadon ==0 ? '' : test_tonghoadon - test_tratien + thanhtoan | number :'3.0-3'}} --></h5></b></td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_tratien\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Thanh toán:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: blue; text-align: right;\"><h5>{{ test_tratien==0 ? '' : test_tratien | number :'3.0-3'}}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_conlai\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Còn lại:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5>{{ test_conlai==0 ? '' : test_conlai | number :'3.0-3' }}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t</td></tr>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n<!-- Dong nay la ben phai -->\n\t<div *ngIf=\"show_giao\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-success\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN ĐÃ GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : !kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'editHD']\">{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tratien,item.conlai,item.tonghoadon,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'edit']\">\n\t\t\t\t\t\t\t\t\t{{ item.tratien }}\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!--  Dòng này thử -->\n\n<!-- \"id\": 8,\n      \"mahoadon\": \"03112018005\",\n      \"makh\": \"AP01\",\n      \"tonghoadon\": 5850000,\n      \"tratien\": 750000,\n      \"conlai\": 5100000,\n      \"kt\": false,\n      \"tinhtrang\": true -->\n"
 
 /***/ }),
 
@@ -1735,7 +2155,7 @@ var HoadonsComponent = /** @class */ (function () {
         //this.Update_Form();
         this.ngOnInit();
     };
-    HoadonsComponent.prototype.list_chitiethd = function (mahd, makh, id, tonghoadon, tratien, conlai, chua, giao, show) {
+    HoadonsComponent.prototype.list_chitiethd = function (mahd, makh, id, thanhtoan, conlai, tonghoadon, chua, giao, show) {
         this.mahd = mahd;
         this.ngay = mahd.slice(0, 2) + "/" + mahd.slice(2, 4) + "/" + mahd.slice(4, 8);
         for (var i = this.db_chitiethd.length - 1; i >= 0; i--) {
@@ -1745,21 +2165,16 @@ var HoadonsComponent = /** @class */ (function () {
             }
         }
         this.tiencu = 0;
-        for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
-            if (this.db_hoadon[i].makh == makh && this.db_hoadon[i].id < id) {
-                this.tiencu = this.tiencu + this.db_hoadon[i].conlai;
-            }
-        }
-        // console.log(mahd + ' - ' + makh + ' - ' + id + ' - ' + tonghoadon + ' - ' +tratien + ' - ' + conlai);
-        this.tongtt = tonghoadon;
-        this.tongcong = 0;
-        this.test_tonghoadon = this.tiencu + this.tongtt - tratien;
-        this.test_tratien = tratien;
+        this.tongcong = tonghoadon;
+        this.test_tonghoadon = conlai;
+        this.test_tratien = thanhtoan;
         this.test_conlai = 0;
-        //console.log(this.tongtt + ' - ' + this.tiencu + ' - ' + this.tongcong + ' - ' + this.test_tonghoadon );
-        for (var i = this.db_dmkh.length - 1; i >= 0; i--) {
-            if (this.db_dmkh[i].makh == makh) {
-                this.tenkhs = this.db_dmkh[i].tenkh;
+        for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
+            console.log(mahd + ' - ' + makh + ' - ' + this.tiencu + ' - ' + this.tongcong);
+            for (var i = this.db_dmkh.length - 1; i >= 0; i--) {
+                if (this.db_dmkh[i].makh == makh) {
+                    this.tenkhs = this.db_dmkh[i].tenkh;
+                }
             }
         }
         //console.log(this.test_tonghoadon + ' - ' + this.test_tratien + ' - ' + this.test_conlai);
@@ -2107,6 +2522,95 @@ var ChitiethdPipe = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pipes/dmhang.pipe.ts":
+/*!**************************************!*\
+  !*** ./src/app/pipes/dmhang.pipe.ts ***!
+  \**************************************/
+/*! exports provided: DmhangPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DmhangPipe", function() { return DmhangPipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var DmhangPipe = /** @class */ (function () {
+    function DmhangPipe() {
+    }
+    DmhangPipe.prototype.transform = function (dmhangs, mahangs) {
+        if (!mahangs) {
+            return dmhangs;
+        }
+        else if (mahangs) {
+            return dmhangs.filter(function (item) {
+                return item.mahang.toString().toLocaleLowerCase().indexOf(mahangs.toLocaleLowerCase()) !== -1;
+            });
+        }
+        else {
+            return dmhangs;
+        }
+    };
+    DmhangPipe = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
+            name: 'dmhang'
+        })
+    ], DmhangPipe);
+    return DmhangPipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pipes/filter-chitiethd.pipe.ts":
+/*!************************************************!*\
+  !*** ./src/app/pipes/filter-chitiethd.pipe.ts ***!
+  \************************************************/
+/*! exports provided: FilterChitiethdPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilterChitiethdPipe", function() { return FilterChitiethdPipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var FilterChitiethdPipe = /** @class */ (function () {
+    function FilterChitiethdPipe() {
+    }
+    FilterChitiethdPipe.prototype.transform = function (chitiethds, mahd) {
+        if (mahd) {
+            return chitiethds.filter(function (item) {
+                return item.mahoadon.toString().toLocaleLowerCase().indexOf(mahd.toString().toLocaleLowerCase()) !== -1;
+            });
+        }
+        else {
+            return chitiethds;
+        }
+    };
+    FilterChitiethdPipe = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
+            name: 'filterChitiethd'
+        })
+    ], FilterChitiethdPipe);
+    return FilterChitiethdPipe;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pipes/show-chitiethd.pipe.ts":
 /*!**********************************************!*\
   !*** ./src/app/pipes/show-chitiethd.pipe.ts ***!
@@ -2332,23 +2836,6 @@ var ChitiethdService = /** @class */ (function () {
         this.http = http;
         this.API = 'http://localhost:3000/chitiethd';
     }
-    //List danh sách  các mặt hàng
-    /*getAllchitiethd() : Observable<chitiethd[]>{
-      return this.http.get(this.API);
-    }
-    getOnechitiethd(id: number) : Observable<chitiethd>{
-      return this.http.get(`${this.API}/${id}`);
-    }
-    add_chitiethd(chitiethd : chitiethd) : Observable<chitiethd>{
-      return this.http.post(this.API, chitiethd);
-    }
-     delete_chitiethd(id : number) : Observable<chitiethd>{
-        return this.http.delete(`${this.API}/${id}`);
-    }
-    uppdate_chitiethd(chitiethd : chitiethd) : Observable<chitiethd>{
-        return this.http.put(`${this.API}/${chitiethd.id}`,chitiethd);
-    }*/
-    //Chinh sua lai
     ChitiethdService.prototype.getAllchitiethd = function () {
         return this.http.get(this.API);
     };
@@ -2371,6 +2858,64 @@ var ChitiethdService = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], ChitiethdService);
     return ChitiethdService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/dmdiachi.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/dmdiachi.service.ts ***!
+  \**********************************************/
+/*! exports provided: DmdiachiService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DmdiachiService", function() { return DmdiachiService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+//import HttpClient vào để sử dụng
+
+var DmdiachiService = /** @class */ (function () {
+    function DmdiachiService(http) {
+        this.http = http;
+        this.API = 'http://localhost:3000/dmdiachi';
+    }
+    //List danh sách  các mặt hàng
+    DmdiachiService.prototype.getAlldmdiachi = function () {
+        return this.http.get(this.API);
+    };
+    DmdiachiService.prototype.getOnedmdiachi = function (id) {
+        return this.http.get(this.API + "/" + id);
+    };
+    DmdiachiService.prototype.add_dmdiachi = function (dmdiachi) {
+        return this.http.post(this.API, dmdiachi);
+    };
+    DmdiachiService.prototype.delete_dmdiachi = function (id) {
+        return this.http.delete(this.API + "/" + id);
+    };
+    DmdiachiService.prototype.uppdate_dmdiachi = function (dmdiachi) {
+        return this.http.put(this.API + "/" + dmdiachi.id, dmdiachi);
+    };
+    DmdiachiService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], DmdiachiService);
+    return DmdiachiService;
 }());
 
 
@@ -2400,33 +2945,22 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 //import HttpClient vào để sử dụng
+/*import { HttpClient } from '@angular/common/http';*/
 
 var DmhangService = /** @class */ (function () {
     function DmhangService(http) {
         this.http = http;
         //Khai báo đường dẫn đến Server để lấy dl
+        /*  public API : string = 'http://localhost:3000/dmhang';
+         public API : string = 'http://localhost:3000/dmhang';
+        */
         this.API = 'http://localhost:3000/dmhang';
     }
     //List danh sách  các mặt hàng
-    /* getAlldmhang() : Observable<dmhang[]>{
-       return this.http.get(this.API);
-     }
-     getOnedmhang(id: number) : Observable<dmhang>{
-       return this.http.get(`${this.API}/${id}`);
-     }
-   
-     add_dmhang(dmhang : dmhang) : Observable<dmhang>{
-       return this.http.post(this.API, dmhang);
-     }
-      delete_dmhang(id : number) : Observable<dmhang>{
-         return this.http.delete(`${this.API}/${id}`);
-     }
-     uppdate_dmhang(dmhang : dmhang) : Observable<dmhang>{
-         return this.http.put(`${this.API}/${dmhang.id}`,dmhang);
-     }*/
-    //Chinh sua lai
     DmhangService.prototype.getAlldmhang = function () {
+        //console.log(this.API);
         return this.http.get(this.API);
+        /*.map((resp : Response) => <dmhang[]>resp.json());*/
     };
     DmhangService.prototype.getOnedmhang = function (id) {
         return this.http.get(this.API + "/" + id);
@@ -2441,9 +2975,9 @@ var DmhangService = /** @class */ (function () {
         return this.http.put(this.API + "/" + dmhang.id, dmhang);
     };
     DmhangService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root'
-        }),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])( /*{
+          providedIn: 'root'
+        }*/),
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], DmhangService);
     return DmhangService;
@@ -2484,21 +3018,6 @@ var DmkhService = /** @class */ (function () {
         this.API = 'http://localhost:3000/dmkh';
     }
     //List danh sách  các mặt hàng
-    /*getAlldmkh() : Observable<dmkh[]>{
-      return this.http.get(this.API);
-    }
-    getOnedmkh(id: number) : Observable<dmkh>{
-      return this.http.get(`${this.API}/${id}`);
-    }
-    add_dmkh(dmkh : dmkh) : Observable<dmkh>{
-      return this.http.post(this.API, dmkh);
-    }
-     delete_dmkh(id : number) : Observable<dmkh>{
-        return this.http.delete(`${this.API}/${id}`);
-    }
-    uppdate_dmkh(dmkh : dmkh) : Observable<dmkh>{
-        return this.http.put(`${this.API}/${dmkh.id}`,dmkh);
-    }*/
     DmkhService.prototype.getAlldmkh = function () {
         return this.http.get(this.API);
     };
@@ -2606,21 +3125,6 @@ var HoadonService = /** @class */ (function () {
         this.API = 'http://localhost:3000/hoadon';
     }
     //List danh sách  các mặt hàng
-    /*getAllhoadon() : Observable<hoadon[]>{
-      return this.http.get(this.API);
-    }
-    getOnehoadon(id: number) : Observable<hoadon>{
-      return this.http.get(`${this.API}/${id}`);
-    }
-    add_hoadon(hoadon : hoadon) : Observable<hoadon>{
-      return this.http.post(this.API, hoadon);
-    }
-     delete_hoadon(id : number) : Observable<hoadon>{
-        return this.http.delete(`${this.API}/${id}`);
-    }
-    uppdate_hoadon(hoadon : hoadon) : Observable<hoadon>{
-        return this.http.put(`${this.API}/${hoadon.id}`,hoadon);
-    }*/
     HoadonService.prototype.getAllhoadon = function () {
         return this.http.get(this.API);
     };
