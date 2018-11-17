@@ -155,6 +155,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pipes_filter_chitiethd_pipe__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pipes/filter-chitiethd.pipe */ "./src/app/pipes/filter-chitiethd.pipe.ts");
 /* harmony import */ var _components_thongke_thongke_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/thongke/thongke.component */ "./src/app/components/thongke/thongke.component.ts");
 /* harmony import */ var _components_thongke_bangke_bangke_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/thongke/bangke/bangke.component */ "./src/app/components/thongke/bangke/bangke.component.ts");
+/* harmony import */ var _pipes_sorthoadon_pipe__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pipes/sorthoadon.pipe */ "./src/app/pipes/sorthoadon.pipe.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -171,6 +172,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 //import HttpModule
 
 //import ngModule
+
 
 
 
@@ -328,6 +330,7 @@ var AppModule = /** @class */ (function () {
                 _pipes_filter_chitiethd_pipe__WEBPACK_IMPORTED_MODULE_33__["FilterChitiethdPipe"],
                 _components_thongke_thongke_component__WEBPACK_IMPORTED_MODULE_34__["ThongkeComponent"],
                 _components_thongke_bangke_bangke_component__WEBPACK_IMPORTED_MODULE_35__["BangkeComponent"],
+                _pipes_sorthoadon_pipe__WEBPACK_IMPORTED_MODULE_36__["SorthoadonPipe"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1704,8 +1707,9 @@ var ChitiethdComponent = /** @class */ (function () {
         }
     };
     ChitiethdComponent.prototype.Valuethanhtoan = function () {
-        this.conlai = this.tongtt - this.thanhtoan;
-        this.tongcong = this.tongtt - this.thanhtoan + this.tiencu;
+        //this.thanhtoan = this.thanhtoan * 1000;
+        this.conlai = this.tongtt - this.thanhtoan * 1000;
+        this.tongcong = this.tongtt - this.thanhtoan * 1000 + this.tiencu;
     };
     ChitiethdComponent.prototype.checkMahoadon = function () {
         this.mahoadon = this.mahoadon.slice(0, 8);
@@ -1736,7 +1740,7 @@ var ChitiethdComponent = /** @class */ (function () {
         }
     };
     ChitiethdComponent.prototype.onClick = function (csdl) {
-        this.Add_hoadon(this.mahoadon, this.txt_makh, this.tongtt, this.thanhtoan, this.conlai);
+        this.Add_hoadon(this.mahoadon, this.txt_makh, this.tongtt, this.thanhtoan * 1000, this.conlai);
         for (var i = this.db_chitiet.length - 1; i >= 0; i--) {
             if (this.db_chitiet[i].tt != null) {
                 this.onAdd_chitiethd(this.mahoadon, this.db_chitiet[i].mahang, this.db_chitiet[i].sl, this.db_chitiet[i].DVT, this.db_chitiet[i].dg, this.db_chitiet[i].tt);
@@ -2025,7 +2029,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"show_chua\">\n\t<input type=\"text\" name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"mahoadon\">\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"makhs\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh\">{{ item.tenkh }}</option>\n</select>\t\n</div>\n\n \n<div class=\"row\">\n\t<div *ngIf=\"show_chua\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN CHƯA GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tratien,item.conlai,item.tonghoadon,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td >{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'edit']\">{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td >\n\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<!-- Dong nay la chinh giua -->\n<div *ngIf=\"show\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\" style=\"width: 470px\">\n\t\t<div  class=\"panel panel-primary\">\n\t\t\t<div style=\"text-align: right;\">\n\t\t\t\t<label><h4>{{ ngay }}</h4></label>\n\t\t\t</div>\n\t\t\t<div style=\"text-align: right;\">\n\t\t\t\t<label><h3>{{ tenkhs }}</h3></label>\n\t\t\t</div>\n\t\t\t<!-- <div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" (click)=\"onPrint()\">Chi tiết hóa đơn số: {{ mahd }} - ngày: {{ ngay }}</h3>\n\t\t\t</div> -->\n\t\t\t<div class=\"panel-body\" align=\"center\">\n\t\t\t\t\n\t\t\t\t<tr align=\"center\"><td style=\"mar\">\n\t\t\t\t\t\t\t<table   (click)=\"list_back(true,true,false)\" class=\"table table-bordered table-hover\" style=\"size: 14px\">\n\t\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t\t<tr style=\"text-align: center\">\n\t\t\t\t\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>ĐG</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>TT</th>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiethd | showChitiethd : mahd; let myId = index\">\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ myId + 1 }}</td>\n\t\t\t\t<td *ngFor=\"let tam of db_dmhang | tenhang : item.mahang\">{{ tam.tenhang }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.sl }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.DVT }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.dg }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: right;\">{{ item.tt }}</td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng toa:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5> {{ tongcong ==0 ? '' : tongcong | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_conlai\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tiền cũ:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: green; text-align: right;\"><h5> \n\t\t\t\t\t\t\t\t\t\t\t\t{{ test_conlai ==0 ? '' : test_conlai | number :'3.0-3'}}\n\t\t\t\t\t\t\t\t\t\t\t<!-- {{ test_conlai ==0 ? '' : test_conlai + thanhtoan - tongtt  | number :'3.0-3'}} --></h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_conlai\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng cộng:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: red; text-align: right;\"><b><h5>\n\t\t\t\t\t\t\t\t\t\t\t\t{{ test_tonghoadon ==0 ? '' : tongcong + test_conlai | number :'3.0-3'}}\n\t\t\t\t\t\t\t\t\t\t\t\t<!-- {{ test_tonghoadon ==0 ? '' : test_tonghoadon - test_tratien + thanhtoan | number :'3.0-3'}} --></h5></b></td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_tratien\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Thanh toán:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: blue; text-align: right;\"><h5>{{ test_tratien==0 ? '' : test_tratien | number :'3.0-3'}}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_tratien\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Còn lại:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5>{{ test_tratien==0 ? '' : tongcong + test_conlai - test_tratien | number :'3.0-3' }}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t</td></tr>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n<!-- Dong nay la ben phai -->\n\t<div *ngIf=\"show_giao\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-success\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN ĐÃ GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th>Mã KH</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : !kttt : makhs; let i = index\">\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'editHD']\">{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tratien,item.conlai,item.tonghoadon,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'edit']\">\n\t\t\t\t\t\t\t\t\t{{ item.tratien }}\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!--  Dòng này thử -->\n\n<!-- \"id\": 8,\n      \"mahoadon\": \"03112018005\",\n      \"makh\": \"AP01\",\n      \"tonghoadon\": 5850000,\n      \"tratien\": 750000,\n      \"conlai\": 5100000,\n      \"kt\": false,\n      \"tinhtrang\": true -->\n"
+module.exports = "<div *ngIf=\"show_chua\">\n\t<input type=\"text\" name=\"\" id=\"input\" class=\"form-control\" [(ngModel)]=\"mahoadon\">\n<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"makhs\">\n\t<option value=\"{{ item.makh }}\" *ngFor=\"let item of db_dmkh\">{{ item.tenkh }}</option>\n</select>\t\n</div>\n\n \n<div class=\"row\">\n\t<div *ngIf=\"show_chua\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-danger\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN CHƯA GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th (click)=\"onSort('MAKH')\">Tên khách hàng</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th (click)=\"onSort('THANHTOAN')\">Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : kttt : makhs | sorthoadon : sortBy : sortValue; let i = index\">\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tratien,item.conlai,item.tonghoadon,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td >{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'edit']\">{{ item.tratien }}</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td >\n\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-success\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t\t<td></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<!-- Dong nay la chinh giua -->\n<div *ngIf=\"show\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\" style=\"width: 470px\">\n\t\t<div  class=\"panel panel-primary\">\n\t\t\t<div style=\"text-align: right;\">\n\t\t\t\t<label><h4>{{ ngay }}</h4></label>\n\t\t\t</div>\n\t\t\t<div style=\"text-align: right;\">\n\t\t\t\t<label><h3>{{ tenkhs }}</h3></label>\n\t\t\t</div>\n\t\t\t<!-- <div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" (click)=\"onPrint()\">Chi tiết hóa đơn số: {{ mahd }} - ngày: {{ ngay }}</h3>\n\t\t\t</div> -->\n\t\t\t<div class=\"panel-body\" align=\"center\">\n\t\t\t\t\n\t\t\t\t<tr align=\"center\"><td style=\"mar\">\n\t\t\t\t\t\t\t<table   (click)=\"list_back(true,true,false)\" class=\"table table-bordered table-hover\" style=\"size: 14px\">\n\t\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t\t<tr style=\"text-align: center\">\n\t\t\t\t\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>ĐG</th>\n\t\t\t\t\t\t\t\t\t\t\t<th>TT</th>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t\t<tr *ngFor=\"let item of db_chitiethd | showChitiethd : mahd; let myId = index\">\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ myId + 1 }}</td>\n\t\t\t\t<td *ngFor=\"let tam of db_dmhang | tenhang : item.mahang\">{{ tam.tenhang }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.sl }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.DVT }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: center\">{{ item.dg }}</td>\n\t\t\t\t\t\t\t\t\t\t\t<td style=\"text-align: right;\">{{ item.tt }}</td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng toa:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5> {{ tongcong ==0 ? '' : tongcong | number :'3.0-3'}}</h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_conlai\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tiền cũ:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: green; text-align: right;\"><h5> \n\t\t\t\t\t\t\t\t\t\t\t\t{{ test_conlai ==0 ? '' : test_conlai | number :'3.0-3'}}\n\t\t\t\t\t\t\t\t\t\t\t<!-- {{ test_conlai ==0 ? '' : test_conlai + thanhtoan - tongtt  | number :'3.0-3'}} --></h5> </td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_conlai\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Tổng cộng:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: red; text-align: right;\"><b><h5>\n\t\t\t\t\t\t\t\t\t\t\t\t{{ test_tonghoadon ==0 ? '' : tongcong + test_conlai | number :'3.0-3'}}\n\t\t\t\t\t\t\t\t\t\t\t\t<!-- {{ test_tonghoadon ==0 ? '' : test_tonghoadon - test_tratien + thanhtoan | number :'3.0-3'}} --></h5></b></td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_tratien\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Thanh toán:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold;color: blue; text-align: right;\"><h5>{{ test_tratien==0 ? '' : test_tratien | number :'3.0-3'}}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t\t<tr *ngIf=\"test_tratien\">\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"2\" style=\"font: bold; text-align: right;\">Còn lại:</td>\n\t\t\t\t\t\t\t\t\t\t\t<td colspan=\"4\" style=\"font: bold; text-align: right;\"><h5>{{ test_tratien==0 ? '' : tongcong + test_conlai - test_tratien | number :'3.0-3' }}</h5></td></tr>\n\t\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t</td></tr>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n<!-- Dong nay la ben phai -->\n\t<div *ngIf=\"show_giao\" class=\"col-xs-6 col-sm-6 col-md-6 col-lg-6\">\n\t\t<div class=\"panel panel-success\">\n\t\t\t<div class=\"panel-heading\">\n\t\t\t\t<h3 class=\"panel-title\" style=\"text-align: center\" [routerLink]=\"['/hoadon/add']\">HÓA ĐƠN ĐÃ GIAO</h3>\n\t\t\t</div>\n\t\t\t<div class=\"panel-body\">\n\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th (click)=\"onSort('MAHOADON')\">Mã hóa đơn</th>\n\t\t\t\t\t\t\t<th (click)=\"onSort('MAKH')\">Tên khách hàng</th>\n\t\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t\t<th (click)=\"onSort('THANHTOAN')\">Thanh toán</th>\n\t\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t\t<th>Tình trạng</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr  *ngFor=\"let item of db_hoadon | chitiethd : mahoadon : !kttt : makhs | sorthoadon : sortBy : sortValue; let i = index\">\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'editHD']\">{{ i + 1 }}</td>\n\t\t\t\t\t\t\t<td (click)=\"list_chitiethd(item.mahoadon,item.makh,item.id,item.tratien,item.conlai,item.tonghoadon,false,false,true)\">{{ item.mahoadon }}</td>\n\t\t\t\t\t\t<td *ngFor=\"let tam of db_dmkh | tenkh : item.makh\">{{ tam.tenkh }}</td>\n\t\t\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t\t\t<td [routerLink]=\"['/hoadon', item.id, 'edit']\">\n\t\t\t\t\t\t\t\t\t{{ item.tratien }}\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\n\t\t<button type=\"button\" class=\"btn btn-large btn-block btn-danger\"\n\t\t\t(click)=\"onEdit_hoadon(item.id)\"\n\t\t>{{ item.tinhtrang ? 'Giao' : 'Chưa' }}</button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!--  Dòng này thử -->\n\n<!-- \"id\": 8,\n      \"mahoadon\": \"03112018005\",\n      \"makh\": \"AP01\",\n      \"tonghoadon\": 5850000,\n      \"tratien\": 750000,\n      \"conlai\": 5100000,\n      \"kt\": false,\n      \"tinhtrang\": true -->\n"
 
 /***/ }),
 
@@ -2076,6 +2080,8 @@ var HoadonsComponent = /** @class */ (function () {
         this.routerService = routerService;
         this.activeRouterService = activeRouterService;
         this.datePipe = datePipe;
+        this.sortBy = 'MAHOADON';
+        this.sortValue = 1;
         this.db_dmhang = [];
         this.db_dmkh = [];
         this.db_chitiet = [];
@@ -2214,6 +2220,10 @@ var HoadonsComponent = /** @class */ (function () {
     };
     HoadonsComponent.prototype.onPrint = function () {
         window.print();
+    };
+    HoadonsComponent.prototype.onSort = function (col) {
+        this.sortBy = col;
+        this.sortValue = -this.sortValue;
     };
     HoadonsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -2494,7 +2504,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n\t<table class=\"table table-hover\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th>Ngày hóa đơn</th>\n\t\t\t\t<th>Địa chỉ</th>\n\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td>\n\t\t\t\t\t<input type=\"tel\" name=\"\"  id=\"input\" class=\"form-control\" [(ngModel)]=\"checkDate\">\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"checkdiachi\" (ngModelChange)=\"change_diachi()\">\n\t\t<option value=\"{{item.madm}}\" *ngFor=\"let item of db_dmdiachi\">{{ item.tendm }}</option>\n\t</select>\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"checkKH\" (ngModelChange)=\"change_khachhang()\">\n\t<option value=\"{{item.makh}}\" *ngFor=\"let item of db_dmkh | tenkh : checkdiachi \">{{ item.tenkh }}</option>\n</select>\t\t\t\t\t\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n\t<div class=\"row\">\n\t\t<div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n\t\t\t<table class=\"table table-bordered table-hover\" border=\"1\">\n\t\t\t<tbody>\n\t\t\t\t<div *ngIf=\"checkKH\">\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true' : checkKH; let i = index\">\n\t\t\t\t\t<td>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let a of db_dmkh | tenkh : item.makh\">{{ a.tenkh }}</td>\n\t\t\t\t\t<td >{{ item.mahoadon }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Ma hang</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\">\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let b of db_dmhang | tenhang : a.mahang\">{{ b.tenhang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t</div>\n\t\t\t\t<div *ngIf=\"!checkKH\">\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true' : checkdiachi; let i = index\">\n\t\t\t\t\t<td>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let a of db_dmkh | tenkh : item.makh\">{{ a.tenkh }}</td>\n\t\t\t\t\t<td >{{ item.mahoadon }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Ma hang</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\">\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let b of db_dmhang | tenhang : a.mahang\">{{ b.tenhang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t</div>\n\t\t\t</tbody>\n\t\t</table>\t\n\t\t</div>\n\t</div>\n\t\n</div>\n\n<!-- <tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\">\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t<th>Mã Hóa Đơn</th>\n\t\t\t\t\t\t<th>Tên Khách hàng</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t{{ item.mahoadon }}\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>{{ item.makh }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Ma hang</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true'; let i = index\">\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>{{ a.mahang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\t\t\t\t\t\n\t\t\t\t</tr> -->"
+module.exports = "<div class=\"row\">\n\t<table class=\"table table-hover\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th>Ngày hóa đơn</th>\n\t\t\t\t<th>Địa chỉ</th>\n\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td>\n\t\t\t\t\t<input type=\"tel\" name=\"\"  id=\"input\" class=\"form-control\" [(ngModel)]=\"checkDate\">\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"checkdiachi\" (ngModelChange)=\"change_diachi()\">\n\t\t<option value=\"{{item.madm}}\" *ngFor=\"let item of db_dmdiachi\">{{ item.tendm }}</option>\n\t</select>\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"checkKH\" (ngModelChange)=\"change_khachhang()\">\n\t<option value=\"{{item.makh}}\" *ngFor=\"let item of db_dmkh | tenkh : checkdiachi \">{{ item.tenkh }}</option>\n</select>\t\t\t\t\t\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n\t<div class=\"row\">\n\t\t<div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n\t\t\t<table class=\"table table-bordered table-hover\" border=\"1\">\n\t\t\t<tbody>\n\t\t\t\t<div *ngIf=\"checkKH\">\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true' : checkKH | sorthoadon : sortBy : sortValue; let i = index\" style=\"text-align: center;\">\n\t\t\t\t\t<td>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<th></th>\n\t\t\t\t\t\t<th></th>\n\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr style=\"text-align: center;\">\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let a of db_dmkh | tenkh : item.makh\" (click)=\"onSort('MAKH')\"><h2>{{ a.tenkh }}</h2></td>\n\t\t\t\t\t<td >{{ item.mahoadon }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr style=\"text-align: center;\">\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr >\n\t\t\t\t<tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\" style=\"text-align: center;\">\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let b of db_dmhang | tenhang : a.mahang\">{{ b.tenhang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t</div>\n\t\t\t\t<div *ngIf=\"!checkKH\">\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true' : checkdiachi | sorthoadon : sortBy : sortValue; let i = index\">\n\t\t\t\t\t<td>\n\t\t\t\t<tr style=\"text-align: center;\">\n\t\t\t\t\t\t<th></th>\n\t\t\t\t\t\t<th></th>\n\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr style=\"text-align: center;\">\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let a of db_dmkh | tenkh : item.makh\" (click)=\"onSort('MAKH')\">{{ a.tenkh }}</td>\n\t\t\t\t\t<td >{{ item.mahoadon }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr style=\"text-align: center;\">\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Tên hàng</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\" style=\"text-align: center;\">\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let b of db_dmhang | tenhang : a.mahang\">{{ b.tenhang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t</div>\n\t\t\t</tbody>\n\t\t</table>\t\n\t\t</div>\n\t</div>\n\t\n</div>\n\n<!-- <tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\">\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t<th>Mã Hóa Đơn</th>\n\t\t\t\t\t\t<th>Tên Khách hàng</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t{{ item.mahoadon }}\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>{{ item.makh }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Ma hang</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true'; let i = index\">\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>{{ a.mahang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\t\t\t\t\t\n\t\t\t\t</tr> -->"
 
 /***/ }),
 
@@ -2548,6 +2558,8 @@ var ThongkeComponent = /** @class */ (function () {
         this.routerService = routerService;
         this.activeRouterService = activeRouterService;
         this.datePipe = datePipe;
+        this.sortBy = 'MAHOADON';
+        this.sortValue = 1;
         this.db_dmhang = [];
         this.db_dmkh = [];
         this.db_dmdiachi = [];
@@ -2701,6 +2713,10 @@ var ThongkeComponent = /** @class */ (function () {
     ThongkeComponent.prototype.change_diachi = function () {
     };
     ThongkeComponent.prototype.change_khachhang = function () {
+    };
+    ThongkeComponent.prototype.onSort = function (col) {
+        this.sortBy = col;
+        this.sortValue = -this.sortValue;
     };
     ThongkeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -3077,6 +3093,78 @@ var ShowChitiethdPipe = /** @class */ (function () {
         })
     ], ShowChitiethdPipe);
     return ShowChitiethdPipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pipes/sorthoadon.pipe.ts":
+/*!******************************************!*\
+  !*** ./src/app/pipes/sorthoadon.pipe.ts ***!
+  \******************************************/
+/*! exports provided: SorthoadonPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SorthoadonPipe", function() { return SorthoadonPipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var SorthoadonPipe = /** @class */ (function () {
+    function SorthoadonPipe() {
+    }
+    SorthoadonPipe.prototype.transform = function (hoadons, sortBy, sortValue) {
+        if (sortBy === 'MAKH') {
+            hoadons.sort(function (a, b) {
+                if (a.makh > b.makh) {
+                    return sortValue;
+                }
+                else if (a.makh < b.makh) {
+                    return -sortValue;
+                }
+                else
+                    return 0;
+            });
+        }
+        if (sortBy === 'THANHTOAN') {
+            hoadons.sort(function (a, b) {
+                if (a.tratien > b.tratien) {
+                    return sortValue;
+                }
+                else if (a.tratien < b.tratien) {
+                    return -sortValue;
+                }
+                else
+                    return 0;
+            });
+        }
+        if (sortBy === 'MAHOADON') {
+            hoadons.sort(function (a, b) {
+                if (a.mahoadon > b.mahoadon) {
+                    return sortValue;
+                }
+                else if (a.mahoadon < b.mahoadon) {
+                    return -sortValue;
+                }
+                else
+                    return 0;
+            });
+        }
+        return hoadons;
+    };
+    SorthoadonPipe = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
+            name: 'sorthoadon'
+        })
+    ], SorthoadonPipe);
+    return SorthoadonPipe;
 }());
 
 
