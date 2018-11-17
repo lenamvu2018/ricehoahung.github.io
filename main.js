@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"#\">Title</a>\n    <ul class=\"nav navbar-nav\">\n      <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact : true}\">\n        <a [routerLink]=\"['/']\">Trang chủ</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmhang']\">DM hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmkh']\">DM khách hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/hoadon']\">HÓA ĐƠN</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/giaonhan']\">GIAO NHẬN HÀNG</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a (click)=\"logout()\">{{ login? 'Login' : 'Logout' }}</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n      <div class=\"panel panel-primary\">\n        <!-- <div class=\"panel-heading\">\n          <h4 class=\"panel-title\" style=\"text-align: center\">HÒA VŨ RICE - 117 Nguyễn Đình Chiểu - Khóm 4 - TP.Châu Đốc - tỉnh An Giang (02963.867.749 - 0943.345.143)</h4>\n        </div> -->\n        <div class=\"panel-body\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"#\">Title</a>\n    <ul class=\"nav navbar-nav\">\n      <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact : true}\">\n        <a [routerLink]=\"['/']\">Trang chủ</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmhang']\">DM hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/dmkh']\">DM khách hàng</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/hoadon']\">HÓA ĐƠN</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/thongke']\">THỐNG KÊ</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a [routerLink]=\"['/bangke']\">BẢNG KÊ</a>\n      </li>\n      <li routerLinkActive=\"active\">\n        <a (click)=\"logout()\">{{ login? 'Login' : 'Logout' }}</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n      <div class=\"panel panel-primary\">\n        <!-- <div class=\"panel-heading\">\n          <h4 class=\"panel-title\" style=\"text-align: center\">HÒA VŨ RICE - 117 Nguyễn Đình Chiểu - Khóm 4 - TP.Châu Đốc - tỉnh An Giang (02963.867.749 - 0943.345.143)</h4>\n        </div> -->\n        <div class=\"panel-body\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -153,6 +153,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_hoadon_hoadon_edit_hoadon_edit_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/hoadon/hoadon-edit/hoadon-edit.component */ "./src/app/components/hoadon/hoadon-edit/hoadon-edit.component.ts");
 /* harmony import */ var _components_hoadon_chitiethd_edit_chitiethd_edit_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/hoadon/chitiethd-edit/chitiethd-edit.component */ "./src/app/components/hoadon/chitiethd-edit/chitiethd-edit.component.ts");
 /* harmony import */ var _pipes_filter_chitiethd_pipe__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pipes/filter-chitiethd.pipe */ "./src/app/pipes/filter-chitiethd.pipe.ts");
+/* harmony import */ var _components_thongke_thongke_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/thongke/thongke.component */ "./src/app/components/thongke/thongke.component.ts");
+/* harmony import */ var _components_thongke_bangke_bangke_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/thongke/bangke/bangke.component */ "./src/app/components/thongke/bangke/bangke.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -169,6 +171,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 //import HttpModule
 
 //import ngModule
+
+
 
 
 
@@ -264,16 +268,28 @@ var appRoutes = [
         ]
     },
     {
-        path: 'giaonhan',
-        component: _components_giaonhan_giaohang_giaohang_component__WEBPACK_IMPORTED_MODULE_24__["GiaohangComponent"],
+        path: 'thongke',
+        component: _components_thongke_thongke_component__WEBPACK_IMPORTED_MODULE_34__["ThongkeComponent"],
+        canActivate: [_services_guards_auth_guard__WEBPACK_IMPORTED_MODULE_4__["AuthGuard"]],
         children: [
             {
                 path: '',
-                component: _components_giaonhan_giaohang_giaohang_component__WEBPACK_IMPORTED_MODULE_24__["GiaohangComponent"]
+                component: _components_thongke_thongke_component__WEBPACK_IMPORTED_MODULE_34__["ThongkeComponent"]
             },
             {
                 path: 'add',
-                component: _components_giaonhan_nhanhang_nhanhang_component__WEBPACK_IMPORTED_MODULE_25__["NhanhangComponent"]
+                component: _components_thongke_thongke_component__WEBPACK_IMPORTED_MODULE_34__["ThongkeComponent"]
+            }
+        ]
+    },
+    {
+        path: 'bangke',
+        component: _components_thongke_bangke_bangke_component__WEBPACK_IMPORTED_MODULE_35__["BangkeComponent"],
+        canActivate: [_services_guards_auth_guard__WEBPACK_IMPORTED_MODULE_4__["AuthGuard"]],
+        children: [
+            {
+                path: '',
+                component: _components_thongke_bangke_bangke_component__WEBPACK_IMPORTED_MODULE_35__["BangkeComponent"]
             }
         ]
     }
@@ -310,6 +326,8 @@ var AppModule = /** @class */ (function () {
                 _components_hoadon_hoadon_edit_hoadon_edit_component__WEBPACK_IMPORTED_MODULE_31__["HoadonEditComponent"],
                 _components_hoadon_chitiethd_edit_chitiethd_edit_component__WEBPACK_IMPORTED_MODULE_32__["ChitiethdEditComponent"],
                 _pipes_filter_chitiethd_pipe__WEBPACK_IMPORTED_MODULE_33__["FilterChitiethdPipe"],
+                _components_thongke_thongke_component__WEBPACK_IMPORTED_MODULE_34__["ThongkeComponent"],
+                _components_thongke_bangke_bangke_component__WEBPACK_IMPORTED_MODULE_35__["BangkeComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -2306,6 +2324,407 @@ var LoginComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/thongke/bangke/bangke.component.css":
+/*!****************************************************************!*\
+  !*** ./src/app/components/thongke/bangke/bangke.component.css ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/thongke/bangke/bangke.component.html":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/thongke/bangke/bangke.component.html ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"sumCash\" (ngModelChange)=\"valueInput()\">\n<div class=\"panel panel-primary\" >\n\t<div class=\"panel-heading\">\n\t\t<h3 class=\"panel-title\" style=\"text-align: center\">BẢNG KÊ TIỀN MẶT</h3>\n\t</div>\n\t<div class=\"panel-body\">\n\t\t<div class=\"row\">\n\t\t\t<div>\n\t\t\t\t<table class=\"table table-hover\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr><th colspan=\"4\" style=\"text-align: center;\"><h3>{{sumCash | number :'3.0-3'}}</h3></th></tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t\t<th>Mệnh giá</th>\n\t\t\t\t\t\t\t<th>Số lượng</th>\n\t\t\t\t\t\t\t<th>Thành tiền</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>1</td>\n\t\t\t\t\t\t\t<td>500.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt500\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum500 | number :'3.0-3' }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>2</td>\n\t\t\t\t\t\t\t<td>200.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt200\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum200 | number :'3.0-3' }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>3</td>\n\t\t\t\t\t\t\t<td>100.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt100\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum100 | number :'3.0-3' }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>4</td>\n\t\t\t\t\t\t\t<td>50.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt50\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum50 | number :'3.0-3' }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>5</td>\n\t\t\t\t\t\t\t<td>20.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt20\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum20 | number :'3.0-3' }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>6</td>\n\t\t\t\t\t\t\t<td>10.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt10\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum10 | number :'3.0-3'}}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>7</td>\n\t\t\t\t\t\t\t<td>5.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt5\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum5 | number :'3.0-3' }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>8</td>\n\t\t\t\t\t\t\t<td>2.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt2\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum2 | number :'3.0-3' }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>9</td>\n\t\t\t\t\t\t\t<td>1.000</td>\n\t\t\t\t\t\t\t<td><input type=\"tel\" name=\"\" id=\"input\" class=\"form-control\" value=\"\" required=\"required\" [(ngModel)]=\"txt1\" (ngModelChange)=\"valuechange()\"></td>\n\t\t\t\t\t\t\t<td>{{ sum1 | number :'3.0-3' }}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t\t<b><label for=\"\">Còn lại: {{ sumLast | number :'3.0-3'}}</label></b>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/thongke/bangke/bangke.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/components/thongke/bangke/bangke.component.ts ***!
+  \***************************************************************/
+/*! exports provided: BangkeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BangkeComponent", function() { return BangkeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BangkeComponent = /** @class */ (function () {
+    function BangkeComponent() {
+        this.sum500 = 0;
+        this.sum200 = 0;
+        this.sum100 = 0;
+        this.sum50 = 0;
+        this.sum20 = 0;
+        this.sum10 = 0;
+        this.sum5 = 0;
+        this.sum2 = 0;
+        this.sum1 = 0;
+        this.sumLast = 0;
+    }
+    BangkeComponent.prototype.ngOnInit = function () {
+    };
+    BangkeComponent.prototype.valuechange = function () {
+        if (this.txt500) {
+            this.sum500 = this.txt500 * 500000;
+        }
+        else {
+            this.sum500 = 0;
+        }
+        if (this.txt200) {
+            this.sum200 = this.txt200 * 200000;
+        }
+        else {
+            this.sum200 = 0;
+        }
+        if (this.txt100) {
+            this.sum100 = this.txt100 * 100000;
+        }
+        else {
+            this.sum100 = 0;
+        }
+        if (this.txt50) {
+            this.sum50 = this.txt50 * 50000;
+        }
+        else {
+            this.sum50 = 0;
+        }
+        if (this.txt20) {
+            this.sum20 = this.txt20 * 20000;
+        }
+        else {
+            this.sum20 = 0;
+        }
+        if (this.txt10) {
+            this.sum10 = this.txt10 * 10000;
+        }
+        else {
+            this.sum10 = 0;
+        }
+        if (this.txt5) {
+            this.sum5 = this.txt5 * 5000;
+        }
+        else {
+            this.sum5 = 0;
+        }
+        if (this.txt2) {
+            this.sum2 = this.txt2 * 2000;
+        }
+        else {
+            this.sum2 = 0;
+        }
+        if (this.txt1) {
+            this.sum1 = this.txt1 * 1000;
+        }
+        else {
+            this.sum1 = 0;
+        }
+        this.sumLast = this.sumCash - (this.sum500 + this.sum200 + this.sum100 + this.sum50 + this.sum20 + this.sum10 + this.sum5 + this.sum2 + this.sum1);
+        //console.log(this.sumLast);
+    };
+    BangkeComponent.prototype.valueInput = function () {
+        this.sum500 = 0;
+        this.sum200 = 0;
+        this.sum100 = 0;
+        this.sum50 = 0;
+        this.sum20 = 0;
+        this.sum10 = 0;
+        this.sum5 = 0;
+        this.sum2 = 0;
+        this.sum1 = 0;
+        this.txt500 = null;
+        this.txt200 = null;
+        this.txt100 = null;
+        this.txt50 = null;
+        this.txt20 = null;
+        this.txt10 = null;
+        this.txt5 = null;
+        this.txt2 = null;
+        this.txt1 = null;
+        this.sumLast = null;
+    };
+    BangkeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-bangke',
+            template: __webpack_require__(/*! ./bangke.component.html */ "./src/app/components/thongke/bangke/bangke.component.html"),
+            styles: [__webpack_require__(/*! ./bangke.component.css */ "./src/app/components/thongke/bangke/bangke.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BangkeComponent);
+    return BangkeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/thongke/thongke.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/components/thongke/thongke.component.css ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/thongke/thongke.component.html":
+/*!***********************************************************!*\
+  !*** ./src/app/components/thongke/thongke.component.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n\t<table class=\"table table-hover\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th>Ngày hóa đơn</th>\n\t\t\t\t<th>Địa chỉ</th>\n\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td>\n\t\t\t\t\t<input type=\"tel\" name=\"\"  id=\"input\" class=\"form-control\" [(ngModel)]=\"checkDate\">\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"checkdiachi\" (ngModelChange)=\"change_diachi()\">\n\t\t<option value=\"{{item.madm}}\" *ngFor=\"let item of db_dmdiachi\">{{ item.tendm }}</option>\n\t</select>\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t<select name=\"\" id=\"input\" class=\"form-control\" required=\"required\" [(ngModel)]=\"checkKH\" (ngModelChange)=\"change_khachhang()\">\n\t<option value=\"{{item.makh}}\" *ngFor=\"let item of db_dmkh | tenkh : checkdiachi \">{{ item.tenkh }}</option>\n</select>\t\t\t\t\t\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n\t<div class=\"row\">\n\t\t<div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n\t\t\t<table class=\"table table-bordered table-hover\" border=\"1\">\n\t\t\t<tbody>\n\t\t\t\t<div *ngIf=\"checkKH\">\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true' : checkKH; let i = index\">\n\t\t\t\t\t<td>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let a of db_dmkh | tenkh : item.makh\">{{ a.tenkh }}</td>\n\t\t\t\t\t<td >{{ item.mahoadon }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Ma hang</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\">\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let b of db_dmhang | tenhang : a.mahang\">{{ b.tenhang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t</div>\n\t\t\t\t<div *ngIf=\"!checkKH\">\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true' : checkdiachi; let i = index\">\n\t\t\t\t\t<td>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t<th>Tên khách hàng</th>\n\t\t\t\t\t\t<th>Mã hóa đơn</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let a of db_dmkh | tenkh : item.makh\">{{ a.tenkh }}</td>\n\t\t\t\t\t<td >{{ item.mahoadon }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th></th>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Ma hang</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\">\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td *ngFor=\"let b of db_dmhang | tenhang : a.mahang\">{{ b.tenhang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t</div>\n\t\t\t</tbody>\n\t\t</table>\t\n\t\t</div>\n\t</div>\n\t\n</div>\n\n<!-- <tr *ngFor=\"let a of db_chitiethd | filterChitiethd : item.mahoadon; let i = index\">\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t\t<th>Mã Hóa Đơn</th>\n\t\t\t\t\t\t<th>Tên Khách hàng</th>\n\t\t\t\t\t\t<th>Tổng hóa đơn</th>\n\t\t\t\t\t\t<th>Thanh toán</th>\n\t\t\t\t\t\t<th>Còn lại</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t{{ item.mahoadon }}\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>{{ item.makh }}</td>\n\t\t\t\t\t<td>{{ item.tonghoadon }}</td>\n\t\t\t\t\t<td>{{ item.tratien }}</td>\n\t\t\t\t\t<td>{{ item.conlai }}</td>\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<table class=\"table table-bordered table-hover\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th>STT</th>\n\t\t\t\t\t<th>Ma hang</th>\n\t\t\t\t\t<th>SL</th>\n\t\t\t\t\t<th>DVT</th>\n\t\t\t\t\t<th>DG</th>\n\t\t\t\t\t<th>TT</th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t<tr *ngFor=\"let item of db_hoadon | chitiethd : checkDate : 'true'; let i = index\">\n\t\t\t\t\t<td>{{ i + 1 }}</td>\n\t\t\t\t\t<td>{{ a.mahang }}</td>\n\t\t\t\t\t<td>{{ a.sl }}</td>\n\t\t\t\t\t<td>{{ a.DVT }}</td>\n\t\t\t\t\t<td>{{ a.dg }}</td>\n\t\t\t\t\t<td>{{ a.tt }}</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\t\t\t\t\t\n\t\t\t\t</tr> -->"
+
+/***/ }),
+
+/***/ "./src/app/components/thongke/thongke.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/thongke/thongke.component.ts ***!
+  \*********************************************************/
+/*! exports provided: ThongkeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThongkeComponent", function() { return ThongkeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_dmhang_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../services/dmhang.service */ "./src/app/services/dmhang.service.ts");
+/* harmony import */ var _services_dmkh_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../services/dmkh.service */ "./src/app/services/dmkh.service.ts");
+/* harmony import */ var _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../services/dmdiachi.service */ "./src/app/services/dmdiachi.service.ts");
+/* harmony import */ var _services_chitiet_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../services/chitiet.service */ "./src/app/services/chitiet.service.ts");
+/* harmony import */ var _services_chitiethd_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../services/chitiethd.service */ "./src/app/services/chitiethd.service.ts");
+/* harmony import */ var _services_hoadon_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../services/hoadon.service */ "./src/app/services/hoadon.service.ts");
+/* harmony import */ var _models_hoadon_model__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../models/hoadon.model */ "./src/app/models/hoadon.model.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+var ThongkeComponent = /** @class */ (function () {
+    function ThongkeComponent(dmhangservice, dmkhservice, dmdiachiservice, chitietservice, chitiethdservice, hoadonservice, routerService, activeRouterService, datePipe) {
+        this.dmhangservice = dmhangservice;
+        this.dmkhservice = dmkhservice;
+        this.dmdiachiservice = dmdiachiservice;
+        this.chitietservice = chitietservice;
+        this.chitiethdservice = chitiethdservice;
+        this.hoadonservice = hoadonservice;
+        this.routerService = routerService;
+        this.activeRouterService = activeRouterService;
+        this.datePipe = datePipe;
+        this.db_dmhang = [];
+        this.db_dmkh = [];
+        this.db_dmdiachi = [];
+        this.db_chitiet = [];
+        this.db_chitiethd = [];
+        this.db_hoadon = [];
+        this.db_hoadon1 = [];
+        this.db_hd = [];
+        this.today = Date.now();
+        this.fixedTimezone = this.today;
+        this.tongtt = 0;
+        this.mahoadon = null;
+        this.mhd = null;
+        this.dem = 1;
+        this.tiencu = 0;
+        this.tongcong = 0;
+        this.show = false;
+        this.show_chua = true;
+        this.show_giao = true;
+        this.kttt = false;
+        this.test_tonghoadon = 0;
+        this.test_tratien = 0;
+        this.test_conlai = 0;
+    }
+    ThongkeComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.subscription = this.dmhangservice.getAlldmhang().subscribe(function (data) {
+            _this.db_dmhang = data;
+        });
+        this.subscription = this.dmkhservice.getAlldmkh().subscribe(function (data) {
+            _this.db_dmkh = data;
+        });
+        this.subscription = this.dmdiachiservice.getAlldmdiachi().subscribe(function (data) {
+            _this.db_dmdiachi = data;
+        });
+        this.subscription = this.chitietservice.getAllchitiet().subscribe(function (data) {
+            _this.db_chitiet = data;
+        });
+        this.subscription = this.chitiethdservice.getAllchitiethd().subscribe(function (data) {
+            _this.db_chitiethd = data;
+        });
+        this.subscription = this.hoadonservice.getAllhoadon().subscribe(function (data) {
+            _this.db_hoadon = data;
+        });
+        this.subscription = this.hoadonservice.getAllhoadon().subscribe(function (data) {
+            _this.db_hoadon1 = data;
+        });
+        var date = new Date();
+        this.mahoadon = this.datePipe.transform(date, "ddMMyyyy");
+        this.checkDate = this.mahoadon;
+    };
+    ThongkeComponent.prototype.Clear_Form = function () {
+        for (var i = this.db_chitiet.length - 1; i >= 0; i--) {
+            this.db_chitiet[i].hoadon = null;
+            this.db_chitiet[i].mahang = null;
+            this.db_chitiet[i].sl = null;
+            this.db_chitiet[i].DVT = null;
+            this.db_chitiet[i].dg = null;
+            this.db_chitiet[i].tt = null;
+        }
+        this.tongtt = 0;
+        this.tiencu = 0;
+        this.txt_makh = '';
+        this.conlai = 0;
+        this.thanhtoan = 0;
+        this.tongcong = 0;
+    };
+    ThongkeComponent.prototype.Update_Form = function () {
+        var _this = this;
+        this.subscription = this.dmhangservice.getAlldmhang().subscribe(function (data) {
+            _this.db_dmhang = data;
+        });
+        this.subscription = this.dmkhservice.getAlldmkh().subscribe(function (data) {
+            _this.db_dmkh = data;
+        });
+        this.subscription = this.chitietservice.getAllchitiet().subscribe(function (data) {
+            _this.db_chitiet = data;
+        });
+        this.subscription = this.chitiethdservice.getAllchitiethd().subscribe(function (data) {
+            _this.db_chitiethd = data;
+        });
+        this.subscription = this.hoadonservice.getAllhoadon().subscribe(function (data) {
+            _this.db_hoadon = data;
+        });
+    };
+    ThongkeComponent.prototype.onEdit_hoadon = function (id) {
+        var _this = this;
+        this.db = new _models_hoadon_model__WEBPACK_IMPORTED_MODULE_7__["hoadon"]();
+        for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
+            if (this.db_hoadon[i].id == id) {
+                this.db.id = this.db_hoadon[i].id;
+                this.db.mahoadon = this.db_hoadon[i].mahoadon;
+                this.db.makh = this.db_hoadon[i].makh;
+                this.db.tonghoadon = this.db_hoadon[i].tonghoadon;
+                this.db.tratien = this.db_hoadon[i].tratien;
+                this.db.conlai = this.db_hoadon[i].conlai;
+                this.db.kt = this.db_hoadon[i].kt;
+                this.db.tinhtrang = !this.db_hoadon[i].tinhtrang;
+            }
+        }
+        this.subscription =
+            this.hoadonservice.uppdate_hoadon(this.db).subscribe(function (data) {
+                _this.routerService.navigateByUrl('hoadon');
+                //console.log(data);
+            });
+        //this.Update_Form();
+        this.ngOnInit();
+    };
+    ThongkeComponent.prototype.list_chitiethd = function (mahd, makh, id, thanhtoan, conlai, tonghoadon, chua, giao, show) {
+        this.mahd = mahd;
+        this.ngay = mahd.slice(0, 2) + "/" + mahd.slice(2, 4) + "/" + mahd.slice(4, 8);
+        for (var i = this.db_chitiethd.length - 1; i >= 0; i--) {
+            if (this.db_chitiethd[i].mahoadon == mahd) {
+                this.db_hd[i] = this.db_chitiethd[i];
+                //console.log(this.db_hd[i]);
+            }
+        }
+        this.tiencu = 0;
+        this.tongcong = tonghoadon;
+        this.test_tonghoadon = conlai;
+        this.test_tratien = thanhtoan;
+        this.test_conlai = 0;
+        for (var i = this.db_dmkh.length - 1; i >= 0; i--) {
+            if (this.db_dmkh[i].makh == makh) {
+                this.tenkhs = this.db_dmkh[i].tenkh;
+            }
+        }
+        for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
+            //console.log(this.db_hoadon[i].mahoadon + ' ');
+            if (this.db_hoadon[i].id < id && this.db_hoadon[i].makh == makh) {
+                this.test_conlai = this.test_conlai + this.db_hoadon[i].conlai;
+            }
+        }
+        //console.log(this.test_tonghoadon + ' - ' + this.test_tratien + ' - ' + this.test_conlai);
+        this.show = show;
+        this.show_chua = chua;
+        this.show_giao = giao;
+    };
+    ThongkeComponent.prototype.list_back = function (chua, giao, show) {
+        this.show = show;
+        this.show_chua = chua;
+        this.show_giao = giao;
+    };
+    ThongkeComponent.prototype.checkHoadon = function () {
+        for (var i = this.db_hoadon.length - 1; i >= 0; i--) {
+            if (this.db_hoadon[i].mahoadon.slice(0, 8) == this.checkDate) {
+                this.mhd = this.db_hoadon[i].mahoadon.slice(0, 8);
+            }
+        }
+    };
+    ThongkeComponent.prototype.change_diachi = function () {
+    };
+    ThongkeComponent.prototype.change_khachhang = function () {
+    };
+    ThongkeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-thongke',
+            template: __webpack_require__(/*! ./thongke.component.html */ "./src/app/components/thongke/thongke.component.html"),
+            styles: [__webpack_require__(/*! ./thongke.component.css */ "./src/app/components/thongke/thongke.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_dmhang_service__WEBPACK_IMPORTED_MODULE_1__["DmhangService"],
+            _services_dmkh_service__WEBPACK_IMPORTED_MODULE_2__["DmkhService"],
+            _services_dmdiachi_service__WEBPACK_IMPORTED_MODULE_3__["DmdiachiService"],
+            _services_chitiet_service__WEBPACK_IMPORTED_MODULE_4__["ChitietService"],
+            _services_chitiethd_service__WEBPACK_IMPORTED_MODULE_5__["ChitiethdService"],
+            _services_hoadon_service__WEBPACK_IMPORTED_MODULE_6__["HoadonService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_8__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_8__["ActivatedRoute"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_9__["DatePipe"]])
+    ], ThongkeComponent);
+    return ThongkeComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/trangchu/trangchu.component.css":
 /*!************************************************************!*\
   !*** ./src/app/components/trangchu/trangchu.component.css ***!
@@ -2737,7 +3156,7 @@ var TenkhPipe = /** @class */ (function () {
         }
         else if (makhs) {
             return dmkhs.filter(function (item) {
-                return item.makh.toString().toLocaleLowerCase().indexOf(makhs.toLocaleLowerCase()) !== -1;
+                return item.makh.toString().toLocaleLowerCase().indexOf(makhs.toString().toLocaleLowerCase()) !== -1;
             });
         }
         else {
