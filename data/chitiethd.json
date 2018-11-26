@@ -1,0 +1,8022 @@
+{
+  "dmdiachi": [
+    {
+      "id": 1,
+      "madm": "CH",
+      "tendm": "Chợ Châu Đốc"
+    },
+    {
+      "id": 2,
+      "madm": "CD",
+      "tendm": "Cái Dầu"
+    },
+    {
+      "id": 3,
+      "madm": "AP",
+      "tendm": "An Phú"
+    },
+    {
+      "id": 4,
+      "madm": "NB",
+      "tendm": "Nhà Bàng"
+    },
+    {
+      "id": 5,
+      "madm": "DK",
+      "tendm": "Đồng Ky"
+    },
+    {
+      "id": 6,
+      "madm": "KA",
+      "tendm": "Khánh An"
+    },
+    {
+      "id": 7,
+      "madm": "TC",
+      "tendm": "Tân Châu"
+    },
+    {
+      "id": 8,
+      "madm": "BM",
+      "tendm": "Bình Mỹ - Năng gù"
+    },
+    {
+      "id": 9,
+      "madm": "LB",
+      "tendm": "Long Bình"
+    },
+    {
+      "id": 10,
+      "madm": "LX",
+      "tendm": "Long Xuyên"
+    },
+    {
+      "id": 11,
+      "madm": "XT",
+      "tendm": "Xuân Tô"
+    },
+    {
+      "id": 12,
+      "madm": "HB",
+      "tendm": "Hòa Bình"
+    },
+    {
+      "id": 13,
+      "madm": "PT",
+      "tendm": "Phú Tân"
+    },
+    {
+      "id": 14,
+      "madm": "MK",
+      "tendm": "Mương Khai - Mỹ Đức"
+    },
+    {
+      "id": 15,
+      "madm": "NS",
+      "tendm": "Núi Sam"
+    },
+    {
+      "id": 16,
+      "madm": "PL",
+      "tendm": "Phú Lộc"
+    },
+    {
+      "id": 17,
+      "madm": "PH",
+      "tendm": "Phước Hưng"
+    },
+    {
+      "id": 18,
+      "madm": "PP",
+      "tendm": "Phú Hữu"
+    },
+    {
+      "id": 19,
+      "madm": "BD",
+      "tendm": "Bắc Đai"
+    },
+    {
+      "id": 20,
+      "madm": "VD",
+      "tendm": "Vĩnh Điều"
+    },
+    {
+      "id": 21,
+      "madm": "SG",
+      "tendm": "Sài Gòn"
+    },
+    {
+      "id": 22,
+      "madm": "VL",
+      "tendm": "Vãng Lai"
+    },
+    {
+      "id": 23,
+      "madm": "KD",
+      "tendm": "Kinh Đào"
+    },
+    {
+      "id": 24,
+      "madm": "TB",
+      "tendm": "Tịnh Biên"
+    },
+    {
+      "id": 24,
+      "madm": "CG",
+      "tendm": "Châu Giang"
+    },
+    {
+      "id": 25,
+      "madm": "ST",
+      "tendm": "Sóc Trăng"
+    },
+    {
+      "id": 26,
+      "madm": "CT",
+      "tendm": "Cần Thơ"
+    },
+    {
+      "id": 27,
+      "madm": "CC",
+      "tendm": "Cồn Tiên"
+    }
+  ],
+  "chitiet": [
+    {
+      "id": 1,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 2,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 3,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 4,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 5,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 6,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 7,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 8,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 9,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    },
+    {
+      "id": 10,
+      "hoadon": null,
+      "mahang": null,
+      "sl": null,
+      "DVT": null,
+      "dg": null,
+      "tt": null
+    }
+  ],
+  "chitiethd": [
+    {
+      "id": 1,
+      "mahoadon": "09112018001",
+      "mahang": "GA01",
+      "sl": null,
+      "DVT": null,
+      "dongia": null,
+      "tt": null
+    },
+    {
+      "mahoadon": "10112018001",
+      "mahang": "GA11",
+      "sl": 5,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 155,
+      "id": 2
+    },
+    {
+      "mahoadon": "10112018001",
+      "mahang": "GA10",
+      "sl": 1,
+      "DVT": "T",
+      "dg": 630,
+      "tt": 630,
+      "id": 3
+    },
+    {
+      "mahoadon": "10112018002",
+      "mahang": "DA06",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 26,
+      "tt": 260,
+      "id": 4
+    },
+    {
+      "mahoadon": "10112018002",
+      "mahang": "DA04",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 1350,
+      "id": 5
+    },
+    {
+      "mahoadon": "10112018002",
+      "mahang": "DA02",
+      "sl": 100,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 2900,
+      "id": 6
+    },
+    {
+      "mahoadon": "10112018003",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 570,
+      "id": 7
+    },
+    {
+      "mahoadon": "10112018003",
+      "mahang": "NPV1",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 20,
+      "tt": 1000,
+      "id": 8
+    },
+    {
+      "mahoadon": "10112018004",
+      "mahang": "TT01",
+      "sl": 44,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 528,
+      "id": 9
+    },
+    {
+      "mahoadon": "10112018005",
+      "mahang": "BA02",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 87,
+      "tt": 870,
+      "id": 10
+    },
+    {
+      "mahoadon": "10112018005",
+      "mahang": "BA01",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 67,
+      "tt": 670,
+      "id": 11
+    },
+    {
+      "mahoadon": "10112018006",
+      "mahang": "NT03",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 3660,
+      "id": 12
+    },
+    {
+      "mahoadon": "10112018007",
+      "mahang": "TT01",
+      "sl": 40,
+      "DVT": "Kg",
+      "dg": 10.6,
+      "tt": 424,
+      "id": 13
+    },
+    {
+      "mahoadon": "10112018008",
+      "mahang": "DA01",
+      "sl": 5,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 155,
+      "id": 14
+    },
+    {
+      "mahoadon": "10112018008",
+      "mahang": "NS01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 900,
+      "tt": 900,
+      "id": 15
+    },
+    {
+      "mahoadon": "10112018008",
+      "mahang": "NH01",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 1710,
+      "id": 16
+    },
+    {
+      "mahoadon": "10112018009",
+      "mahang": "TT01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 10.8,
+      "tt": 270,
+      "id": 17
+    },
+    {
+      "mahoadon": "10112018010",
+      "mahang": "GA10",
+      "sl": 1100,
+      "DVT": "Kg",
+      "dg": 11,
+      "tt": 12100,
+      "id": 18
+    },
+    {
+      "mahoadon": "10112018011",
+      "mahang": "TT01",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 11,
+      "tt": 220,
+      "id": 19
+    },
+    {
+      "mahoadon": "11112018001",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 20
+    },
+    {
+      "mahoadon": "10112018012",
+      "mahang": "TT01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 14,
+      "tt": 140,
+      "id": 21
+    },
+    {
+      "mahoadon": "10112018012",
+      "mahang": "GA08",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 615,
+      "tt": 1230,
+      "id": 22
+    },
+    {
+      "mahoadon": "10112018013",
+      "mahang": "GA09",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 16,
+      "tt": 320,
+      "id": 23
+    },
+    {
+      "mahoadon": "10112018014",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 650,
+      "tt": 650,
+      "id": 24
+    },
+    {
+      "mahoadon": "10112018015",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 700,
+      "tt": 700,
+      "id": 25
+    },
+    {
+      "mahoadon": "10112018016",
+      "mahang": "GA11",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 880,
+      "id": 26
+    },
+    {
+      "mahoadon": "10112018017",
+      "mahang": "GA04",
+      "sl": 5,
+      "DVT": "T",
+      "dg": 125,
+      "tt": 625,
+      "id": 27
+    },
+    {
+      "mahoadon": "10112018018",
+      "mahang": "GA10",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 760,
+      "tt": 760,
+      "id": 28
+    },
+    {
+      "mahoadon": "10112018019",
+      "mahang": "GA02",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 14,
+      "tt": 700,
+      "id": 29
+    },
+    {
+      "mahoadon": "10112018020",
+      "mahang": "GA11",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 880,
+      "id": 30
+    },
+    {
+      "mahoadon": "10112018021",
+      "mahang": "GA09",
+      "sl": 30,
+      "DVT": "Kg",
+      "dg": 16,
+      "tt": 480,
+      "id": 31
+    },
+    {
+      "mahoadon": "11112018002",
+      "mahang": "TT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 520,
+      "tt": 1040,
+      "id": 32
+    },
+    {
+      "mahoadon": "11112018003",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 520,
+      "tt": 520,
+      "id": 33
+    },
+    {
+      "mahoadon": "11112018003",
+      "mahang": "GA13",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 34
+    },
+    {
+      "mahoadon": "11112018004",
+      "mahang": "GA11",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 1760,
+      "id": 35
+    },
+    {
+      "mahoadon": "11112018005",
+      "mahang": "GA15",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 1680,
+      "id": 36
+    },
+    {
+      "mahoadon": "11112018005",
+      "mahang": "NT01",
+      "sl": 7,
+      "DVT": "B",
+      "dg": 740,
+      "tt": 5180,
+      "id": 37
+    },
+    {
+      "mahoadon": "11112018005",
+      "mahang": "NH02",
+      "sl": 6,
+      "DVT": "B",
+      "dg": 600,
+      "tt": 3600,
+      "id": 38
+    },
+    {
+      "mahoadon": "11112018006",
+      "mahang": "NT03",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1200,
+      "tt": 1200,
+      "id": 39
+    },
+    {
+      "mahoadon": "11112018007",
+      "mahang": "ND01",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 39,
+      "tt": 1950,
+      "id": 40
+    },
+    {
+      "mahoadon": "11112018008",
+      "mahang": "DA08",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 32.5,
+      "tt": 650,
+      "id": 43
+    },
+    {
+      "mahoadon": "11112018008",
+      "mahang": "ND01",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 39,
+      "tt": 1950,
+      "id": 44
+    },
+    {
+      "mahoadon": "11112018008",
+      "mahang": "NT03",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 2440,
+      "id": 45
+    },
+    {
+      "mahoadon": "11112018009",
+      "mahang": "GA12",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 1950,
+      "tt": 7800,
+      "id": 46
+    },
+    {
+      "mahoadon": "11112018010",
+      "mahang": "DA08",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 33,
+      "tt": 330,
+      "id": 47
+    },
+    {
+      "mahoadon": "11112018011",
+      "mahang": "TT01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 10.6,
+      "tt": 265,
+      "id": 48
+    },
+    {
+      "mahoadon": "11112018012",
+      "mahang": "BA07",
+      "sl": 4,
+      "DVT": "C",
+      "dg": 200,
+      "tt": 800,
+      "id": 49
+    },
+    {
+      "mahoadon": "11112018012",
+      "mahang": "BA06",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 180,
+      "tt": 1800,
+      "id": 50
+    },
+    {
+      "mahoadon": "11112018012",
+      "mahang": "BA05",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 80,
+      "tt": 800,
+      "id": 51
+    },
+    {
+      "mahoadon": "11112018013",
+      "mahang": "BA07",
+      "sl": 4,
+      "DVT": "C",
+      "dg": 220,
+      "tt": 880,
+      "id": 52
+    },
+    {
+      "mahoadon": "11112018014",
+      "mahang": "DA08",
+      "sl": 3,
+      "DVT": "Kg",
+      "dg": 33,
+      "tt": 99,
+      "id": 53
+    },
+    {
+      "mahoadon": "11112018014",
+      "mahang": "DA02",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 270,
+      "id": 54
+    },
+    {
+      "mahoadon": "11112018014",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 560,
+      "tt": 560,
+      "id": 55
+    },
+    {
+      "mahoadon": "11112018015",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 56
+    },
+    {
+      "mahoadon": "11112018016",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 570,
+      "id": 57
+    },
+    {
+      "mahoadon": "11112018017",
+      "mahang": "GA17",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 850,
+      "tt": 850,
+      "id": 58
+    },
+    {
+      "mahoadon": "11112018018",
+      "mahang": "GA09",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 720,
+      "tt": 3600,
+      "id": 59
+    },
+    {
+      "mahoadon": "11112018018",
+      "mahang": "NT04",
+      "sl": 11,
+      "DVT": "T",
+      "dg": 38,
+      "tt": 418,
+      "id": 60
+    },
+    {
+      "mahoadon": "11112018018",
+      "mahang": "BA04",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 70,
+      "tt": 700,
+      "id": 61
+    },
+    {
+      "mahoadon": "11112018018",
+      "mahang": "BA03",
+      "sl": 15,
+      "DVT": "C",
+      "dg": 60,
+      "tt": 900,
+      "id": 62
+    },
+    {
+      "mahoadon": "11112018018",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 500,
+      "id": 63
+    },
+    {
+      "mahoadon": "11112018018",
+      "mahang": "GA18",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 350,
+      "tt": 1750,
+      "id": 64
+    },
+    {
+      "mahoadon": "11112018019",
+      "mahang": "DA02",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 290,
+      "id": 65
+    },
+    {
+      "mahoadon": "11112018019",
+      "mahang": "NT03",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 1220,
+      "id": 66
+    },
+    {
+      "mahoadon": "11112018020",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 67
+    },
+    {
+      "mahoadon": "11112018021",
+      "mahang": "NT01",
+      "sl": 7,
+      "DVT": "B",
+      "dg": 760,
+      "tt": 5320,
+      "id": 69
+    },
+    {
+      "mahoadon": "11112018022",
+      "mahang": "NH01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 13,
+      "tt": 130,
+      "id": 70
+    },
+    {
+      "mahoadon": "11112018022",
+      "mahang": "TT02",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 120,
+      "id": 71
+    },
+    {
+      "mahoadon": "11112018023",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 72
+    },
+    {
+      "mahoadon": "11112018024",
+      "mahang": "GA15",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 1680,
+      "id": 73
+    },
+    {
+      "mahoadon": "12112018001",
+      "mahang": "GA19",
+      "sl": 10,
+      "DVT": "B",
+      "dg": 345,
+      "tt": 3450,
+      "id": 74
+    },
+    {
+      "mahoadon": "12112018001",
+      "mahang": "GA18",
+      "sl": 20,
+      "DVT": "B",
+      "dg": 340,
+      "tt": 6800,
+      "id": 75
+    },
+    {
+      "mahoadon": "12112018002",
+      "mahang": "GA11",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 30,
+      "tt": 300,
+      "id": 76
+    },
+    {
+      "mahoadon": "12112018002",
+      "mahang": "ND01",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 40,
+      "tt": 800,
+      "id": 77
+    },
+    {
+      "mahoadon": "12112018002",
+      "mahang": "GA17",
+      "sl": 100,
+      "DVT": "Kg",
+      "dg": 14,
+      "tt": 1400,
+      "id": 78
+    },
+    {
+      "mahoadon": "12112018002",
+      "mahang": "GA07",
+      "sl": 10,
+      "DVT": "T",
+      "dg": 125,
+      "tt": 1250,
+      "id": 79
+    },
+    {
+      "mahoadon": "12112018002",
+      "mahang": "GA01",
+      "sl": 5,
+      "DVT": "T",
+      "dg": 155,
+      "tt": 775,
+      "id": 80
+    },
+    {
+      "mahoadon": "12112018003",
+      "mahang": "GA11",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1500,
+      "tt": 1500,
+      "id": 81
+    },
+    {
+      "mahoadon": "12112018003",
+      "mahang": "NT03",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 1220,
+      "id": 82
+    },
+    {
+      "mahoadon": "12112018003",
+      "mahang": "GA16",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 2640,
+      "id": 83
+    },
+    {
+      "mahoadon": "12112018004",
+      "mahang": "DA01",
+      "sl": 180,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 5580,
+      "id": 84
+    },
+    {
+      "mahoadon": "12112018004",
+      "mahang": "BB01",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 23,
+      "tt": 1150,
+      "id": 85
+    },
+    {
+      "mahoadon": "12112018005",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 520,
+      "tt": 520,
+      "id": 86
+    },
+    {
+      "mahoadon": "12112018006",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 580,
+      "tt": 580,
+      "id": 87
+    },
+    {
+      "mahoadon": "12112018007",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 510,
+      "tt": 510,
+      "id": 88
+    },
+    {
+      "mahoadon": "12112018008",
+      "mahang": "GA20",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 680,
+      "tt": 680,
+      "id": 89
+    },
+    {
+      "mahoadon": "12112018009",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 520,
+      "tt": 520,
+      "id": 90
+    },
+    {
+      "mahoadon": "12112018010",
+      "mahang": "DA01",
+      "sl": 30,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 930,
+      "id": 91
+    },
+    {
+      "mahoadon": "12112018010",
+      "mahang": "GA11",
+      "sl": 1,
+      "DVT": "Kg",
+      "dg": 33,
+      "tt": 33,
+      "id": 92
+    },
+    {
+      "mahoadon": "12112018010",
+      "mahang": "DA04",
+      "sl": 1,
+      "DVT": "Kg",
+      "dg": 28,
+      "tt": 28,
+      "id": 93
+    },
+    {
+      "mahoadon": "12112018010",
+      "mahang": "DA02",
+      "sl": 5,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 145,
+      "id": 94
+    },
+    {
+      "mahoadon": "12112018010",
+      "mahang": "DA06",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 26,
+      "tt": 520,
+      "id": 95
+    },
+    {
+      "mahoadon": "12112018011",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 580,
+      "tt": 580,
+      "id": 96
+    },
+    {
+      "mahoadon": "12112018011",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 510,
+      "tt": 510,
+      "id": 97
+    },
+    {
+      "mahoadon": "12112018012",
+      "mahang": "GA21",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 15,
+      "tt": 300,
+      "id": 98
+    },
+    {
+      "mahoadon": "12112018013",
+      "mahang": "TT01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 10.6,
+      "tt": 265,
+      "id": 99
+    },
+    {
+      "mahoadon": "12112018014",
+      "mahang": "TT03",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 650,
+      "tt": 650,
+      "id": 100
+    },
+    {
+      "mahoadon": "12112018015",
+      "mahang": "GA15",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 4200,
+      "id": 101
+    },
+    {
+      "mahoadon": "12112018016",
+      "mahang": "TT01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 11,
+      "tt": 110,
+      "id": 102
+    },
+    {
+      "mahoadon": "12112018016",
+      "mahang": "GA09",
+      "sl": 30,
+      "DVT": "Kg",
+      "dg": 16,
+      "tt": 480,
+      "id": 103
+    },
+    {
+      "mahoadon": "12112018017",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 570,
+      "id": 104
+    },
+    {
+      "mahoadon": "12112018018",
+      "mahang": "GA15",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 840,
+      "id": 105
+    },
+    {
+      "mahoadon": "12112018019",
+      "mahang": "BA03",
+      "sl": 2,
+      "DVT": "C",
+      "dg": 60,
+      "tt": 120,
+      "id": 106
+    },
+    {
+      "mahoadon": "12112018019",
+      "mahang": "BA04",
+      "sl": 4,
+      "DVT": "C",
+      "dg": 70,
+      "tt": 280,
+      "id": 107
+    },
+    {
+      "mahoadon": "12112018020",
+      "mahang": "GA16",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 880,
+      "id": 108
+    },
+    {
+      "mahoadon": "12112018020",
+      "mahang": "TT01",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 255,
+      "tt": 1020,
+      "id": 109
+    },
+    {
+      "mahoadon": "12112018021",
+      "mahang": "GA21",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 13,
+      "tt": 325,
+      "id": 110
+    },
+    {
+      "mahoadon": "12112018022",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 580,
+      "tt": 580,
+      "id": 111
+    },
+    {
+      "mahoadon": "13112018001",
+      "mahang": "GA16",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 880,
+      "id": 112
+    },
+    {
+      "mahoadon": "13112018002",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 310,
+      "id": 113
+    },
+    {
+      "mahoadon": "13112018002",
+      "mahang": "DA04",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 540,
+      "id": 114
+    },
+    {
+      "mahoadon": "13112018003",
+      "mahang": "TT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 540,
+      "tt": 1080,
+      "id": 115
+    },
+    {
+      "mahoadon": "13112018004",
+      "mahang": "TT05",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 2500,
+      "id": 116
+    },
+    {
+      "mahoadon": "13112018005",
+      "mahang": "NT03",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 6100,
+      "id": 117
+    },
+    {
+      "mahoadon": "13112018006",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 118
+    },
+    {
+      "mahoadon": "13112018007",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 780,
+      "tt": 780,
+      "id": 119
+    },
+    {
+      "mahoadon": "13112018007",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 570,
+      "id": 120
+    },
+    {
+      "mahoadon": "13112018008",
+      "mahang": "NH02",
+      "sl": 20,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 10000,
+      "id": 121
+    },
+    {
+      "mahoadon": "13112018009",
+      "mahang": "TT01",
+      "sl": 44,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 528,
+      "id": 122
+    },
+    {
+      "mahoadon": "13112018010",
+      "mahang": "GA17",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 20,
+      "tt": 200,
+      "id": 123
+    },
+    {
+      "mahoadon": "13112018011",
+      "mahang": "BA07",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 240,
+      "tt": 1200,
+      "id": 124
+    },
+    {
+      "mahoadon": "13112018012",
+      "mahang": "NT03",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 2440,
+      "id": 125
+    },
+    {
+      "mahoadon": "13112018012",
+      "mahang": "GA11",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 20,
+      "tt": 400,
+      "id": 126
+    },
+    {
+      "mahoadon": "13112018012",
+      "mahang": "GA21",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 700,
+      "tt": 700,
+      "id": 127
+    },
+    {
+      "mahoadon": "13112018013",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 500,
+      "id": 128
+    },
+    {
+      "mahoadon": "13112018013",
+      "mahang": "GA21",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 670,
+      "tt": 1340,
+      "id": 129
+    },
+    {
+      "mahoadon": "13112018013",
+      "mahang": "GA15",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 840,
+      "id": 130
+    },
+    {
+      "mahoadon": "13112018013",
+      "mahang": "NH01",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 2280,
+      "id": 131
+    },
+    {
+      "mahoadon": "13112018014",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 290,
+      "id": 132
+    },
+    {
+      "mahoadon": "13112018014",
+      "mahang": "BA04",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 70,
+      "tt": 70,
+      "id": 133
+    },
+    {
+      "mahoadon": "13112018014",
+      "mahang": "DA04",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 270,
+      "id": 134
+    },
+    {
+      "mahoadon": "13112018014",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 510,
+      "tt": 510,
+      "id": 135
+    },
+    {
+      "mahoadon": "13112018015",
+      "mahang": "GA13",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 500,
+      "id": 136
+    },
+    {
+      "mahoadon": "13112018015",
+      "mahang": "GA08",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 610,
+      "tt": 610,
+      "id": 137
+    },
+    {
+      "mahoadon": "13112018015",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 500,
+      "id": 138
+    },
+    {
+      "mahoadon": "13112018015",
+      "mahang": "GA09",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 670,
+      "tt": 2010,
+      "id": 139
+    },
+    {
+      "mahoadon": "13112018016",
+      "mahang": "BA09",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 75,
+      "tt": 1500,
+      "id": 140
+    },
+    {
+      "mahoadon": "13112018016",
+      "mahang": "BA08",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 65,
+      "tt": 1300,
+      "id": 141
+    },
+    {
+      "mahoadon": "13112018016",
+      "mahang": "BA07",
+      "sl": 4,
+      "DVT": "C",
+      "dg": 200,
+      "tt": 800,
+      "id": 142
+    },
+    {
+      "mahoadon": "13112018017",
+      "mahang": "NH02",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 500,
+      "id": 143
+    },
+    {
+      "mahoadon": "13112018017",
+      "mahang": "NH01",
+      "sl": 10,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 5300,
+      "id": 144
+    },
+    {
+      "mahoadon": "13112018018",
+      "mahang": "GA20",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 15,
+      "tt": 750,
+      "id": 145
+    },
+    {
+      "mahoadon": "13112018019",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 510,
+      "tt": 510,
+      "id": 146
+    },
+    {
+      "mahoadon": "13112018020",
+      "mahang": "GA13",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 1100,
+      "id": 147
+    },
+    {
+      "mahoadon": "13112018021",
+      "mahang": "TT01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 11,
+      "tt": 275,
+      "id": 148
+    },
+    {
+      "mahoadon": "13112018022",
+      "mahang": "GA08",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 610,
+      "tt": 610,
+      "id": 149
+    },
+    {
+      "mahoadon": "14112018001",
+      "mahang": "GA11",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 30,
+      "tt": 300,
+      "id": 150
+    },
+    {
+      "mahoadon": "14112018001",
+      "mahang": "GA12",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1950,
+      "tt": 1950,
+      "id": 151
+    },
+    {
+      "mahoadon": "14112018002",
+      "mahang": "TT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 1060,
+      "id": 152
+    },
+    {
+      "mahoadon": "14112018003",
+      "mahang": "DA04",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 270,
+      "id": 153
+    },
+    {
+      "mahoadon": "14112018003",
+      "mahang": "DA01",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 28.5,
+      "tt": 1425,
+      "id": 154
+    },
+    {
+      "mahoadon": "14112018003",
+      "mahang": "GA16",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 1760,
+      "id": 155
+    },
+    {
+      "mahoadon": "14112018004",
+      "mahang": "TT01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 10.8,
+      "tt": 270,
+      "id": 156
+    },
+    {
+      "mahoadon": "14112018005",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 157
+    },
+    {
+      "mahoadon": "14112018006",
+      "mahang": "DA04",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 270,
+      "id": 158
+    },
+    {
+      "mahoadon": "14112018007",
+      "mahang": "DA01",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 28.5,
+      "tt": 1425,
+      "id": 159
+    },
+    {
+      "mahoadon": "14112018008",
+      "mahang": "ND01",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 39.5,
+      "tt": 1975,
+      "id": 160
+    },
+    {
+      "mahoadon": "14112018009",
+      "mahang": "BB02",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 32,
+      "tt": 32,
+      "id": 161
+    },
+    {
+      "mahoadon": "14112018009",
+      "mahang": "DA04",
+      "sl": 3,
+      "DVT": "Kg",
+      "dg": 28,
+      "tt": 84,
+      "id": 162
+    },
+    {
+      "mahoadon": "14112018009",
+      "mahang": "NH01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 12.4,
+      "tt": 310,
+      "id": 163
+    },
+    {
+      "mahoadon": "14112018010",
+      "mahang": "DA02",
+      "sl": 30,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 870,
+      "id": 164
+    },
+    {
+      "mahoadon": "14112018010",
+      "mahang": "DA08",
+      "sl": 5,
+      "DVT": "Kg",
+      "dg": 32,
+      "tt": 160,
+      "id": 165
+    },
+    {
+      "mahoadon": "14112018010",
+      "mahang": "NH01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 1140,
+      "id": 166
+    },
+    {
+      "mahoadon": "14112018011",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 780,
+      "tt": 780,
+      "id": 167
+    },
+    {
+      "mahoadon": "14112018012",
+      "mahang": "NT03",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 1220,
+      "id": 168
+    },
+    {
+      "mahoadon": "14112018013",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 540,
+      "tt": 540,
+      "id": 169
+    },
+    {
+      "mahoadon": "14112018014",
+      "mahang": "BA10",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 140,
+      "tt": 1400,
+      "id": 170
+    },
+    {
+      "mahoadon": "14112018015",
+      "mahang": "GA18",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 350,
+      "tt": 1400,
+      "id": 171
+    },
+    {
+      "mahoadon": "14112018016",
+      "mahang": "GA09",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 16,
+      "tt": 160,
+      "id": 172
+    },
+    {
+      "mahoadon": "14112018017",
+      "mahang": "NS01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 900,
+      "tt": 900,
+      "id": 173
+    },
+    {
+      "mahoadon": "14112018018",
+      "mahang": "GA12",
+      "sl": 15,
+      "DVT": "Kg",
+      "dg": 39,
+      "tt": 585,
+      "id": 174
+    },
+    {
+      "mahoadon": "14112018018",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 175
+    },
+    {
+      "mahoadon": "15112018001",
+      "mahang": "NT04",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 17,
+      "tt": 170,
+      "id": 176
+    },
+    {
+      "mahoadon": "15112018002",
+      "mahang": "GA16",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 890,
+      "tt": 2670,
+      "id": 177
+    },
+    {
+      "mahoadon": "15112018002",
+      "mahang": "GA22",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 780,
+      "tt": 1560,
+      "id": 178
+    },
+    {
+      "mahoadon": "15112018003",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 510,
+      "tt": 510,
+      "id": 179
+    },
+    {
+      "mahoadon": "15112018004",
+      "mahang": "GA18",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 360,
+      "tt": 360,
+      "id": 180
+    },
+    {
+      "mahoadon": "15112018005",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 181
+    },
+    {
+      "mahoadon": "15112018005",
+      "mahang": "GA08",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 580,
+      "tt": 580,
+      "id": 182
+    },
+    {
+      "mahoadon": "15112018006",
+      "mahang": "TT01",
+      "sl": 10,
+      "DVT": "B",
+      "dg": 210,
+      "tt": 2100,
+      "id": 183
+    },
+    {
+      "mahoadon": "15112018006",
+      "mahang": "GA09",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 750,
+      "tt": 1500,
+      "id": 184
+    },
+    {
+      "mahoadon": "15112018007",
+      "mahang": "GA09",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 15,
+      "tt": 150,
+      "id": 185
+    },
+    {
+      "mahoadon": "15112018008",
+      "mahang": "TT01",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 540,
+      "tt": 2160,
+      "id": 186
+    },
+    {
+      "mahoadon": "15112018009",
+      "mahang": "NT03",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 6100,
+      "id": 187
+    },
+    {
+      "mahoadon": "15112018010",
+      "mahang": "GA22",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 780,
+      "tt": 780,
+      "id": 188
+    },
+    {
+      "mahoadon": "15112018011",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 189
+    },
+    {
+      "mahoadon": "15112018012",
+      "mahang": "ND01",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 39.5,
+      "tt": 1975,
+      "id": 190
+    },
+    {
+      "mahoadon": "15112018012",
+      "mahang": "GA11",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 1450,
+      "id": 191
+    },
+    {
+      "mahoadon": "15112018013",
+      "mahang": "GA08",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 610,
+      "tt": 610,
+      "id": 192
+    },
+    {
+      "mahoadon": "15112018014",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 193
+    },
+    {
+      "mahoadon": "15112018015",
+      "mahang": "TT01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 10.8,
+      "tt": 270,
+      "id": 194
+    },
+    {
+      "mahoadon": "15112018016",
+      "mahang": "GA17",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 375,
+      "tt": 375,
+      "id": 195
+    },
+    {
+      "mahoadon": "15112018016",
+      "mahang": "GA04",
+      "sl": 5,
+      "DVT": "T",
+      "dg": 85,
+      "tt": 425,
+      "id": 196
+    },
+    {
+      "mahoadon": "15112018016",
+      "mahang": "BA02",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 90,
+      "tt": 90,
+      "id": 197
+    },
+    {
+      "mahoadon": "15112018016",
+      "mahang": "BA01",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 70,
+      "tt": 70,
+      "id": 198
+    },
+    {
+      "mahoadon": "15112018016",
+      "mahang": "GA15",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 840,
+      "id": 199
+    },
+    {
+      "mahoadon": "15112018016",
+      "mahang": "NT01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 17,
+      "tt": 170,
+      "id": 200
+    },
+    {
+      "mahoadon": "15112018017",
+      "mahang": "NH01",
+      "sl": 12,
+      "DVT": "Kg",
+      "dg": 13,
+      "tt": 156,
+      "id": 201
+    },
+    {
+      "mahoadon": "15112018018",
+      "mahang": "TT01",
+      "sl": 44,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 528,
+      "id": 202
+    },
+    {
+      "mahoadon": "15112018019",
+      "mahang": "BA03",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 60,
+      "tt": 300,
+      "id": 203
+    },
+    {
+      "mahoadon": "15112018020",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 275,
+      "tt": 275,
+      "id": 204
+    },
+    {
+      "mahoadon": "15112018020",
+      "mahang": "GA17",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 375,
+      "tt": 375,
+      "id": 205
+    },
+    {
+      "mahoadon": "15112018021",
+      "mahang": "GA17",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 350,
+      "tt": 700,
+      "id": 206
+    },
+    {
+      "mahoadon": "15112018022",
+      "mahang": "GA08",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 680,
+      "tt": 680,
+      "id": 207
+    },
+    {
+      "mahoadon": "15112018023",
+      "mahang": "NT03",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1200,
+      "tt": 1200,
+      "id": 208
+    },
+    {
+      "mahoadon": "15112018023",
+      "mahang": "GA15",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 825,
+      "tt": 1650,
+      "id": 209
+    },
+    {
+      "mahoadon": "15112018024",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 270,
+      "tt": 270,
+      "id": 210
+    },
+    {
+      "mahoadon": "16112018001",
+      "mahang": "GA08",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 660,
+      "tt": 1980,
+      "id": 211
+    },
+    {
+      "mahoadon": "16112018002",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 212
+    },
+    {
+      "mahoadon": "16112018003",
+      "mahang": "TT01",
+      "sl": 15,
+      "DVT": "Kg",
+      "dg": 11,
+      "tt": 165,
+      "id": 213
+    },
+    {
+      "mahoadon": "16112018004",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 214
+    },
+    {
+      "mahoadon": "16112018004",
+      "mahang": "GA13",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 1650,
+      "id": 215
+    },
+    {
+      "mahoadon": "16112018005",
+      "mahang": "DA02",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 310,
+      "id": 216
+    },
+    {
+      "mahoadon": "16112018006",
+      "mahang": "GA16",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 2640,
+      "id": 217
+    },
+    {
+      "mahoadon": "16112018007",
+      "mahang": "GA09",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 16,
+      "tt": 320,
+      "id": 218
+    },
+    {
+      "mahoadon": "16112018008",
+      "mahang": "GA15",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 4200,
+      "id": 219
+    },
+    {
+      "mahoadon": "16112018008",
+      "mahang": "NT03",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 6100,
+      "id": 220
+    },
+    {
+      "mahoadon": "16112018009",
+      "mahang": "NPV1",
+      "sl": 80,
+      "DVT": "B",
+      "dg": 38,
+      "tt": 3040,
+      "id": 221
+    },
+    {
+      "mahoadon": "16112018010",
+      "mahang": "GA13",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 1650,
+      "id": 222
+    },
+    {
+      "mahoadon": "16112018011",
+      "mahang": "GA20",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 680,
+      "tt": 680,
+      "id": 223
+    },
+    {
+      "mahoadon": "16112018011",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 510,
+      "tt": 510,
+      "id": 224
+    },
+    {
+      "mahoadon": "16112018012",
+      "mahang": "NPV1",
+      "sl": 40,
+      "DVT": "Kg",
+      "dg": 20,
+      "tt": 800,
+      "id": 225
+    },
+    {
+      "mahoadon": "16112018013",
+      "mahang": "GA15",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 825,
+      "tt": 1650,
+      "id": 226
+    },
+    {
+      "mahoadon": "16112018014",
+      "mahang": "GA16",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 890,
+      "tt": 890,
+      "id": 227
+    },
+    {
+      "mahoadon": "16112018015",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 228
+    },
+    {
+      "mahoadon": "16112018016",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 560,
+      "tt": 560,
+      "id": 229
+    },
+    {
+      "mahoadon": "16112018016",
+      "mahang": "GA15",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 830,
+      "tt": 2490,
+      "id": 230
+    },
+    {
+      "mahoadon": "16112018017",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 231
+    },
+    {
+      "mahoadon": "16112018018",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 540,
+      "tt": 540,
+      "id": 232
+    },
+    {
+      "mahoadon": "16112018019",
+      "mahang": "GA20",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 850,
+      "tt": 850,
+      "id": 233
+    },
+    {
+      "mahoadon": "16112018020",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 520,
+      "tt": 520,
+      "id": 234
+    },
+    {
+      "mahoadon": "16112018021",
+      "mahang": "BA04",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 72,
+      "tt": 360,
+      "id": 235
+    },
+    {
+      "mahoadon": "16112018021",
+      "mahang": "BA03",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 62,
+      "tt": 310,
+      "id": 236
+    },
+    {
+      "mahoadon": "16112018022",
+      "mahang": "TT01",
+      "sl": 150,
+      "DVT": "Kg",
+      "dg": 10.5,
+      "tt": 1575,
+      "id": 237
+    },
+    {
+      "mahoadon": "16112018023",
+      "mahang": "GA20",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 680,
+      "tt": 680,
+      "id": 238
+    },
+    {
+      "mahoadon": "16112018023",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 530,
+      "id": 239
+    },
+    {
+      "mahoadon": "17112018001",
+      "mahang": "GA22",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 18,
+      "tt": 360,
+      "id": 240
+    },
+    {
+      "mahoadon": "17112018002",
+      "mahang": "NT03",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 6100,
+      "id": 241
+    },
+    {
+      "mahoadon": "17112018003",
+      "mahang": "GA21",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 660,
+      "tt": 660,
+      "id": 242
+    },
+    {
+      "mahoadon": "17112018004",
+      "mahang": "GA20",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 680,
+      "tt": 680,
+      "id": 243
+    },
+    {
+      "mahoadon": "17112018005",
+      "mahang": "BA08",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 15,
+      "tt": 15,
+      "id": 244
+    },
+    {
+      "mahoadon": "17112018005",
+      "mahang": "BA02",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 90,
+      "tt": 90,
+      "id": 245
+    },
+    {
+      "mahoadon": "17112018005",
+      "mahang": "BA01",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 70,
+      "tt": 70,
+      "id": 246
+    },
+    {
+      "mahoadon": "17112018005",
+      "mahang": "GA15",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 840,
+      "id": 247
+    },
+    {
+      "mahoadon": "17112018005",
+      "mahang": "GA20",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 680,
+      "tt": 680,
+      "id": 248
+    },
+    {
+      "mahoadon": "17112018005",
+      "mahang": "GA11",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 30,
+      "tt": 300,
+      "id": 249
+    },
+    {
+      "mahoadon": "17112018006",
+      "mahang": "BA02",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 90,
+      "tt": 90,
+      "id": 250
+    },
+    {
+      "mahoadon": "17112018006",
+      "mahang": "TT01",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 1500,
+      "id": 251
+    },
+    {
+      "mahoadon": "17112018007",
+      "mahang": "BA11",
+      "sl": 3,
+      "DVT": "C",
+      "dg": 80,
+      "tt": 240,
+      "id": 252
+    },
+    {
+      "mahoadon": "17112018007",
+      "mahang": "BA04",
+      "sl": 2,
+      "DVT": "C",
+      "dg": 100,
+      "tt": 200,
+      "id": 253
+    },
+    {
+      "mahoadon": "17112018008",
+      "mahang": "GA09",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 15,
+      "tt": 150,
+      "id": 254
+    },
+    {
+      "mahoadon": "17112018009",
+      "mahang": "NH01",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 600,
+      "tt": 3000,
+      "id": 255
+    },
+    {
+      "mahoadon": "17112018010",
+      "mahang": "BA08",
+      "sl": 20,
+      "DVT": "C",
+      "dg": 15,
+      "tt": 300,
+      "id": 256
+    },
+    {
+      "mahoadon": "17112018010",
+      "mahang": "ND01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 40,
+      "tt": 400,
+      "id": 257
+    },
+    {
+      "mahoadon": "17112018010",
+      "mahang": "GA18",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 350,
+      "tt": 1750,
+      "id": 258
+    },
+    {
+      "mahoadon": "17112018011",
+      "mahang": "BA04",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 70,
+      "tt": 700,
+      "id": 259
+    },
+    {
+      "mahoadon": "17112018012",
+      "mahang": "BA03",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 60,
+      "tt": 600,
+      "id": 260
+    },
+    {
+      "mahoadon": "17112018012",
+      "mahang": "DA02",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 310,
+      "id": 261
+    },
+    {
+      "mahoadon": "17112018012",
+      "mahang": "DA04",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 270,
+      "id": 262
+    },
+    {
+      "mahoadon": "17112018013",
+      "mahang": "GA21",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 670,
+      "tt": 670,
+      "id": 263
+    },
+    {
+      "mahoadon": "17112018014",
+      "mahang": "GA15",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 830,
+      "tt": 830,
+      "id": 264
+    },
+    {
+      "mahoadon": "17112018015",
+      "mahang": "GA16",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 880,
+      "id": 265
+    },
+    {
+      "mahoadon": "17112018016",
+      "mahang": "BB01",
+      "sl": 60,
+      "DVT": "Kg",
+      "dg": 23,
+      "tt": 1380,
+      "id": 266
+    },
+    {
+      "mahoadon": "17112018016",
+      "mahang": "DA04",
+      "sl": 5,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 135,
+      "id": 267
+    },
+    {
+      "mahoadon": "18112018001",
+      "mahang": "NT03",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 1200,
+      "tt": 6000,
+      "id": 268
+    },
+    {
+      "mahoadon": "18112018002",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 28.5,
+      "tt": 285,
+      "id": 269
+    },
+    {
+      "mahoadon": "18112018002",
+      "mahang": "NH02",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 500,
+      "id": 270
+    },
+    {
+      "mahoadon": "18112018002",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 560,
+      "tt": 560,
+      "id": 271
+    },
+    {
+      "mahoadon": "18112018003",
+      "mahang": "BA02",
+      "sl": 3,
+      "DVT": "C",
+      "dg": 84,
+      "tt": 252,
+      "id": 272
+    },
+    {
+      "mahoadon": "18112018003",
+      "mahang": "BA04",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 72,
+      "tt": 360,
+      "id": 273
+    },
+    {
+      "mahoadon": "18112018003",
+      "mahang": "BA03",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 62,
+      "tt": 310,
+      "id": 274
+    },
+    {
+      "mahoadon": "18112018004",
+      "mahang": "TT01",
+      "sl": 44,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 528,
+      "id": 275
+    },
+    {
+      "mahoadon": "18112018005",
+      "mahang": "DA06",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 26,
+      "tt": 260,
+      "id": 276
+    },
+    {
+      "mahoadon": "18112018005",
+      "mahang": "DA04",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 26.5,
+      "tt": 265,
+      "id": 277
+    },
+    {
+      "mahoadon": "18112018005",
+      "mahang": "DA02",
+      "sl": 30,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 930,
+      "id": 278
+    },
+    {
+      "mahoadon": "18112018006",
+      "mahang": "GA09",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 780,
+      "tt": 3900,
+      "id": 279
+    },
+    {
+      "mahoadon": "18112018007",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 570,
+      "id": 280
+    },
+    {
+      "mahoadon": "18112018008",
+      "mahang": "NH01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 1140,
+      "id": 281
+    },
+    {
+      "mahoadon": "18112018009",
+      "mahang": "NT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 725,
+      "tt": 1450,
+      "id": 282
+    },
+    {
+      "mahoadon": "18112018010",
+      "mahang": "GA20",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 800,
+      "tt": 800,
+      "id": 283
+    },
+    {
+      "mahoadon": "18112018011",
+      "mahang": "NT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 850,
+      "tt": 850,
+      "id": 284
+    },
+    {
+      "mahoadon": "18112018012",
+      "mahang": "GA15",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 840,
+      "id": 285
+    },
+    {
+      "mahoadon": "18112018013",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 286
+    },
+    {
+      "mahoadon": "18112018014",
+      "mahang": "GA13",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 1100,
+      "id": 287
+    },
+    {
+      "mahoadon": "18112018014",
+      "mahang": "TT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 1100,
+      "id": 288
+    },
+    {
+      "mahoadon": "18112018015",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 289
+    },
+    {
+      "mahoadon": "18112018016",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 750,
+      "tt": 750,
+      "id": 290
+    },
+    {
+      "mahoadon": "18112018017",
+      "mahang": "DA09",
+      "sl": 15,
+      "DVT": "Kg",
+      "dg": 34,
+      "tt": 510,
+      "id": 291
+    },
+    {
+      "mahoadon": "18112018017",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 290,
+      "id": 292
+    },
+    {
+      "mahoadon": "18112018017",
+      "mahang": "DA04",
+      "sl": 15,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 405,
+      "id": 293
+    },
+    {
+      "mahoadon": "18112018018",
+      "mahang": "GA09",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 15,
+      "tt": 150,
+      "id": 294
+    },
+    {
+      "mahoadon": "18112018018",
+      "mahang": "GA15",
+      "sl": 13,
+      "DVT": "Kg",
+      "dg": 18,
+      "tt": 234,
+      "id": 295
+    },
+    {
+      "mahoadon": "18112018019",
+      "mahang": "TT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 520,
+      "tt": 1040,
+      "id": 296
+    },
+    {
+      "mahoadon": "18112018019",
+      "mahang": "BA02",
+      "sl": 0.5,
+      "DVT": "C",
+      "dg": 70,
+      "tt": 35,
+      "id": 297
+    },
+    {
+      "mahoadon": "18112018020",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 570,
+      "id": 298
+    },
+    {
+      "mahoadon": "18112018021",
+      "mahang": "GA15",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 840,
+      "id": 299
+    },
+    {
+      "mahoadon": "18112018022",
+      "mahang": "GA11",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 30,
+      "tt": 300,
+      "id": 300
+    },
+    {
+      "mahoadon": "18112018022",
+      "mahang": "NT03",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 1210,
+      "tt": 2420,
+      "id": 301
+    },
+    {
+      "mahoadon": "18112018023",
+      "mahang": "GA20",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 670,
+      "tt": 670,
+      "id": 302
+    },
+    {
+      "mahoadon": "18112018023",
+      "mahang": "GA18",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 350,
+      "tt": 350,
+      "id": 303
+    },
+    {
+      "mahoadon": "18112018024",
+      "mahang": "DA04",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 26.5,
+      "tt": 265,
+      "id": 304
+    },
+    {
+      "mahoadon": "18112018025",
+      "mahang": "GA15",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 1680,
+      "id": 305
+    },
+    {
+      "mahoadon": "18112018026",
+      "mahang": "NH01",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 240,
+      "id": 306
+    },
+    {
+      "mahoadon": "18112018027",
+      "mahang": "BA04",
+      "sl": 2,
+      "DVT": "C",
+      "dg": 70,
+      "tt": 140,
+      "id": 307
+    },
+    {
+      "mahoadon": "18112018027",
+      "mahang": "GA07",
+      "sl": 10,
+      "DVT": "T",
+      "dg": 125,
+      "tt": 1250,
+      "id": 308
+    },
+    {
+      "mahoadon": "18112018027",
+      "mahang": "BA03",
+      "sl": 2,
+      "DVT": "C",
+      "dg": 60,
+      "tt": 120,
+      "id": 309
+    },
+    {
+      "mahoadon": "18112018028",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 310
+    },
+    {
+      "mahoadon": "18112018029",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 600,
+      "tt": 600,
+      "id": 311
+    },
+    {
+      "mahoadon": "18112018030",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 520,
+      "tt": 520,
+      "id": 312
+    },
+    {
+      "mahoadon": "19112018001",
+      "mahang": "TT01",
+      "sl": 6,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 3300,
+      "id": 313
+    },
+    {
+      "mahoadon": "19112018002",
+      "mahang": "TT01",
+      "sl": 520,
+      "DVT": "Kg",
+      "dg": 10,
+      "tt": 5200,
+      "id": 314
+    },
+    {
+      "mahoadon": "19112018003",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 290,
+      "id": 315
+    },
+    {
+      "mahoadon": "19112018003",
+      "mahang": "DA06",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 26,
+      "tt": 260,
+      "id": 316
+    },
+    {
+      "mahoadon": "19112018003",
+      "mahang": "DA04",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 540,
+      "id": 317
+    },
+    {
+      "mahoadon": "19112018004",
+      "mahang": "GA19",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 375,
+      "tt": 750,
+      "id": 318
+    },
+    {
+      "mahoadon": "19112018005",
+      "mahang": "GA04",
+      "sl": 25,
+      "DVT": "T",
+      "dg": 82,
+      "tt": 2050,
+      "id": 319
+    },
+    {
+      "mahoadon": "19112018006",
+      "mahang": "TT01",
+      "sl": 35,
+      "DVT": "Kg",
+      "dg": 11,
+      "tt": 385,
+      "id": 320
+    },
+    {
+      "mahoadon": "19112018007",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 275,
+      "tt": 275,
+      "id": 321
+    },
+    {
+      "mahoadon": "19112018008",
+      "mahang": "GA20",
+      "sl": 44,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 528,
+      "id": 322
+    },
+    {
+      "mahoadon": "19112018009",
+      "mahang": "BB02",
+      "sl": 0.5,
+      "DVT": "Thieng",
+      "dg": 620,
+      "tt": 310,
+      "id": 323
+    },
+    {
+      "mahoadon": "19112018009",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 290,
+      "id": 324
+    },
+    {
+      "mahoadon": "19112018009",
+      "mahang": "DA08",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 33,
+      "tt": 330,
+      "id": 325
+    },
+    {
+      "mahoadon": "19112018010",
+      "mahang": "GA08",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 610,
+      "tt": 610,
+      "id": 326
+    },
+    {
+      "mahoadon": "19112018011",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 28.5,
+      "tt": 285,
+      "id": 327
+    },
+    {
+      "mahoadon": "19112018011",
+      "mahang": "NT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 850,
+      "tt": 850,
+      "id": 328
+    },
+    {
+      "mahoadon": "19112018011",
+      "mahang": "NT03",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 1220,
+      "id": 329
+    },
+    {
+      "mahoadon": "19112018012",
+      "mahang": "NT03",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 1200,
+      "tt": 1200,
+      "id": 330
+    },
+    {
+      "mahoadon": "19112018012",
+      "mahang": "GA15",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 830,
+      "tt": 1660,
+      "id": 331
+    },
+    {
+      "mahoadon": "19112018013",
+      "mahang": "GA07",
+      "sl": 2,
+      "DVT": "T",
+      "dg": 125,
+      "tt": 250,
+      "id": 332
+    },
+    {
+      "mahoadon": "19112018013",
+      "mahang": "GA04",
+      "sl": 2,
+      "DVT": "T",
+      "dg": 85,
+      "tt": 170,
+      "id": 333
+    },
+    {
+      "mahoadon": "19112018013",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 560,
+      "tt": 560,
+      "id": 334
+    },
+    {
+      "mahoadon": "19112018014",
+      "mahang": "TT01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 10.8,
+      "tt": 270,
+      "id": 335
+    },
+    {
+      "mahoadon": "19112018015",
+      "mahang": "BB02",
+      "sl": 1,
+      "DVT": "C",
+      "dg": 33,
+      "tt": 33,
+      "id": 336
+    },
+    {
+      "mahoadon": "19112018015",
+      "mahang": "NH01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 300,
+      "id": 337
+    },
+    {
+      "mahoadon": "19112018016",
+      "mahang": "TT01",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 11,
+      "tt": 220,
+      "id": 338
+    },
+    {
+      "mahoadon": "19112018017",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 780,
+      "tt": 780,
+      "id": 339
+    },
+    {
+      "mahoadon": "19112018018",
+      "mahang": "DA02",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 310,
+      "id": 340
+    },
+    {
+      "mahoadon": "19112018018",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 560,
+      "tt": 560,
+      "id": 341
+    },
+    {
+      "mahoadon": "19112018019",
+      "mahang": "GA08",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 620,
+      "tt": 1240,
+      "id": 342
+    },
+    {
+      "mahoadon": "19112018020",
+      "mahang": "GA20",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 1100,
+      "tt": 2200,
+      "id": 343
+    },
+    {
+      "mahoadon": "19112018021",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 510,
+      "tt": 510,
+      "id": 344
+    },
+    {
+      "mahoadon": "19112018022",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 590,
+      "tt": 590,
+      "id": 345
+    },
+    {
+      "mahoadon": "19112018022",
+      "mahang": "GA02",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 700,
+      "tt": 700,
+      "id": 346
+    },
+    {
+      "mahoadon": "19112018023",
+      "mahang": "GA13",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 600,
+      "tt": 600,
+      "id": 347
+    },
+    {
+      "mahoadon": "19112018024",
+      "mahang": "ND01",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 40,
+      "tt": 800,
+      "id": 348
+    },
+    {
+      "mahoadon": "19112018024",
+      "mahang": "GA11",
+      "sl": 15,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 465,
+      "id": 349
+    },
+    {
+      "mahoadon": "19112018024",
+      "mahang": "NT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 900,
+      "tt": 900,
+      "id": 350
+    },
+    {
+      "mahoadon": "19112018025",
+      "mahang": "BA04",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 100,
+      "tt": 500,
+      "id": 351
+    },
+    {
+      "mahoadon": "19112018025",
+      "mahang": "BA05",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 80,
+      "tt": 400,
+      "id": 352
+    },
+    {
+      "mahoadon": "19112018026",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 750,
+      "tt": 750,
+      "id": 353
+    },
+    {
+      "mahoadon": "20112018001",
+      "mahang": "TT01",
+      "sl": 9,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 4950,
+      "id": 354
+    },
+    {
+      "mahoadon": "20112018002",
+      "mahang": "TT01",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 260,
+      "tt": 1040,
+      "id": 355
+    },
+    {
+      "mahoadon": "20112018003",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 540,
+      "tt": 540,
+      "id": 356
+    },
+    {
+      "mahoadon": "20112018004",
+      "mahang": "TT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 1100,
+      "id": 357
+    },
+    {
+      "mahoadon": "20112018005",
+      "mahang": "TT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 525,
+      "tt": 1050,
+      "id": 358
+    },
+    {
+      "mahoadon": "20112018005",
+      "mahang": "GA13",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 1100,
+      "id": 359
+    },
+    {
+      "mahoadon": "20112018006",
+      "mahang": "GA13",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 550,
+      "id": 360
+    },
+    {
+      "mahoadon": "20112018007",
+      "mahang": "GA11",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 310,
+      "id": 361
+    },
+    {
+      "mahoadon": "20112018007",
+      "mahang": "GA12",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 1100,
+      "tt": 4400,
+      "id": 362
+    },
+    {
+      "mahoadon": "20112018008",
+      "mahang": "GA08",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 610,
+      "tt": 610,
+      "id": 363
+    },
+    {
+      "mahoadon": "20112018009",
+      "mahang": "GA12",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 1950,
+      "tt": 3900,
+      "id": 364
+    },
+    {
+      "mahoadon": "20112018009",
+      "mahang": "NT03",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 3660,
+      "id": 365
+    },
+    {
+      "mahoadon": "20112018010",
+      "mahang": "NH02",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 500,
+      "id": 366
+    },
+    {
+      "mahoadon": "20112018011",
+      "mahang": "TT01",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 520,
+      "tt": 2080,
+      "id": 367
+    },
+    {
+      "mahoadon": "20112018012",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 570,
+      "id": 368
+    },
+    {
+      "mahoadon": "20112018013",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 290,
+      "id": 369
+    },
+    {
+      "mahoadon": "20112018014",
+      "mahang": "DA08",
+      "sl": 16.5,
+      "DVT": "Kg",
+      "dg": 32.5,
+      "tt": 536.25,
+      "id": 370
+    },
+    {
+      "mahoadon": "20112018014",
+      "mahang": "DA04",
+      "sl": 50,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 1350,
+      "id": 371
+    },
+    {
+      "mahoadon": "20112018014",
+      "mahang": "DA02",
+      "sl": 180,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 5580,
+      "id": 372
+    },
+    {
+      "mahoadon": "20112018015",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 540,
+      "tt": 540,
+      "id": 373
+    },
+    {
+      "mahoadon": "20112018016",
+      "mahang": "TT01",
+      "sl": 8,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 4400,
+      "id": 374
+    },
+    {
+      "mahoadon": "20112018017",
+      "mahang": "NT03",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 1220,
+      "tt": 3660,
+      "id": 375
+    },
+    {
+      "mahoadon": "20112018018",
+      "mahang": "GA07",
+      "sl": 1,
+      "DVT": "T",
+      "dg": 125,
+      "tt": 125,
+      "id": 376
+    },
+    {
+      "mahoadon": "20112018019",
+      "mahang": "NS01",
+      "sl": 10,
+      "DVT": "B",
+      "dg": 900,
+      "tt": 9000,
+      "id": 377
+    },
+    {
+      "mahoadon": "20112018020",
+      "mahang": "DA04",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 270,
+      "id": 378
+    },
+    {
+      "mahoadon": "20112018020",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 31,
+      "tt": 310,
+      "id": 379
+    },
+    {
+      "mahoadon": "20112018020",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 560,
+      "tt": 560,
+      "id": 380
+    },
+    {
+      "mahoadon": "20112018021",
+      "mahang": "GA07",
+      "sl": 4,
+      "DVT": "T",
+      "dg": 125,
+      "tt": 500,
+      "id": 381
+    },
+    {
+      "mahoadon": "20112018022",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 525,
+      "tt": 525,
+      "id": 382
+    },
+    {
+      "mahoadon": "20112018022",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 750,
+      "tt": 750,
+      "id": 383
+    },
+    {
+      "mahoadon": "20112018023",
+      "mahang": "GA16",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 880,
+      "id": 384
+    },
+    {
+      "mahoadon": "20112018023",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 570,
+      "tt": 570,
+      "id": 385
+    },
+    {
+      "mahoadon": "20112018024",
+      "mahang": "BA10",
+      "sl": 5,
+      "DVT": "C",
+      "dg": 150,
+      "tt": 750,
+      "id": 386
+    },
+    {
+      "mahoadon": "20112018025",
+      "mahang": "TT01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 120,
+      "id": 387
+    },
+    {
+      "mahoadon": "20112018026",
+      "mahang": "TT01",
+      "sl": 4,
+      "DVT": "B",
+      "dg": 530,
+      "tt": 2120,
+      "id": 388
+    },
+    {
+      "mahoadon": "20112018027",
+      "mahang": "TT01",
+      "sl": 25,
+      "DVT": "Kg",
+      "dg": 10.4,
+      "tt": 260,
+      "id": 389
+    },
+    {
+      "mahoadon": "20112018028",
+      "mahang": "GA15",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 830,
+      "tt": 830,
+      "id": 390
+    },
+    {
+      "mahoadon": "20112018029",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 750,
+      "tt": 750,
+      "id": 391
+    },
+    {
+      "mahoadon": "20112018030",
+      "mahang": "GA10",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 63,
+      "tt": 1260,
+      "id": 392
+    },
+    {
+      "mahoadon": "20112018031",
+      "mahang": "DA02",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 30,
+      "tt": 300,
+      "id": 393
+    },
+    {
+      "mahoadon": "20112018031",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 600,
+      "tt": 600,
+      "id": 394
+    },
+    {
+      "mahoadon": "20112018032",
+      "mahang": "GA16",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 880,
+      "tt": 880,
+      "id": 395
+    },
+    {
+      "mahoadon": "20112018032",
+      "mahang": "GA09",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 750,
+      "tt": 750,
+      "id": 396
+    },
+    {
+      "mahoadon": "20112018033",
+      "mahang": "TT01",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 550,
+      "tt": 1100,
+      "id": 397
+    },
+    {
+      "mahoadon": "20112018034",
+      "mahang": "GA11",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 30,
+      "tt": 300,
+      "id": 398
+    },
+    {
+      "mahoadon": "20112018034",
+      "mahang": "DA01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 29,
+      "tt": 290,
+      "id": 399
+    },
+    {
+      "mahoadon": "20112018035",
+      "mahang": "NT01",
+      "sl": 3,
+      "DVT": "B",
+      "dg": 750,
+      "tt": 2250,
+      "id": 400
+    },
+    {
+      "mahoadon": "20112018036",
+      "mahang": "BA12",
+      "sl": 2,
+      "DVT": "C",
+      "dg": 100,
+      "tt": 200,
+      "id": 401
+    },
+    {
+      "mahoadon": "20112018037",
+      "mahang": "TT01",
+      "sl": 60,
+      "DVT": "B",
+      "dg": 525,
+      "tt": 31500,
+      "id": 402
+    },
+    {
+      "mahoadon": "20112018038",
+      "mahang": "BA04",
+      "sl": 10,
+      "DVT": "C",
+      "dg": 72,
+      "tt": 720,
+      "id": 403
+    },
+    {
+      "mahoadon": "21112018001",
+      "mahang": "GA15",
+      "sl": 2,
+      "DVT": "B",
+      "dg": 840,
+      "tt": 1680,
+      "id": 404
+    },
+    {
+      "mahoadon": "21112018002",
+      "mahang": "TT01",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 500,
+      "tt": 2500,
+      "id": 405
+    },
+    {
+      "mahoadon": "21112018003",
+      "mahang": "NH01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 580,
+      "tt": 580,
+      "id": 406
+    },
+    {
+      "mahoadon": "21112018004",
+      "mahang": "TT01",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 510,
+      "tt": 510,
+      "id": 407
+    },
+    {
+      "mahoadon": "21112018005",
+      "mahang": "TT01",
+      "sl": 10,
+      "DVT": "Kg",
+      "dg": 12,
+      "tt": 120,
+      "id": 408
+    },
+    {
+      "mahoadon": "21112018006",
+      "mahang": "GA18",
+      "sl": 1,
+      "DVT": "B",
+      "dg": 360,
+      "tt": 360,
+      "id": 409
+    },
+    {
+      "mahoadon": "21112018007",
+      "mahang": "TT01",
+      "sl": 5,
+      "DVT": "B",
+      "dg": 265,
+      "tt": 1325,
+      "id": 410
+    },
+    {
+      "mahoadon": "21112018007",
+      "mahang": "DA04",
+      "sl": 20,
+      "DVT": "Kg",
+      "dg": 27,
+      "tt": 540,
+      "id": 411
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular 4",
+      "description": "For  front end developer",
+      "fee": 10
+    },
+    {
+      "id": 2,
+      "name": "React JS",
+      "description": "Developer",
+      "fee": 20
+    },
+    {
+      "name": "Androi",
+      "description": "Angualr JS",
+      "fee": "100",
+      "id": 6
+    }
+  ],
+  "dmhang": [
+    {
+      "id": 1,
+      "mahang": "NH01",
+      "tenhang": "Nếp Hòa Hảo loại 1",
+      "xuatxu": "Việt Nam"
+    },
+    {
+      "id": 2,
+      "mahang": "NH02",
+      "tenhang": "Nếp Hòa Hảo loại 2",
+      "xuatxu": "Việt Nam"
+    },
+    {
+      "id": 3,
+      "mahang": "NT01",
+      "tenhang": "Nếp thơm loại 1",
+      "xuatxu": "Thái  Lan"
+    },
+    {
+      "id": 4,
+      "mahang": "NT02",
+      "tenhang": "Nếp thơm loại 2",
+      "xuatxu": "Việt Nam"
+    },
+    {
+      "mahang": "GA01",
+      "tenhang": "Gạo hạt ngọc trời 1 - 10kg",
+      "xuatxu": "Việt nam",
+      "id": 5
+    },
+    {
+      "mahang": "GA02",
+      "tenhang": "Gạo hạt ngọc trời 2 - 10kg",
+      "xuatxu": "Việt Nam",
+      "id": 6
+    },
+    {
+      "mahang": "GA03",
+      "tenhang": "Gạo hạt ngọc trời 3 - 10Kg",
+      "xuatxu": "Việt Nam",
+      "id": 7
+    },
+    {
+      "mahang": "DA01",
+      "tenhang": "Đậu TH",
+      "xuatxu": "Việt Nam",
+      "id": 8
+    },
+    {
+      "mahang": "DA02",
+      "tenhang": "Đậu OM",
+      "xuatxu": "Việt Nam",
+      "id": 9
+    },
+    {
+      "mahang": "DA03",
+      "tenhang": "Đậu xanh tróc vỏ loại thường",
+      "xuatxu": "Việt Nam",
+      "id": 10
+    },
+    {
+      "mahang": "DA04",
+      "tenhang": "Đậu trắng bi loại 1",
+      "xuatxu": "Việt Nam",
+      "id": 11
+    },
+    {
+      "mahang": "DA05",
+      "tenhang": "Đậu trắng bi loại 2",
+      "xuatxu": "Việt Nam",
+      "id": 12
+    },
+    {
+      "mahang": "DA06",
+      "tenhang": "Đậu hột loại 1",
+      "xuatxu": "Việt Nam",
+      "id": 13
+    },
+    {
+      "mahang": "DA07",
+      "tenhang": "Đậu Nành",
+      "xuatxu": "Việt Nam",
+      "id": 14
+    },
+    {
+      "mahang": "GA10",
+      "tenhang": "Gạo mầm",
+      "xuatxu": "Việt Nam",
+      "id": 15
+    },
+    {
+      "mahang": "GA11",
+      "tenhang": "Gạo huyết rồng",
+      "xuatxu": "Việt Nam",
+      "id": 16
+    },
+    {
+      "mahang": "NPV1",
+      "tenhang": "Nếp thơm NPV",
+      "xuatxu": "Việt Nam",
+      "id": 17
+    },
+    {
+      "mahang": "TT01",
+      "tenhang": "Tấm thơm",
+      "xuatxu": "Việt Nam",
+      "id": 18
+    },
+    {
+      "mahang": "BA01",
+      "tenhang": "Bao 5kg may",
+      "xuatxu": "Việt Nam",
+      "id": 19
+    },
+    {
+      "mahang": "BA02",
+      "tenhang": "Bao 10kg may",
+      "xuatxu": "Việt Nam",
+      "id": 20
+    },
+    {
+      "mahang": "BA03",
+      "tenhang": "Bao 5kg ống",
+      "xuatxu": "Việt Nam",
+      "id": 21
+    },
+    {
+      "mahang": "BA04",
+      "tenhang": "Bao 10kg ống",
+      "xuatxu": "Việt Nam",
+      "id": 22
+    },
+    {
+      "mahang": "NT03",
+      "tenhang": "Nai",
+      "xuatxu": "TL",
+      "id": 23
+    },
+    {
+      "mahang": "NS01",
+      "tenhang": "nếp Sáp",
+      "xuatxu": "Việt Nam",
+      "id": 24
+    },
+    {
+      "mahang": "GA14",
+      "tenhang": "Gạo SCam",
+      "xuatxu": "CPC",
+      "id": 25
+    },
+    {
+      "mahang": "GA04",
+      "tenhang": "Bạch Dương",
+      "xuatxu": "Việt Nam",
+      "id": 26
+    },
+    {
+      "mahang": "GA05",
+      "tenhang": "Thiên Long",
+      "xuatxu": "VN",
+      "id": 27
+    },
+    {
+      "mahang": "GA06",
+      "tenhang": "Phượng Hoàng",
+      "xuatxu": "VN",
+      "id": 28
+    },
+    {
+      "mahang": "GA07",
+      "tenhang": "Bắc Đẩu",
+      "xuatxu": "VN",
+      "id": 29
+    },
+    {
+      "mahang": "GA08",
+      "tenhang": "Gạo sóc",
+      "xuatxu": "CPC",
+      "id": 30
+    },
+    {
+      "mahang": "GA09",
+      "tenhang": "Gạo Rum",
+      "xuatxu": "CPC",
+      "id": 31
+    },
+    {
+      "mahang": "GA15",
+      "tenhang": "SĐ",
+      "xuatxu": "",
+      "id": 32
+    },
+    {
+      "mahang": "GA16",
+      "tenhang": "SH",
+      "id": 33
+    },
+    {
+      "mahang": "GA12",
+      "tenhang": "Bọc",
+      "id": 34
+    },
+    {
+      "mahang": "BN01",
+      "tenhang": "Bột nếp",
+      "id": 35
+    },
+    {
+      "mahang": "GA13",
+      "tenhang": "Gạo khô",
+      "id": 36
+    },
+    {
+      "mahang": "NT04",
+      "tenhang": "Thái việt",
+      "id": 37
+    },
+    {
+      "mahang": "ND01",
+      "tenhang": "Nếp đen",
+      "id": 38
+    },
+    {
+      "mahang": "DA08",
+      "tenhang": "Đậu phộng",
+      "id": 39
+    },
+    {
+      "mahang": "ME01",
+      "tenhang": "Mè ruột",
+      "xuatxu": "Việt Nam",
+      "id": 40
+    },
+    {
+      "mahang": "TT02",
+      "tenhang": "Tấm Sóc",
+      "id": 41
+    },
+    {
+      "mahang": "TT03",
+      "tenhang": "Tấm Rum",
+      "id": 42
+    },
+    {
+      "mahang": "TT04",
+      "tenhang": "Tấm khô",
+      "id": 43
+    },
+    {
+      "mahang": "BA05",
+      "tenhang": "Bao 5kg trong",
+      "id": 44
+    },
+    {
+      "mahang": "BA06",
+      "tenhang": "Bao 20kg trong",
+      "id": 45
+    },
+    {
+      "mahang": "BA07",
+      "tenhang": "Bao 25kg",
+      "id": 46
+    },
+    {
+      "mahang": "GA17",
+      "tenhang": "Gạo nhây",
+      "id": 47
+    },
+    {
+      "mahang": "GA18",
+      "tenhang": "HNT S2 25kg",
+      "id": 48
+    },
+    {
+      "mahang": "GA19",
+      "tenhang": "HNT S1 25kg",
+      "id": 49
+    },
+    {
+      "mahang": "BB01",
+      "tenhang": "Bắp xay",
+      "id": 50
+    },
+    {
+      "mahang": "GA20",
+      "tenhang": "Gạo thơm",
+      "id": 51
+    },
+    {
+      "mahang": "GA21",
+      "tenhang": "Lài",
+      "id": 52
+    },
+    {
+      "mahang": "TT05",
+      "tenhang": "Bò",
+      "id": 53
+    },
+    {
+      "mahang": "BA08",
+      "tenhang": "Chỉ trắng",
+      "id": 54
+    },
+    {
+      "mahang": "BA09",
+      "tenhang": "chỉ Màu",
+      "id": 55
+    },
+    {
+      "mahang": "BB02",
+      "tenhang": "Bánh Phồng",
+      "id": 56
+    },
+    {
+      "mahang": "BA10",
+      "tenhang": "Bao 10 Vàng (Jasmin Rice)",
+      "id": 57
+    },
+    {
+      "mahang": "GA22",
+      "tenhang": "Lài Sữa",
+      "id": 58
+    },
+    {
+      "mahang": "BA11",
+      "tenhang": "Bao 5kg trong",
+      "id": 59
+    },
+    {
+      "mahang": "DA09",
+      "tenhang": "Đậu đỏ",
+      "id": 60
+    },
+    {
+      "mahang": "BA12",
+      "tenhang": "Bao 5 Bóng",
+      "id": 61
+    }
+  ],
+  "dmkh": [
+    {
+      "id": 1,
+      "makh": "CH01",
+      "tenkh": "Anh Bình",
+      "diachi": "Chợ Châu Đốc",
+      "phone": "0919997227",
+      "tk": "001002003004005"
+    },
+    {
+      "id": 2,
+      "makh": "CH02",
+      "tenkh": "Dì Sinh",
+      "diachi": "Chợ Châu Đốc",
+      "phone": "0919997772",
+      "tk": "005002003004005"
+    },
+    {
+      "makh": "CD01",
+      "tenkh": "Anh Bình",
+      "diachi": "Chợ Cái Dầu",
+      "phone": "9837543932409",
+      "tk": "0099776655544",
+      "id": 3
+    },
+    {
+      "makh": "AP01",
+      "tenkh": "Chú Hui",
+      "diachi": "Chợ Long Bình",
+      "phone": "876756459i9",
+      "tk": "8885554333",
+      "id": 4
+    },
+    {
+      "makh": "NS01",
+      "tenkh": "Anh Kiệt",
+      "diachi": "Núi Sam",
+      "phone": "456575888",
+      "tk": "0009987766",
+      "id": 5
+    },
+    {
+      "makh": "VL01",
+      "tenkh": "Bán lẻ",
+      "diachi": "Tại nhà",
+      "phone": "87485987786",
+      "tk": "7688989090",
+      "id": 6
+    },
+    {
+      "makh": "AP02",
+      "tenkh": "Hậu Trang",
+      "diachi": "Đồng Ky",
+      "phone": "83948593895",
+      "tk": "23948395895843",
+      "id": 7
+    },
+    {
+      "makh": "AP03",
+      "tenkh": "Bích PH",
+      "diachi": "Phú Hữu",
+      "phone": "8398739593",
+      "tk": "387543856995",
+      "id": 8
+    },
+    {
+      "makh": "VG01",
+      "tenkh": "Thầy Minh (VG)",
+      "diachi": "Vĩnh Gia",
+      "phone": "38945743957",
+      "tk": "398579384985",
+      "id": 9
+    },
+    {
+      "makh": "CH03",
+      "tenkh": "Dinh Dưỡng",
+      "diachi": "Chợ nhà thờ",
+      "phone": "938458435989",
+      "tk": "3875483454938",
+      "id": 10
+    },
+    {
+      "makh": "CD02",
+      "tenkh": "Dì Me",
+      "diachi": "Khu CN Bình Long",
+      "phone": "384579347598",
+      "tk": "398745347589",
+      "id": 11
+    },
+    {
+      "makh": "LX01",
+      "tenkh": "Trang Thảo",
+      "diachi": "Long Xuyên",
+      "phone": "748593854794",
+      "tk": "3948534589843",
+      "id": 12
+    },
+    {
+      "makh": "VL02",
+      "tenkh": "Hẻm đồ chay út Vân",
+      "diachi": "Chợ Châu Đốc",
+      "id": 13
+    },
+    {
+      "makh": "GA01",
+      "tenkh": "Nhà 7 Giàu",
+      "diachi": "Vĩnh Mỹ",
+      "phone": "0392.434.634",
+      "id": 14
+    },
+    {
+      "makh": "VL03",
+      "tenkh": "Minh kem (hẻm trường phát)",
+      "diachi": "Lộ 2000",
+      "id": 15
+    },
+    {
+      "makh": "CH04",
+      "tenkh": "Tân Thời",
+      "diachi": "Chợ Châu Đốc",
+      "id": 16
+    },
+    {
+      "makh": "VL04",
+      "tenkh": "Cô Chi (K.Viên)",
+      "diachi": "Chùa Kỳ Viên",
+      "id": 17
+    },
+    {
+      "makh": "SG01",
+      "tenkh": "Dì Trinh",
+      "diachi": "Sài Gòn",
+      "id": 18
+    },
+    {
+      "makh": "CH05",
+      "tenkh": "Cô Thúy",
+      "diachi": "Châu Đốc",
+      "id": 19
+    },
+    {
+      "makh": "CH06",
+      "tenkh": "Dì Huệ FB",
+      "diachi": "Phường B",
+      "id": 20
+    },
+    {
+      "makh": "CC01",
+      "tenkh": "Vợ Vũ Móm",
+      "id": 21
+    },
+    {
+      "makh": "CH08",
+      "tenkh": "Hòa Hiệp",
+      "diachi": "Chợ Châu Đốc",
+      "id": 22
+    },
+    {
+      "makh": "CH07",
+      "tenkh": "Dì Tư FB",
+      "diachi": "Phường B",
+      "id": 23
+    },
+    {
+      "makh": "CH09",
+      "tenkh": "Chú Cầm",
+      "diachi": "Chợ Châu Đốc",
+      "id": 24
+    },
+    {
+      "makh": "CH10",
+      "tenkh": "Hớn Nguyên",
+      "diachi": "Chợ Châu Đốc",
+      "id": 25
+    },
+    {
+      "makh": "MK01",
+      "tenkh": "Dì Phượng",
+      "diachi": "Chợ Mỹ Đức",
+      "id": 26
+    },
+    {
+      "makh": "MK02",
+      "tenkh": "Nhứt Vân",
+      "diachi": "Chợ Mỹ Đức",
+      "id": 27
+    },
+    {
+      "makh": "HB01",
+      "tenkh": "Hai Đặng (HB)",
+      "diachi": "Hòa Lạc",
+      "id": 28
+    },
+    {
+      "makh": "KD01",
+      "tenkh": "Anh Phong -KD",
+      "diachi": "chợ Kinh Đào",
+      "id": 29
+    },
+    {
+      "makh": "CH11",
+      "tenkh": "chị Phước",
+      "diachi": "chợ Châu Đốc",
+      "id": 30
+    },
+    {
+      "makh": "CD03",
+      "tenkh": "Dì Liên",
+      "diachi": "chợ Cái Dầu",
+      "id": 31
+    },
+    {
+      "makh": "CH12",
+      "tenkh": "Dũ Hưng",
+      "diachi": "nhà Máy xay lúa",
+      "id": 32
+    },
+    {
+      "makh": "KA01",
+      "tenkh": "Hậu Bích",
+      "diachi": "chợ Khánh An",
+      "id": 33
+    },
+    {
+      "makh": "KA02",
+      "tenkh": "chị Hiệp",
+      "diachi": "chợ Khánh An",
+      "id": 34
+    },
+    {
+      "makh": "CG01",
+      "tenkh": "chú Trang",
+      "diachi": "Châu Giang",
+      "id": 35
+    },
+    {
+      "makh": "CG02",
+      "tenkh": "dì Tư (CG)",
+      "diachi": "Châu Giang",
+      "id": 36
+    },
+    {
+      "makh": "CH13",
+      "tenkh": "chị Thúy (xôi)",
+      "diachi": "chợ Châu Đốc",
+      "id": 37
+    },
+    {
+      "makh": "VL05",
+      "tenkh": "làm Võ Thành",
+      "id": 38
+    },
+    {
+      "makh": "VL06",
+      "tenkh": "cô Phước (Áo trắng)",
+      "diachi": "chợ Châu Đốc",
+      "id": 39
+    },
+    {
+      "makh": "CH14",
+      "tenkh": "cháo Su Su",
+      "diachi": "chợ Châu Đốc",
+      "id": 40
+    },
+    {
+      "makh": "CH15",
+      "tenkh": "cháo Panda",
+      "diachi": "chợ Châu Đốc",
+      "id": 41
+    },
+    {
+      "makh": "DK01",
+      "tenkh": "Tuấn Phượng",
+      "diachi": "Đồng Ky",
+      "id": 42
+    },
+    {
+      "makh": "DK02",
+      "tenkh": "Năm Tàu Hủ",
+      "diachi": "Đồng Ky",
+      "id": 43
+    },
+    {
+      "makh": "DK03",
+      "tenkh": "Thảo Nhiều",
+      "diachi": "Đồng Ky",
+      "id": 44
+    },
+    {
+      "makh": "LX02",
+      "tenkh": "chị Thế",
+      "diachi": "Long Xuyên",
+      "id": 45
+    },
+    {
+      "makh": "LB01",
+      "tenkh": "út Vĩnh",
+      "diachi": "chợ Long Bình",
+      "id": 46
+    },
+    {
+      "makh": "AP04",
+      "tenkh": "Phụng VHĐ",
+      "diachi": "Vĩnh Hội Đông",
+      "id": 47
+    },
+    {
+      "makh": "AP05",
+      "tenkh": "DÌ 5 C",
+      "diachi": "An Phú",
+      "id": 48
+    },
+    {
+      "makh": "CG03",
+      "tenkh": "Dì Thùy CG",
+      "diachi": "Châu Giang",
+      "id": 49
+    },
+    {
+      "makh": "CH16",
+      "tenkh": "Ý Mía",
+      "diachi": "Châu Đốc",
+      "id": 50
+    },
+    {
+      "makh": "NS02",
+      "tenkh": "chị Thủy NS",
+      "diachi": "Núi Sam",
+      "id": 51
+    },
+    {
+      "makh": "CH17",
+      "tenkh": "trà Trang",
+      "diachi": "chợ  Châu Đốc",
+      "id": 52
+    },
+    {
+      "makh": "CH18",
+      "tenkh": "Mỹ Mỹ",
+      "diachi": "chợ Châu Đốc",
+      "id": 53
+    },
+    {
+      "makh": "CH19",
+      "tenkh": "chú Thanh (Viếng)",
+      "diachi": "chợ Châu Đốc",
+      "id": 54
+    },
+    {
+      "makh": "PL01",
+      "tenkh": "út Đẹp",
+      "diachi": "đò kênh 5 xã",
+      "id": 55
+    },
+    {
+      "makh": "PL02",
+      "tenkh": "Dì Hiểm",
+      "diachi": "đò kênh 5 xã",
+      "id": 56
+    },
+    {
+      "makh": "PL03",
+      "tenkh": "dì Nghĩa",
+      "diachi": "đò kênh 5 xã",
+      "id": 57
+    },
+    {
+      "makh": "AP06",
+      "tenkh": "chị Bích AP",
+      "diachi": "chợ Nông sản An Phú",
+      "id": 58
+    },
+    {
+      "makh": "VD01",
+      "tenkh": "Đoàn Dự",
+      "diachi": "Vĩnh Điều",
+      "id": 59
+    },
+    {
+      "makh": "NS03",
+      "tenkh": "chị Mơ",
+      "diachi": "chợ Vĩnh Đông Núi Sam",
+      "id": 60
+    },
+    {
+      "makh": "VL07",
+      "tenkh": "anh Khưu",
+      "diachi": "Vĩnh Ngươn",
+      "id": 61
+    },
+    {
+      "makh": "VD02",
+      "tenkh": "chị Thanh",
+      "diachi": "Vĩnh Điều",
+      "id": 62
+    },
+    {
+      "makh": "CH20",
+      "tenkh": "Hoàng QL - FB",
+      "diachi": "Phường B",
+      "id": 63
+    },
+    {
+      "makh": "VL08",
+      "tenkh": "Nhã Phương",
+      "diachi": "",
+      "id": 64
+    },
+    {
+      "makh": "VL09",
+      "tenkh": "Mỹ uốn tóc",
+      "diachi": "Hẻm trường Hùng Vương",
+      "id": 65
+    },
+    {
+      "makh": "VL10",
+      "tenkh": "dì Huệ cơm tấm",
+      "diachi": "đường núi Châu Đốc",
+      "id": 66
+    },
+    {
+      "makh": "VL11",
+      "tenkh": "vợ Thủ",
+      "diachi": "chợ Châu Đốc",
+      "id": 67
+    },
+    {
+      "makh": "CH21",
+      "tenkh": "Trang Dung",
+      "diachi": "chợ Châu Đốc",
+      "id": 68
+    },
+    {
+      "makh": "CH22",
+      "tenkh": "chị Bé Hai",
+      "diachi": "Cử Trị",
+      "id": 69
+    },
+    {
+      "makh": "VL12",
+      "tenkh": "ghe Quệt",
+      "diachi": "ghe Miên",
+      "id": 70
+    },
+    {
+      "makh": "DK04",
+      "tenkh": "Hai Kha",
+      "diachi": "Đồng Ky",
+      "id": 71
+    },
+    {
+      "makh": "VL13",
+      "tenkh": "cầu Chắc Ri",
+      "diachi": "Vĩnh Ngươn",
+      "id": 72
+    },
+    {
+      "makh": "CH23",
+      "tenkh": "117 Trương Định",
+      "diachi": "chợ Nhà thờ",
+      "id": 73
+    },
+    {
+      "makh": "LB02",
+      "tenkh": "Thùy Dương",
+      "diachi": "chợ Long Bình",
+      "id": 74
+    },
+    {
+      "makh": "VL14",
+      "tenkh": "cà phê Vân",
+      "diachi": "chợ Châu Đốc",
+      "id": 75
+    },
+    {
+      "makh": "KD02",
+      "tenkh": "chú Nho",
+      "diachi": "Kinh Đào",
+      "id": 76
+    },
+    {
+      "makh": "KD03",
+      "tenkh": "anh Tùng KĐ",
+      "diachi": "Kinh Đào",
+      "id": 77
+    },
+    {
+      "makh": "LX03",
+      "tenkh": "chị Vân (Trang Dung)",
+      "diachi": "chợ Bình Khánh - Long Xuyên",
+      "id": 78
+    },
+    {
+      "makh": "CH24",
+      "tenkh": "A Sim",
+      "diachi": "ngã tư đường Núi - trường đua",
+      "id": 79
+    },
+    {
+      "makh": "AP07",
+      "tenkh": "Tuyền (gạo)",
+      "diachi": "Vĩnh Hội Đông",
+      "id": 80
+    },
+    {
+      "makh": "BD01",
+      "tenkh": "chị Vân",
+      "diachi": "Bắc Đai",
+      "id": 81
+    },
+    {
+      "makh": "BD02",
+      "tenkh": "Phương GM",
+      "diachi": "Bắc Đai",
+      "id": 82
+    },
+    {
+      "makh": "TB01",
+      "tenkh": "Dì Đầm",
+      "diachi": "chùa Phật Nằm",
+      "id": 83
+    },
+    {
+      "makh": "CH25",
+      "tenkh": "em Dì sang",
+      "diachi": "chợ Châu Đốc",
+      "id": 84
+    },
+    {
+      "makh": "DK05",
+      "tenkh": "dì Suối",
+      "diachi": "Đồng Ky",
+      "id": 85
+    },
+    {
+      "makh": "KD04",
+      "tenkh": "chị Hạnh - dì 2 Hừng",
+      "diachi": "chợ Kinh Đào",
+      "id": 86
+    },
+    {
+      "makh": "CH26",
+      "tenkh": "dì Ngà",
+      "diachi": "chợ Châu Đốc",
+      "id": 87
+    },
+    {
+      "makh": "VL15",
+      "tenkh": "5 Ken",
+      "diachi": "Vĩnh Ngươn",
+      "id": 88
+    },
+    {
+      "makh": "PP01",
+      "tenkh": "5 Lợi",
+      "diachi": "Phú Hữu",
+      "id": 89
+    },
+    {
+      "makh": "CH27",
+      "tenkh": "chú Tuấn thợ nấu",
+      "diachi": "Hẻm miếu ông Hàn",
+      "id": 90
+    },
+    {
+      "makh": "TC01",
+      "tenkh": "dì Bình - Lê Chánh",
+      "diachi": "Lê Chánh",
+      "id": 91
+    },
+    {
+      "makh": "ST01",
+      "tenkh": "dì Thủy - ST",
+      "diachi": "Sóc Trăng",
+      "id": 92
+    },
+    {
+      "makh": "VL16",
+      "tenkh": "5 Chí - bán cơm",
+      "diachi": "chợ Châu Đốc",
+      "id": 93
+    },
+    {
+      "makh": "CH28",
+      "tenkh": "nhà trọ Khánh Toàn",
+      "diachi": "ngã tư đường núi",
+      "id": 94
+    },
+    {
+      "makh": "CH29",
+      "tenkh": "dì Vân Triều",
+      "diachi": "chợ Châu Đốc",
+      "id": 95
+    },
+    {
+      "makh": "NS04",
+      "tenkh": "chú Những",
+      "diachi": "Núi Sam",
+      "id": 96
+    },
+    {
+      "makh": "VL17",
+      "tenkh": "Thuận Phượng",
+      "diachi": "chợ Châu Đốc",
+      "id": 97
+    },
+    {
+      "makh": "CC02",
+      "tenkh": "dì 3 Nha",
+      "diachi": "Cồn Tiên - An Phú",
+      "id": 98
+    },
+    {
+      "makh": "VD03",
+      "tenkh": "dì Đèo",
+      "diachi": "Đồn biên phòng Vĩnh Điều",
+      "id": 99
+    },
+    {
+      "makh": "VL18",
+      "tenkh": "Sáu Linh",
+      "diachi": "hẻm cầu Sắt",
+      "id": 100
+    },
+    {
+      "makh": "AP08",
+      "tenkh": "dì Ba cháo cá",
+      "diachi": "bến đò Hà Bao",
+      "id": 101
+    },
+    {
+      "makh": "VL19",
+      "tenkh": "dì Nèo",
+      "diachi": "đường Núi",
+      "id": 102
+    },
+    {
+      "makh": "VL20",
+      "tenkh": "VLXD Kim Hùng",
+      "diachi": "cử trị",
+      "id": 103
+    },
+    {
+      "makh": "VL21",
+      "tenkh": "A Quầy",
+      "diachi": "đường núi",
+      "id": 104
+    },
+    {
+      "makh": "CC03",
+      "tenkh": "Y Sỹ Dũng",
+      "diachi": "Cồn  Tiên",
+      "id": 105
+    },
+    {
+      "makh": "PT01",
+      "tenkh": "anh Kiệt - xe tải",
+      "diachi": "Cái Đầm",
+      "id": 106
+    },
+    {
+      "makh": "CH30",
+      "tenkh": "Tiền Thạnh",
+      "diachi": "chợ Châu Đốc",
+      "id": 107
+    },
+    {
+      "makh": "VL22",
+      "tenkh": "cơm Diễm My",
+      "diachi": "chợ Châu Đốc",
+      "id": 108
+    },
+    {
+      "makh": "VL23",
+      "tenkh": "139 Pasteur",
+      "diachi": "Đầu đường",
+      "id": 109
+    },
+    {
+      "makh": "VL24",
+      "tenkh": "Quán Sò 10 Thu",
+      "diachi": "đường Cồn Tiên",
+      "id": 110
+    },
+    {
+      "makh": "VL25",
+      "tenkh": "Ba Chia",
+      "diachi": "hẻm đường Cồn Tiên",
+      "id": 111
+    },
+    {
+      "makh": "CH31",
+      "tenkh": "chị Tú - phường đội",
+      "diachi": "chợ Phường Đội",
+      "id": 112
+    },
+    {
+      "makh": "VL26",
+      "tenkh": "ghe Ba Kiệt cầu chuối",
+      "diachi": "chợ Châu Đốc",
+      "id": 113
+    },
+    {
+      "makh": "CH32",
+      "tenkh": "Út Vân",
+      "diachi": "chợ Châu Đốc",
+      "id": 114
+    },
+    {
+      "makh": "VL27",
+      "tenkh": "Phước Lợi",
+      "diachi": "chợ Châu Đốc",
+      "id": 115
+    },
+    {
+      "makh": "VL28",
+      "tenkh": "Xe Phương",
+      "diachi": "Bãi Bửu",
+      "id": 116
+    },
+    {
+      "makh": "KD05",
+      "tenkh": "Nguyệt KĐ",
+      "diachi": "chợ Kinh Đào",
+      "id": 117
+    },
+    {
+      "makh": "NS05",
+      "tenkh": "Nhà trọ Thùy Dung",
+      "diachi": "Núi Sam",
+      "id": 118
+    },
+    {
+      "makh": "VL29",
+      "tenkh": "Nội siêu quậy",
+      "diachi": "Châu Đốc",
+      "id": 119
+    },
+    {
+      "makh": "VL30",
+      "tenkh": "Anh Bó",
+      "diachi": "chợ Châu Đốc",
+      "id": 120
+    },
+    {
+      "makh": "HB02",
+      "tenkh": "Út Bình",
+      "diachi": "Hòa Lạc",
+      "id": 121
+    },
+    {
+      "makh": "CH33",
+      "tenkh": "Dì 5 Mỹ",
+      "diachi": "chợ Châu Đốc",
+      "id": 122
+    },
+    {
+      "makh": "KD06",
+      "tenkh": "chị Hồng - KĐ",
+      "diachi": "chợ Kinh Đào",
+      "id": 123
+    },
+    {
+      "makh": "PP02",
+      "tenkh": "Hai Trị - PH",
+      "diachi": "Phú Hữu",
+      "id": 124
+    },
+    {
+      "makh": "PP03",
+      "tenkh": "Bích - PH",
+      "diachi": "Phú Hữu",
+      "id": 125
+    },
+    {
+      "makh": "PP04",
+      "tenkh": "Giáo Minh - PH",
+      "diachi": "Phú Hữu",
+      "id": 126
+    },
+    {
+      "makh": "VL31",
+      "tenkh": "Dì Tạo",
+      "id": 127
+    },
+    {
+      "makh": "CH34",
+      "tenkh": "Dì Sang",
+      "diachi": "chợ Châu Đốc",
+      "id": 128
+    },
+    {
+      "makh": "VL32",
+      "tenkh": "Xe Linh - CT",
+      "diachi": "Cần Thơ",
+      "id": 129
+    },
+    {
+      "makh": "VL33",
+      "tenkh": "Sang - Cầu Chuối",
+      "diachi": "chợ Châu Đốc",
+      "id": 130
+    },
+    {
+      "makh": "VD04",
+      "tenkh": "Xe Gắn",
+      "diachi": "Vĩnh Điều",
+      "id": 131
+    },
+    {
+      "makh": "NS06",
+      "tenkh": "Cháu Út Lửa",
+      "diachi": "Núi Sam",
+      "id": 132
+    },
+    {
+      "makh": "VL34",
+      "tenkh": "Dì Thay - KĐ",
+      "diachi": "Kinh Đào",
+      "id": 133
+    },
+    {
+      "makh": "CH35",
+      "tenkh": "Nhà màu xanh",
+      "diachi": "Châu Đốc Khóm 4",
+      "id": 134
+    },
+    {
+      "makh": "AP09",
+      "tenkh": "Huê Mậu",
+      "diachi": "chợ An Phú",
+      "id": 135
+    },
+    {
+      "makh": "VL35",
+      "tenkh": "Má Mỹ - Phước Quảng",
+      "id": 136
+    },
+    {
+      "makh": "VL36",
+      "tenkh": "Kiệt Cầu Tàu",
+      "diachi": "chợ  Chuối Châu Đốc",
+      "id": 137
+    },
+    {
+      "makh": "CH36",
+      "tenkh": "Dì Tư Dung",
+      "diachi": "Châu Đốc",
+      "id": 138
+    },
+    {
+      "makh": "VL37",
+      "tenkh": "Dì Lẻ",
+      "diachi": "Đầu đường",
+      "id": 139
+    },
+    {
+      "makh": "VD05",
+      "tenkh": "Đoàn Dự -VĐ",
+      "diachi": "Vĩnh Điều",
+      "id": 140
+    },
+    {
+      "makh": "VL38",
+      "tenkh": "Cà Phê Trang - VM",
+      "diachi": "Chợ Vĩnh Mỹ",
+      "id": 141
+    },
+    {
+      "makh": "VL39",
+      "tenkh": "Thu Phận",
+      "diachi": "Nhà Nhã Phương",
+      "id": 142
+    },
+    {
+      "makh": "DK06",
+      "tenkh": "Dì Thơ - ĐK",
+      "diachi": "Đồng Ky",
+      "id": 143
+    },
+    {
+      "makh": "NS07",
+      "tenkh": "Dì Duyên - NS",
+      "diachi": "Núi Sam",
+      "id": 144
+    },
+    {
+      "makh": "VL40",
+      "tenkh": "Rượu Chuối Thanh Hương",
+      "diachi": "FB",
+      "id": 145
+    },
+    {
+      "makh": "PP05",
+      "tenkh": "Hai Học - PH",
+      "diachi": "Phú Hữu",
+      "id": 146
+    },
+    {
+      "makh": "AP10",
+      "tenkh": "thầy Giáo Ửng",
+      "diachi": "UBND Đa Phước",
+      "id": 147
+    },
+    {
+      "makh": "VL41",
+      "tenkh": "Đò út Hiệp",
+      "diachi": "chợ Cá",
+      "id": 148
+    },
+    {
+      "makh": "CH37",
+      "tenkh": "dì Ánh - FB",
+      "diachi": "chợ Phường B",
+      "id": 149
+    },
+    {
+      "makh": "VL42",
+      "tenkh": "Bún Bò Huế",
+      "diachi": "Phường B",
+      "id": 150
+    },
+    {
+      "makh": "TC02",
+      "tenkh": "Cô Hoa - TC",
+      "diachi": "cầu sắt số 5",
+      "id": 151
+    },
+    {
+      "makh": "CH38",
+      "tenkh": "Xôi Cha",
+      "id": 152
+    },
+    {
+      "makh": "AP11",
+      "tenkh": "chú 10 O",
+      "diachi": "Hà Bao",
+      "id": 153
+    },
+    {
+      "makh": "MK03",
+      "tenkh": "Dì Ánh Hoa",
+      "diachi": "Mỹ Đức",
+      "id": 154
+    },
+    {
+      "makh": "CH39",
+      "tenkh": "Dì Tý Xôi",
+      "diachi": "chợ Châu Đốc",
+      "id": 155
+    },
+    {
+      "makh": "KA03",
+      "tenkh": "Bích Duy",
+      "diachi": "Khánh An",
+      "id": 156
+    },
+    {
+      "makh": "VL43",
+      "tenkh": "Hổ - Toản",
+      "diachi": "công trình công cộng",
+      "id": 157
+    },
+    {
+      "makh": "CC04",
+      "tenkh": "Vân trùm sò",
+      "diachi": "Cồn Tiên",
+      "id": 158
+    },
+    {
+      "makh": "PH01",
+      "tenkh": "Kim Vui",
+      "diachi": "cây xăng Thành Tựu - Phước Hưng",
+      "id": 159
+    },
+    {
+      "makh": "CH40",
+      "tenkh": "chị Thủy - chợ gạo",
+      "diachi": "chợ Châu Đốc",
+      "id": 160
+    },
+    {
+      "makh": "VL44",
+      "tenkh": "Chú Tài thuế",
+      "diachi": "đầu đường",
+      "id": 161
+    },
+    {
+      "makh": "VD06",
+      "tenkh": "Chuyến - Đầm chích",
+      "diachi": "Vĩnh Điều",
+      "id": 162
+    },
+    {
+      "makh": "KD07",
+      "tenkh": "Dì Mài",
+      "diachi": "chợ Nam Châu Đốc",
+      "id": 163
+    },
+    {
+      "makh": "MK04",
+      "tenkh": "chị Sương - KH",
+      "diachi": "Khánh Hòa",
+      "id": 164
+    },
+    {
+      "makh": "TB02",
+      "tenkh": "Dì Hai Đặng - TB",
+      "diachi": "chợ Tịnh Biên",
+      "id": 165
+    },
+    {
+      "makh": "VL45",
+      "tenkh": "Hương Hậu",
+      "id": 166
+    },
+    {
+      "makh": "VL46",
+      "tenkh": "Cô Thơ - Đình",
+      "diachi": "chợ Châu Đốc",
+      "id": 167
+    },
+    {
+      "makh": "VL47",
+      "tenkh": "cô Thi",
+      "diachi": "trường Nguyễn Huệ",
+      "id": 168
+    },
+    {
+      "makh": "VL48",
+      "tenkh": "Ý Lìn",
+      "diachi": "châu Đốc",
+      "id": 169
+    },
+    {
+      "makh": "VL49",
+      "tenkh": "Hiền Sơn Xe",
+      "id": 170
+    }
+  ],
+  "hoadon": [
+    {
+      "id": 2,
+      "mahoadon": "10112018001",
+      "makh": "VL01",
+      "tonghoadon": 785000,
+      "tratien": 785000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 3,
+      "mahoadon": "10112018002",
+      "makh": "AP02",
+      "tonghoadon": 4510000,
+      "tratien": 0,
+      "conlai": 4510000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 4,
+      "mahoadon": "10112018003",
+      "makh": "VG01",
+      "tonghoadon": 1570000,
+      "tratien": 0,
+      "conlai": 1570000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 5,
+      "mahoadon": "10112018004",
+      "makh": "CH03",
+      "tonghoadon": 528000,
+      "tratien": "528000",
+      "conlai": 0,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 6,
+      "mahoadon": "10112018005",
+      "makh": "CD02",
+      "tonghoadon": 1540000,
+      "tratien": 0,
+      "conlai": 1540000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 7,
+      "mahoadon": "10112018006",
+      "makh": "LX01",
+      "tonghoadon": 3660000,
+      "tratien": 0,
+      "conlai": 3660000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 8,
+      "mahoadon": "10112018007",
+      "makh": "VL02",
+      "tonghoadon": 424000,
+      "tratien": 0,
+      "conlai": 424000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 9,
+      "mahoadon": "10112018008",
+      "makh": "AP03",
+      "tonghoadon": 2765000,
+      "tratien": 2765000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 10,
+      "mahoadon": "10112018009",
+      "makh": "VL01",
+      "tonghoadon": 270000,
+      "tratien": 270000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 11,
+      "mahoadon": "10112018010",
+      "makh": "GA01",
+      "tonghoadon": 12100000,
+      "tratien": 12100000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 12,
+      "mahoadon": "10112018011",
+      "makh": "VL03",
+      "tonghoadon": 220000,
+      "tratien": 220000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 13,
+      "mahoadon": "11112018001",
+      "makh": "CH05",
+      "tonghoadon": 550000,
+      "tratien": "550000",
+      "conlai": 0,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 14,
+      "mahoadon": "10112018012",
+      "makh": "CH04",
+      "tonghoadon": 1370000,
+      "tratien": 1370000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 15,
+      "mahoadon": "10112018013",
+      "makh": "VL05",
+      "tonghoadon": 320000,
+      "tratien": 0,
+      "conlai": 320000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 16,
+      "mahoadon": "10112018014",
+      "makh": "VL01",
+      "tonghoadon": 650000,
+      "tratien": 650000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 17,
+      "mahoadon": "10112018015",
+      "makh": "CC01",
+      "tonghoadon": 700000,
+      "tratien": 700000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 18,
+      "mahoadon": "10112018016",
+      "makh": "CH06",
+      "tonghoadon": 880000,
+      "tratien": 0,
+      "conlai": 880000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 19,
+      "mahoadon": "10112018017",
+      "makh": "CH02",
+      "tonghoadon": 625000,
+      "tratien": 0,
+      "conlai": 625000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 20,
+      "mahoadon": "10112018018",
+      "makh": "CH02",
+      "tonghoadon": 760000,
+      "tratien": 0,
+      "conlai": 760000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 21,
+      "mahoadon": "10112018019",
+      "makh": "SG01",
+      "tonghoadon": 700000,
+      "tratien": 0,
+      "conlai": 700000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 22,
+      "mahoadon": "10112018020",
+      "makh": "CH08",
+      "tonghoadon": 880000,
+      "tratien": 0,
+      "conlai": 880000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 23,
+      "mahoadon": "10112018021",
+      "makh": "VL04",
+      "tonghoadon": 480000,
+      "tratien": 480000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 24,
+      "mahoadon": "11112018002",
+      "makh": "CH07",
+      "tonghoadon": 1040000,
+      "tratien": 1040000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 25,
+      "mahoadon": "11112018003",
+      "makh": "CH07",
+      "tonghoadon": 1070000,
+      "tratien": 1070000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 26,
+      "mahoadon": "11112018004",
+      "makh": "CH09",
+      "tonghoadon": 1760000,
+      "tratien": 0,
+      "conlai": 1760000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 27,
+      "mahoadon": "11112018005",
+      "makh": "KD01",
+      "tonghoadon": 10460000,
+      "tratien": "23500000",
+      "conlai": -13040000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 28,
+      "mahoadon": "11112018006",
+      "makh": "CH12",
+      "tonghoadon": 1200000,
+      "tratien": 1200000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 29,
+      "mahoadon": "11112018007",
+      "makh": "CH01",
+      "tonghoadon": 1950000,
+      "tratien": 0,
+      "conlai": 1950000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 30,
+      "mahoadon": "11112018008",
+      "makh": "CD03",
+      "tonghoadon": 5040000,
+      "tratien": 0,
+      "conlai": 5040000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 31,
+      "mahoadon": "11112018009",
+      "makh": "LX02",
+      "tonghoadon": 7800000,
+      "tratien": 0,
+      "conlai": 7800000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 32,
+      "mahoadon": "11112018010",
+      "makh": "LB01",
+      "tonghoadon": 330000,
+      "tratien": 0,
+      "conlai": 330000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 33,
+      "mahoadon": "11112018011",
+      "makh": "AP04",
+      "tonghoadon": 265000,
+      "tratien": 265000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 34,
+      "mahoadon": "11112018012",
+      "makh": "AP05",
+      "tonghoadon": 3400000,
+      "tratien": 3400000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 35,
+      "mahoadon": "11112018013",
+      "makh": "KA01",
+      "tonghoadon": 880000,
+      "tratien": 0,
+      "conlai": 880000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 36,
+      "mahoadon": "11112018014",
+      "makh": "CG01",
+      "tonghoadon": 929000,
+      "tratien": 929000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 37,
+      "mahoadon": "11112018015",
+      "makh": "CH16",
+      "tonghoadon": 550000,
+      "tratien": 0,
+      "conlai": 550000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 38,
+      "mahoadon": "11112018016",
+      "makh": "CH13",
+      "tonghoadon": 570000,
+      "tratien": 570000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 39,
+      "mahoadon": "11112018017",
+      "makh": "HB01",
+      "tonghoadon": 850000,
+      "tratien": 850000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 40,
+      "mahoadon": "11112018018",
+      "makh": "MK01",
+      "tonghoadon": 7868000,
+      "tratien": 7868000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 41,
+      "mahoadon": "11112018019",
+      "makh": "NS02",
+      "tonghoadon": 1510000,
+      "tratien": 0,
+      "conlai": 1510000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 42,
+      "mahoadon": "11112018020",
+      "makh": "CH10",
+      "tonghoadon": 550000,
+      "tratien": 0,
+      "conlai": 550000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 43,
+      "mahoadon": "11112018021",
+      "makh": "CH01",
+      "tonghoadon": 5320000,
+      "tratien": "0",
+      "conlai": 5320000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 44,
+      "mahoadon": "11112018022",
+      "makh": "CH17",
+      "tonghoadon": 250000,
+      "tratien": 0,
+      "conlai": 250000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 45,
+      "mahoadon": "11112018023",
+      "makh": "CH14",
+      "tonghoadon": 530000,
+      "tratien": 0,
+      "conlai": 530000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 46,
+      "mahoadon": "11112018024",
+      "makh": "CH19",
+      "tonghoadon": 1680000,
+      "tratien": 0,
+      "conlai": 1680000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 47,
+      "mahoadon": "12112018001",
+      "makh": "PL01",
+      "tonghoadon": 10250000,
+      "tratien": 10250000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 48,
+      "mahoadon": "12112018002",
+      "makh": "AP06",
+      "tonghoadon": 4525000,
+      "tratien": 10000000,
+      "conlai": -5475000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 49,
+      "mahoadon": "12112018003",
+      "makh": "CD01",
+      "tonghoadon": 5360000,
+      "tratien": 0,
+      "conlai": 5360000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 50,
+      "mahoadon": "12112018004",
+      "makh": "CD03",
+      "tonghoadon": 6730000,
+      "tratien": 0,
+      "conlai": 6730000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 51,
+      "mahoadon": "12112018005",
+      "makh": "CH11",
+      "tonghoadon": 520000,
+      "tratien": 520000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 52,
+      "mahoadon": "12112018006",
+      "makh": "VD01",
+      "tonghoadon": 580000,
+      "tratien": 580000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 53,
+      "mahoadon": "12112018007",
+      "makh": "NS03",
+      "tonghoadon": 510000,
+      "tratien": 510000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 54,
+      "mahoadon": "12112018008",
+      "makh": "CH07",
+      "tonghoadon": 680000,
+      "tratien": 680000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 55,
+      "mahoadon": "12112018009",
+      "makh": "VL07",
+      "tonghoadon": 520000,
+      "tratien": 520000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 56,
+      "mahoadon": "12112018010",
+      "makh": "VD02",
+      "tonghoadon": 1656000,
+      "tratien": 0,
+      "conlai": 1656000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 57,
+      "mahoadon": "12112018011",
+      "makh": "CH20",
+      "tonghoadon": 1090000,
+      "tratien": 1090000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 58,
+      "mahoadon": "12112018012",
+      "makh": "VL08",
+      "tonghoadon": 300000,
+      "tratien": 300000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 59,
+      "mahoadon": "12112018013",
+      "makh": "VL09",
+      "tonghoadon": 265000,
+      "tratien": 265000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 60,
+      "mahoadon": "12112018014",
+      "makh": "VL10",
+      "tonghoadon": 650000,
+      "tratien": 650000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 61,
+      "mahoadon": "12112018015",
+      "makh": "LX02",
+      "tonghoadon": 4200000,
+      "tratien": 0,
+      "conlai": 4200000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 62,
+      "mahoadon": "12112018016",
+      "makh": "VL11",
+      "tonghoadon": 590000,
+      "tratien": 0,
+      "conlai": 590000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 63,
+      "mahoadon": "12112018017",
+      "makh": "NS01",
+      "tonghoadon": 570000,
+      "tratien": 570000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 64,
+      "mahoadon": "12112018018",
+      "makh": "CH21",
+      "tonghoadon": 840000,
+      "tratien": 0,
+      "conlai": 840000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 65,
+      "mahoadon": "12112018019",
+      "makh": "VL01",
+      "tonghoadon": 400000,
+      "tratien": 400000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 66,
+      "mahoadon": "12112018020",
+      "makh": "CH22",
+      "tonghoadon": 1900000,
+      "tratien": 1900000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 67,
+      "mahoadon": "12112018021",
+      "makh": "VL12",
+      "tonghoadon": 325000,
+      "tratien": 325000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 68,
+      "mahoadon": "12112018022",
+      "makh": "VL01",
+      "tonghoadon": 580000,
+      "tratien": 580000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 69,
+      "mahoadon": "13112018001",
+      "makh": "CH22",
+      "tonghoadon": 880000,
+      "tratien": 0,
+      "conlai": 880000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 70,
+      "mahoadon": "13112018002",
+      "makh": "DK04",
+      "tonghoadon": 850000,
+      "tratien": 850000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 71,
+      "mahoadon": "13112018003",
+      "makh": "VL13",
+      "tonghoadon": 1080000,
+      "tratien": 1080000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 72,
+      "mahoadon": "13112018004",
+      "makh": "AP01",
+      "tonghoadon": 2500000,
+      "tratien": 0,
+      "conlai": 2500000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 73,
+      "mahoadon": "13112018005",
+      "makh": "LX01",
+      "tonghoadon": 6100000,
+      "tratien": 0,
+      "conlai": 6100000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 74,
+      "mahoadon": "13112018006",
+      "makh": "VL01",
+      "tonghoadon": 530000,
+      "tratien": 530000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 75,
+      "mahoadon": "13112018007",
+      "makh": "CH23",
+      "tonghoadon": 1350000,
+      "tratien": 1350000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 76,
+      "mahoadon": "13112018008",
+      "makh": "LB02",
+      "tonghoadon": 10000000,
+      "tratien": 0,
+      "conlai": 10000000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 77,
+      "mahoadon": "13112018009",
+      "makh": "CH03",
+      "tonghoadon": 528000,
+      "tratien": 528000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 78,
+      "mahoadon": "13112018010",
+      "makh": "VL14",
+      "tonghoadon": 200000,
+      "tratien": 200000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 79,
+      "mahoadon": "13112018011",
+      "makh": "KA01",
+      "tonghoadon": 1200000,
+      "tratien": 0,
+      "conlai": 1200000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 80,
+      "mahoadon": "13112018012",
+      "makh": "CD03",
+      "tonghoadon": 3540000,
+      "tratien": 0,
+      "conlai": 3540000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 81,
+      "mahoadon": "13112018013",
+      "makh": "KD02",
+      "tonghoadon": 4960000,
+      "tratien": 0,
+      "conlai": 4960000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 82,
+      "mahoadon": "13112018014",
+      "makh": "NS03",
+      "tonghoadon": 1140000,
+      "tratien": 0,
+      "conlai": 1140000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 83,
+      "mahoadon": "13112018015",
+      "makh": "CH24",
+      "tonghoadon": 3620000,
+      "tratien": 0,
+      "conlai": 3620000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 84,
+      "mahoadon": "13112018016",
+      "makh": "AP07",
+      "tonghoadon": 3600000,
+      "tratien": 0,
+      "conlai": 3600000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 85,
+      "mahoadon": "13112018017",
+      "makh": "BD02",
+      "tonghoadon": 5800000,
+      "tratien": 5800000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 86,
+      "mahoadon": "13112018018",
+      "makh": "SG01",
+      "tonghoadon": 750000,
+      "tratien": 0,
+      "conlai": 750000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 87,
+      "mahoadon": "13112018019",
+      "makh": "CH14",
+      "tonghoadon": 510000,
+      "tratien": 510000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 88,
+      "mahoadon": "13112018020",
+      "makh": "TB01",
+      "tonghoadon": 1100000,
+      "tratien": 0,
+      "conlai": 1100000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 89,
+      "mahoadon": "13112018021",
+      "makh": "VL01",
+      "tonghoadon": 275000,
+      "tratien": 275000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 90,
+      "mahoadon": "13112018022",
+      "makh": "CG01",
+      "tonghoadon": 610000,
+      "tratien": 610000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 91,
+      "mahoadon": "14112018001",
+      "makh": "KA01",
+      "tonghoadon": 2250000,
+      "tratien": 0,
+      "conlai": 2250000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 92,
+      "mahoadon": "14112018002",
+      "makh": "CH25",
+      "tonghoadon": 1060000,
+      "tratien": 1060000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 93,
+      "mahoadon": "14112018003",
+      "makh": "CG02",
+      "tonghoadon": 3455000,
+      "tratien": 3000000,
+      "conlai": 455000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 94,
+      "mahoadon": "14112018004",
+      "makh": "VL01",
+      "tonghoadon": 270000,
+      "tratien": 270000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 95,
+      "mahoadon": "14112018005",
+      "makh": "CH19",
+      "tonghoadon": 550000,
+      "tratien": 0,
+      "conlai": 550000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 96,
+      "mahoadon": "14112018006",
+      "makh": "DK05",
+      "tonghoadon": 270000,
+      "tratien": 270000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 97,
+      "mahoadon": "14112018007",
+      "makh": "KD04",
+      "tonghoadon": 1425000,
+      "tratien": 1425000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 98,
+      "mahoadon": "14112018008",
+      "makh": "CH26",
+      "tonghoadon": 1975000,
+      "tratien": 0,
+      "conlai": 1975000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 99,
+      "mahoadon": "14112018009",
+      "makh": "VL15",
+      "tonghoadon": 426000,
+      "tratien": 426000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 100,
+      "mahoadon": "14112018010",
+      "makh": "PP01",
+      "tonghoadon": 2170000,
+      "tratien": 1070000,
+      "conlai": 1100000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 101,
+      "mahoadon": "14112018011",
+      "makh": "CH27",
+      "tonghoadon": 780000,
+      "tratien": 780000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 102,
+      "mahoadon": "14112018012",
+      "makh": "TC01",
+      "tonghoadon": 1220000,
+      "tratien": 0,
+      "conlai": 1220000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 103,
+      "mahoadon": "14112018013",
+      "makh": "ST01",
+      "tonghoadon": 540000,
+      "tratien": 0,
+      "conlai": 540000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 104,
+      "mahoadon": "14112018014",
+      "makh": "CH12",
+      "tonghoadon": 1400000,
+      "tratien": 1400000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 105,
+      "mahoadon": "14112018015",
+      "makh": "MK01",
+      "tonghoadon": 1400000,
+      "tratien": 1400000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 106,
+      "mahoadon": "14112018016",
+      "makh": "VL16",
+      "tonghoadon": 160000,
+      "tratien": 160000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 107,
+      "mahoadon": "14112018017",
+      "makh": "CH28",
+      "tonghoadon": 900000,
+      "tratien": 900000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 108,
+      "mahoadon": "14112018018",
+      "makh": "CH29",
+      "tonghoadon": 1115000,
+      "tratien": 0,
+      "conlai": 1115000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 109,
+      "mahoadon": "15112018001",
+      "makh": "NS04",
+      "tonghoadon": 170000,
+      "tratien": 170000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 110,
+      "mahoadon": "15112018002",
+      "makh": "CD01",
+      "tonghoadon": 4230000,
+      "tratien": 0,
+      "conlai": 4230000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 111,
+      "mahoadon": "15112018003",
+      "makh": "CH14",
+      "tonghoadon": 510000,
+      "tratien": 510000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 112,
+      "mahoadon": "15112018004",
+      "makh": "VL17",
+      "tonghoadon": 360000,
+      "tratien": 360000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 113,
+      "mahoadon": "15112018005",
+      "makh": "CC02",
+      "tonghoadon": 1110000,
+      "tratien": 1110000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 114,
+      "mahoadon": "15112018006",
+      "makh": "VD03",
+      "tonghoadon": 3600000,
+      "tratien": 5000000,
+      "conlai": -1400000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 115,
+      "mahoadon": "15112018007",
+      "makh": "VL18",
+      "tonghoadon": 150000,
+      "tratien": 150000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 116,
+      "mahoadon": "15112018008",
+      "makh": "AP08",
+      "tonghoadon": 2160000,
+      "tratien": 2160000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 117,
+      "mahoadon": "15112018009",
+      "makh": "LX01",
+      "tonghoadon": 6100000,
+      "tratien": 0,
+      "conlai": 6100000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 118,
+      "mahoadon": "15112018010",
+      "makh": "VL01",
+      "tonghoadon": 780000,
+      "tratien": 780000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 119,
+      "mahoadon": "15112018011",
+      "makh": "VL19",
+      "tonghoadon": 550000,
+      "tratien": 550000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 120,
+      "mahoadon": "15112018012",
+      "makh": "CH26",
+      "tonghoadon": 3425000,
+      "tratien": 0,
+      "conlai": 3425000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 121,
+      "mahoadon": "15112018013",
+      "makh": "VL20",
+      "tonghoadon": 610000,
+      "tratien": 610000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 122,
+      "mahoadon": "15112018014",
+      "makh": "VL21",
+      "tonghoadon": 530000,
+      "tratien": 530000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 123,
+      "mahoadon": "15112018015",
+      "makh": "CC03",
+      "tonghoadon": 270000,
+      "tratien": 270000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 124,
+      "mahoadon": "15112018016",
+      "makh": "KD03",
+      "tonghoadon": 1970000,
+      "tratien": 1970000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 125,
+      "mahoadon": "15112018017",
+      "makh": "CH18",
+      "tonghoadon": 156000,
+      "tratien": 0,
+      "conlai": 156000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 126,
+      "mahoadon": "15112018018",
+      "makh": "CH03",
+      "tonghoadon": 528000,
+      "tratien": 528000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 127,
+      "mahoadon": "15112018019",
+      "makh": "PT01",
+      "tonghoadon": 300000,
+      "tratien": 300000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 128,
+      "mahoadon": "15112018020",
+      "makh": "CH30",
+      "tonghoadon": 650000,
+      "tratien": 650000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 129,
+      "mahoadon": "15112018021",
+      "makh": "MK01",
+      "tonghoadon": 700000,
+      "tratien": 700000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 130,
+      "mahoadon": "15112018022",
+      "makh": "VL22",
+      "tonghoadon": 680000,
+      "tratien": 680000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 131,
+      "mahoadon": "15112018023",
+      "makh": "LX03",
+      "tonghoadon": 2850000,
+      "tratien": 2850000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 132,
+      "mahoadon": "15112018024",
+      "makh": "VL23",
+      "tonghoadon": 270000,
+      "tratien": 270000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 133,
+      "mahoadon": "16112018001",
+      "makh": "MK01",
+      "tonghoadon": 1980000,
+      "tratien": 1000000,
+      "conlai": 980000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 134,
+      "mahoadon": "16112018002",
+      "makh": "VL24",
+      "tonghoadon": 530000,
+      "tratien": 530000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 135,
+      "mahoadon": "16112018003",
+      "makh": "VL25",
+      "tonghoadon": 165000,
+      "tratien": 0,
+      "conlai": 165000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 136,
+      "mahoadon": "16112018004",
+      "makh": "CH07",
+      "tonghoadon": 2180000,
+      "tratien": 2180000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 137,
+      "mahoadon": "16112018005",
+      "makh": "NS04",
+      "tonghoadon": 310000,
+      "tratien": 310000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 138,
+      "mahoadon": "16112018006",
+      "makh": "CH06",
+      "tonghoadon": 2640000,
+      "tratien": 0,
+      "conlai": 2640000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 139,
+      "mahoadon": "16112018007",
+      "makh": "VL08",
+      "tonghoadon": 320000,
+      "tratien": 320000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 140,
+      "mahoadon": "16112018008",
+      "makh": "LX01",
+      "tonghoadon": 10300000,
+      "tratien": 0,
+      "conlai": 10300000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 141,
+      "mahoadon": "16112018009",
+      "makh": "MK01",
+      "tonghoadon": 3040000,
+      "tratien": 3970000,
+      "conlai": -930000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 142,
+      "mahoadon": "16112018010",
+      "makh": "TB01",
+      "tonghoadon": 1650000,
+      "tratien": 0,
+      "conlai": 1650000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 143,
+      "mahoadon": "16112018011",
+      "makh": "CH31",
+      "tonghoadon": 1190000,
+      "tratien": 1190000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 144,
+      "mahoadon": "16112018012",
+      "makh": "CH02",
+      "tonghoadon": 800000,
+      "tratien": 0,
+      "conlai": 800000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 145,
+      "mahoadon": "16112018013",
+      "makh": "CH21",
+      "tonghoadon": 1650000,
+      "tratien": 1650000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 146,
+      "mahoadon": "16112018014",
+      "makh": "VL19",
+      "tonghoadon": 890000,
+      "tratien": 890000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 147,
+      "mahoadon": "16112018015",
+      "makh": "VL26",
+      "tonghoadon": 550000,
+      "tratien": 550000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 148,
+      "mahoadon": "16112018016",
+      "makh": "CH01",
+      "tonghoadon": 3050000,
+      "tratien": 0,
+      "conlai": 3050000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 149,
+      "mahoadon": "16112018017",
+      "makh": "CH32",
+      "tonghoadon": 530000,
+      "tratien": 530000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 150,
+      "mahoadon": "16112018018",
+      "makh": "VL01",
+      "tonghoadon": 540000,
+      "tratien": 540000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 151,
+      "mahoadon": "16112018019",
+      "makh": "VL27",
+      "tonghoadon": 850000,
+      "tratien": 850000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 152,
+      "mahoadon": "16112018020",
+      "makh": "CH14",
+      "tonghoadon": 520000,
+      "tratien": 520000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 153,
+      "mahoadon": "16112018021",
+      "makh": "VL28",
+      "tonghoadon": 670000,
+      "tratien": 760000,
+      "conlai": -90000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 154,
+      "mahoadon": "16112018022",
+      "makh": "NS05",
+      "tonghoadon": 1575000,
+      "tratien": 1575000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 155,
+      "mahoadon": "16112018023",
+      "makh": "KD05",
+      "tonghoadon": 1210000,
+      "tratien": 1210000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 156,
+      "mahoadon": "17112018001",
+      "makh": "VL29",
+      "tonghoadon": 360000,
+      "tratien": 360000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 157,
+      "mahoadon": "17112018002",
+      "makh": "LX01",
+      "tonghoadon": 6100000,
+      "tratien": 0,
+      "conlai": 6100000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 158,
+      "mahoadon": "17112018003",
+      "makh": "VL01",
+      "tonghoadon": 660000,
+      "tratien": 0,
+      "conlai": 660000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 159,
+      "mahoadon": "17112018004",
+      "makh": "KD03",
+      "tonghoadon": 680000,
+      "tratien": 680000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 160,
+      "mahoadon": "17112018005",
+      "makh": "KD02",
+      "tonghoadon": 1995000,
+      "tratien": 0,
+      "conlai": 1995000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 161,
+      "mahoadon": "17112018006",
+      "makh": "CH24",
+      "tonghoadon": 1590000,
+      "tratien": 1590000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 162,
+      "mahoadon": "17112018007",
+      "makh": "AP02",
+      "tonghoadon": 440000,
+      "tratien": "0",
+      "conlai": 440000,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 163,
+      "mahoadon": "17112018008",
+      "makh": "VL01",
+      "tonghoadon": 150000,
+      "tratien": 150000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 164,
+      "mahoadon": "17112018009",
+      "makh": "KD01",
+      "tonghoadon": 3000000,
+      "tratien": 0,
+      "conlai": 3000000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 165,
+      "mahoadon": "17112018010",
+      "makh": "MK02",
+      "tonghoadon": 2450000,
+      "tratien": 0,
+      "conlai": 2450000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 166,
+      "mahoadon": "17112018011",
+      "makh": "CD02",
+      "tonghoadon": 1300000,
+      "tratien": 0,
+      "conlai": 1300000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 167,
+      "mahoadon": "17112018012",
+      "makh": "NS04",
+      "tonghoadon": 580000,
+      "tratien": 580000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 168,
+      "mahoadon": "17112018013",
+      "makh": "CH20",
+      "tonghoadon": 670000,
+      "tratien": 670000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 169,
+      "mahoadon": "17112018014",
+      "makh": "CH19",
+      "tonghoadon": 830000,
+      "tratien": "5000000",
+      "conlai": -4170000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 170,
+      "mahoadon": "17112018015",
+      "makh": "VL30",
+      "tonghoadon": 880000,
+      "tratien": 880000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 171,
+      "mahoadon": "17112018016",
+      "makh": "HB02",
+      "tonghoadon": 1515000,
+      "tratien": 1515000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 172,
+      "mahoadon": "18112018001",
+      "makh": "CH33",
+      "tonghoadon": 6000000,
+      "tratien": 0,
+      "conlai": 6000000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 173,
+      "mahoadon": "18112018002",
+      "makh": "NS03",
+      "tonghoadon": 1345000,
+      "tratien": 1345000,
+      "conlai": 0,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 174,
+      "mahoadon": "18112018003",
+      "makh": "KD06",
+      "tonghoadon": 922000,
+      "tratien": 922000,
+      "conlai": 0,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 175,
+      "mahoadon": "18112018004",
+      "makh": "CH03",
+      "tonghoadon": 528000,
+      "tratien": 528000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 176,
+      "mahoadon": "18112018005",
+      "makh": "TC01",
+      "tonghoadon": 1455000,
+      "tratien": 0,
+      "conlai": 1455000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 177,
+      "mahoadon": "18112018006",
+      "makh": "PP02",
+      "tonghoadon": 3900000,
+      "tratien": 0,
+      "conlai": 3900000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 178,
+      "mahoadon": "18112018007",
+      "makh": "PP03",
+      "tonghoadon": 570000,
+      "tratien": 570000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 179,
+      "mahoadon": "18112018008",
+      "makh": "PP04",
+      "tonghoadon": 1140000,
+      "tratien": 1140000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 180,
+      "mahoadon": "18112018009",
+      "makh": "CD03",
+      "tonghoadon": 1450000,
+      "tratien": 0,
+      "conlai": 1450000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 181,
+      "mahoadon": "18112018010",
+      "makh": "VL31",
+      "tonghoadon": 800000,
+      "tratien": 0,
+      "conlai": 800000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 182,
+      "mahoadon": "18112018011",
+      "makh": "CH34",
+      "tonghoadon": 850000,
+      "tratien": 0,
+      "conlai": 850000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 183,
+      "mahoadon": "18112018012",
+      "makh": "NS03",
+      "tonghoadon": 840000,
+      "tratien": 840000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 184,
+      "mahoadon": "18112018013",
+      "makh": "VL32",
+      "tonghoadon": 550000,
+      "tratien": 550000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 185,
+      "mahoadon": "18112018014",
+      "makh": "CH07",
+      "tonghoadon": 2200000,
+      "tratien": 2200000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 186,
+      "mahoadon": "18112018015",
+      "makh": "VL33",
+      "tonghoadon": 550000,
+      "tratien": 550000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 187,
+      "mahoadon": "18112018016",
+      "makh": "VD04",
+      "tonghoadon": 750000,
+      "tratien": 0,
+      "conlai": 750000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 188,
+      "mahoadon": "18112018017",
+      "makh": "NS06",
+      "tonghoadon": 1205000,
+      "tratien": 0,
+      "conlai": 1205000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 189,
+      "mahoadon": "18112018018",
+      "makh": "VL34",
+      "tonghoadon": 384000,
+      "tratien": 384000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 190,
+      "mahoadon": "18112018019",
+      "makh": "CH11",
+      "tonghoadon": 1075000,
+      "tratien": 0,
+      "conlai": 1075000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 191,
+      "mahoadon": "18112018020",
+      "makh": "LB01",
+      "tonghoadon": 570000,
+      "tratien": 0,
+      "conlai": 570000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 192,
+      "mahoadon": "18112018021",
+      "makh": "CH35",
+      "tonghoadon": 840000,
+      "tratien": 840000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 193,
+      "mahoadon": "18112018022",
+      "makh": "CD03",
+      "tonghoadon": 2720000,
+      "tratien": 0,
+      "conlai": 2720000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 194,
+      "mahoadon": "18112018023",
+      "makh": "CH31",
+      "tonghoadon": 1020000,
+      "tratien": 1020000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 195,
+      "mahoadon": "18112018024",
+      "makh": "PP01",
+      "tonghoadon": 265000,
+      "tratien": 0,
+      "conlai": 265000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 196,
+      "mahoadon": "18112018025",
+      "makh": "CH19",
+      "tonghoadon": 1680000,
+      "tratien": 0,
+      "conlai": 1680000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 197,
+      "mahoadon": "18112018026",
+      "makh": "VL01",
+      "tonghoadon": 240000,
+      "tratien": 240000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 198,
+      "mahoadon": "18112018027",
+      "makh": "AP09",
+      "tonghoadon": 1510000,
+      "tratien": 0,
+      "conlai": 1510000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 199,
+      "mahoadon": "18112018028",
+      "makh": "VL35",
+      "tonghoadon": 550000,
+      "tratien": 550000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 200,
+      "mahoadon": "18112018029",
+      "makh": "CG01",
+      "tonghoadon": 600000,
+      "tratien": 600000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 201,
+      "mahoadon": "18112018030",
+      "makh": "CH15",
+      "tonghoadon": 520000,
+      "tratien": 520000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 202,
+      "mahoadon": "19112018001",
+      "makh": "VL36",
+      "tonghoadon": 3300000,
+      "tratien": 3300000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 203,
+      "mahoadon": "19112018002",
+      "makh": "CH36",
+      "tonghoadon": 5200000,
+      "tratien": 5200000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 204,
+      "mahoadon": "19112018003",
+      "makh": "DK04",
+      "tonghoadon": 1090000,
+      "tratien": 1090000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 205,
+      "mahoadon": "19112018004",
+      "makh": "VL37",
+      "tonghoadon": 750000,
+      "tratien": 750000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 206,
+      "mahoadon": "19112018005",
+      "makh": "MK02",
+      "tonghoadon": 2050000,
+      "tratien": 0,
+      "conlai": 2050000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 207,
+      "mahoadon": "19112018006",
+      "makh": "VD05",
+      "tonghoadon": 385000,
+      "tratien": 385000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 208,
+      "mahoadon": "19112018007",
+      "makh": "VL38",
+      "tonghoadon": 275000,
+      "tratien": 275000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 209,
+      "mahoadon": "19112018008",
+      "makh": "CH03",
+      "tonghoadon": 528000,
+      "tratien": 528000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 210,
+      "mahoadon": "19112018009",
+      "makh": "DK06",
+      "tonghoadon": 930000,
+      "tratien": 0,
+      "conlai": 930000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 211,
+      "mahoadon": "19112018010",
+      "makh": "VL39",
+      "tonghoadon": 610000,
+      "tratien": 610000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 212,
+      "mahoadon": "19112018011",
+      "makh": "NS07",
+      "tonghoadon": 2355000,
+      "tratien": 2355000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 213,
+      "mahoadon": "19112018012",
+      "makh": "CH01",
+      "tonghoadon": 2860000,
+      "tratien": 0,
+      "conlai": 2860000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 214,
+      "mahoadon": "19112018013",
+      "makh": "CH01",
+      "tonghoadon": 980000,
+      "tratien": 0,
+      "conlai": 980000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 215,
+      "mahoadon": "19112018014",
+      "makh": "VL40",
+      "tonghoadon": 270000,
+      "tratien": 270000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 216,
+      "mahoadon": "19112018015",
+      "makh": "VL15",
+      "tonghoadon": 333000,
+      "tratien": 333000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 217,
+      "mahoadon": "19112018016",
+      "makh": "VL01",
+      "tonghoadon": 220000,
+      "tratien": 220000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 218,
+      "mahoadon": "19112018017",
+      "makh": "PP05",
+      "tonghoadon": 780000,
+      "tratien": 780000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 219,
+      "mahoadon": "19112018018",
+      "makh": "NS04",
+      "tonghoadon": 870000,
+      "tratien": 870000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 220,
+      "mahoadon": "19112018019",
+      "makh": "CH04",
+      "tonghoadon": 1240000,
+      "tratien": 1240000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 221,
+      "mahoadon": "19112018020",
+      "makh": "KA01",
+      "tonghoadon": 2200000,
+      "tratien": 0,
+      "conlai": 2200000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 222,
+      "mahoadon": "19112018021",
+      "makh": "CH14",
+      "tonghoadon": 510000,
+      "tratien": 510000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 223,
+      "mahoadon": "19112018022",
+      "makh": "CC03",
+      "tonghoadon": 1290000,
+      "tratien": 1290000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 224,
+      "mahoadon": "19112018023",
+      "makh": "VL01",
+      "tonghoadon": 600000,
+      "tratien": 600000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 225,
+      "mahoadon": "19112018024",
+      "makh": "CH06",
+      "tonghoadon": 2165000,
+      "tratien": 0,
+      "conlai": 2165000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 226,
+      "mahoadon": "19112018025",
+      "makh": "KA02",
+      "tonghoadon": 900000,
+      "tratien": 900000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 227,
+      "mahoadon": "19112018026",
+      "makh": "VL01",
+      "tonghoadon": 750000,
+      "tratien": 750000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 228,
+      "mahoadon": "20112018001",
+      "makh": "AP10",
+      "tonghoadon": 4950000,
+      "tratien": 4950000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 229,
+      "mahoadon": "20112018002",
+      "makh": "CH34",
+      "tonghoadon": 1040000,
+      "tratien": 0,
+      "conlai": 1040000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 230,
+      "mahoadon": "20112018003",
+      "makh": "VL41",
+      "tonghoadon": 540000,
+      "tratien": 540000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 231,
+      "mahoadon": "20112018004",
+      "makh": "VL33",
+      "tonghoadon": 1100000,
+      "tratien": 1100000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 232,
+      "mahoadon": "20112018005",
+      "makh": "CH37",
+      "tonghoadon": 2150000,
+      "tratien": 0,
+      "conlai": 2150000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 233,
+      "mahoadon": "20112018006",
+      "makh": "VL01",
+      "tonghoadon": 550000,
+      "tratien": 550000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 234,
+      "mahoadon": "20112018007",
+      "makh": "KA01",
+      "tonghoadon": 4710000,
+      "tratien": 0,
+      "conlai": 4710000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 235,
+      "mahoadon": "20112018008",
+      "makh": "VL42",
+      "tonghoadon": 610000,
+      "tratien": 610000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 236,
+      "mahoadon": "20112018009",
+      "makh": "LX01",
+      "tonghoadon": 7560000,
+      "tratien": 0,
+      "conlai": 7560000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 237,
+      "mahoadon": "20112018010",
+      "makh": "VL01",
+      "tonghoadon": 500000,
+      "tratien": 500000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 238,
+      "mahoadon": "20112018011",
+      "makh": "TC02",
+      "tonghoadon": 2080000,
+      "tratien": 0,
+      "conlai": 2080000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 239,
+      "mahoadon": "20112018012",
+      "makh": "CH13",
+      "tonghoadon": 570000,
+      "tratien": 570000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 240,
+      "mahoadon": "20112018013",
+      "makh": "NS03",
+      "tonghoadon": 290000,
+      "tratien": 290000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 241,
+      "mahoadon": "20112018014",
+      "makh": "CD03",
+      "tonghoadon": 7466250,
+      "tratien": 0,
+      "conlai": 7466250,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 242,
+      "mahoadon": "20112018015",
+      "makh": "CH34",
+      "tonghoadon": 540000,
+      "tratien": 0,
+      "conlai": 540000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 243,
+      "mahoadon": "20112018016",
+      "makh": "AP11",
+      "tonghoadon": 4400000,
+      "tratien": 4400000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 244,
+      "mahoadon": "20112018017",
+      "makh": "MK03",
+      "tonghoadon": 3660000,
+      "tratien": 3660000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 245,
+      "mahoadon": "20112018018",
+      "makh": "CH17",
+      "tonghoadon": 125000,
+      "tratien": 0,
+      "conlai": 125000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 246,
+      "mahoadon": "20112018019",
+      "makh": "CH39",
+      "tonghoadon": 9000000,
+      "tratien": 0,
+      "conlai": 9000000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 247,
+      "mahoadon": "20112018020",
+      "makh": "NS04",
+      "tonghoadon": 1140000,
+      "tratien": 1140000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 248,
+      "mahoadon": "20112018021",
+      "makh": "KA03",
+      "tonghoadon": 500000,
+      "tratien": 500000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 249,
+      "mahoadon": "20112018022",
+      "makh": "NS05",
+      "tonghoadon": 1275000,
+      "tratien": 1275000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 250,
+      "mahoadon": "20112018023",
+      "makh": "NS01",
+      "tonghoadon": 1450000,
+      "tratien": 1450000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 251,
+      "mahoadon": "20112018024",
+      "makh": "CH01",
+      "tonghoadon": 750000,
+      "tratien": 0,
+      "conlai": 750000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 252,
+      "mahoadon": "20112018025",
+      "makh": "VL01",
+      "tonghoadon": 120000,
+      "tratien": 120000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 253,
+      "mahoadon": "20112018026",
+      "makh": "CH06",
+      "tonghoadon": 2120000,
+      "tratien": 0,
+      "conlai": 2120000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 254,
+      "mahoadon": "20112018027",
+      "makh": "VL43",
+      "tonghoadon": 260000,
+      "tratien": 260000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 255,
+      "mahoadon": "20112018028",
+      "makh": "CH19",
+      "tonghoadon": 830000,
+      "tratien": 0,
+      "conlai": 830000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 256,
+      "mahoadon": "20112018029",
+      "makh": "CC04",
+      "tonghoadon": 750000,
+      "tratien": 750000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 257,
+      "mahoadon": "20112018030",
+      "makh": "VL01",
+      "tonghoadon": 1260000,
+      "tratien": 1260000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 258,
+      "mahoadon": "20112018031",
+      "makh": "CG01",
+      "tonghoadon": 900000,
+      "tratien": 900000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 259,
+      "mahoadon": "20112018032",
+      "makh": "ST01",
+      "tonghoadon": 1630000,
+      "tratien": 0,
+      "conlai": 1630000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 260,
+      "mahoadon": "20112018033",
+      "makh": "VL01",
+      "tonghoadon": 1100000,
+      "tratien": 1100000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 261,
+      "mahoadon": "20112018034",
+      "makh": "HB02",
+      "tonghoadon": 590000,
+      "tratien": 590000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 262,
+      "mahoadon": "20112018035",
+      "makh": "MK03",
+      "tonghoadon": 2250000,
+      "tratien": 2250000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 263,
+      "mahoadon": "20112018036",
+      "makh": "PH01",
+      "tonghoadon": 200000,
+      "tratien": 0,
+      "conlai": 200000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 264,
+      "mahoadon": "20112018037",
+      "makh": "CH40",
+      "tonghoadon": 31500000,
+      "tratien": 0,
+      "conlai": 31500000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 265,
+      "mahoadon": "20112018038",
+      "makh": "VL28",
+      "tonghoadon": 720000,
+      "tratien": 720000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 266,
+      "mahoadon": "21112018001",
+      "makh": "CH19",
+      "tonghoadon": 1680000,
+      "tratien": 0,
+      "conlai": 1680000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 267,
+      "mahoadon": "21112018002",
+      "makh": "AP01",
+      "tonghoadon": 2500000,
+      "tratien": 0,
+      "conlai": 2500000,
+      "kt": false,
+      "tinhtrang": true
+    },
+    {
+      "id": 268,
+      "mahoadon": "21112018003",
+      "makh": "VD05",
+      "tonghoadon": 580000,
+      "tratien": 580000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 269,
+      "mahoadon": "21112018004",
+      "makh": "CH14",
+      "tonghoadon": 510000,
+      "tratien": 510000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 270,
+      "mahoadon": "21112018005",
+      "makh": "VL01",
+      "tonghoadon": 120000,
+      "tratien": 120000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 271,
+      "mahoadon": "21112018006",
+      "makh": "VL44",
+      "tonghoadon": 360000,
+      "tratien": 360000,
+      "conlai": 0,
+      "kt": true,
+      "tinhtrang": true
+    },
+    {
+      "id": 272,
+      "mahoadon": "21112018007",
+      "makh": "VD06",
+      "tonghoadon": 1865000,
+      "tratien": 4000000,
+      "conlai": -2135000,
+      "kt": false,
+      "tinhtrang": true
+    }
+  ]
+}

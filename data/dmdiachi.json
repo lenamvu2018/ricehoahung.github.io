@@ -1,0 +1,142 @@
+[
+    {
+      "id": 1,
+      "madm": "CH",
+      "tendm": "Chợ Châu Đốc"
+    },
+    {
+      "id": 2,
+      "madm": "CD",
+      "tendm": "Cái Dầu"
+    },
+    {
+      "id": 3,
+      "madm": "AP",
+      "tendm": "An Phú"
+    },
+    {
+      "id": 4,
+      "madm": "NB",
+      "tendm": "Nhà Bàng"
+    },
+    {
+      "id": 5,
+      "madm": "DK",
+      "tendm": "Đồng Ky"
+    },
+    {
+      "id": 6,
+      "madm": "KA",
+      "tendm": "Khánh An"
+    },
+    {
+      "id": 7,
+      "madm": "TC",
+      "tendm": "Tân Châu"
+    },
+    {
+      "id": 8,
+      "madm": "BM",
+      "tendm": "Bình Mỹ - Năng gù"
+    },
+    {
+      "id": 9,
+      "madm": "LB",
+      "tendm": "Long Bình"
+    },
+    {
+      "id": 10,
+      "madm": "LX",
+      "tendm": "Long Xuyên"
+    },
+    {
+      "id": 11,
+      "madm": "XT",
+      "tendm": "Xuân Tô"
+    },
+    {
+      "id": 12,
+      "madm": "HB",
+      "tendm": "Hòa Bình"
+    },
+    {
+      "id": 13,
+      "madm": "PT",
+      "tendm": "Phú Tân"
+    },
+    {
+      "id": 14,
+      "madm": "MK",
+      "tendm": "Mương Khai - Mỹ Đức"
+    },
+    {
+      "id": 15,
+      "madm": "NS",
+      "tendm": "Núi Sam"
+    },
+    {
+      "id": 16,
+      "madm": "PL",
+      "tendm": "Phú Lộc"
+    },
+    {
+      "id": 17,
+      "madm": "PH",
+      "tendm": "Phước Hưng"
+    },
+    {
+      "id": 18,
+      "madm": "PP",
+      "tendm": "Phú Hữu"
+    },
+    {
+      "id": 19,
+      "madm": "BD",
+      "tendm": "Bắc Đai"
+    },
+    {
+      "id": 20,
+      "madm": "VD",
+      "tendm": "Vĩnh Điều"
+    },
+    {
+      "id": 21,
+      "madm": "SG",
+      "tendm": "Sài Gòn"
+    },
+    {
+      "id": 22,
+      "madm": "VL",
+      "tendm": "Vãng Lai"
+    },
+    {
+      "id": 23,
+      "madm": "KD",
+      "tendm": "Kinh Đào"
+    },
+    {
+      "id": 24,
+      "madm": "TB",
+      "tendm": "Tịnh Biên"
+    },
+    {
+      "id": 24,
+      "madm": "CG",
+      "tendm": "Châu Giang"
+    },
+    {
+      "id": 25,
+      "madm": "ST",
+      "tendm": "Sóc Trăng"
+    },
+    {
+      "id": 26,
+      "madm": "CT",
+      "tendm": "Cần Thơ"
+    },
+    {
+      "id": 27,
+      "madm": "CC",
+      "tendm": "Cồn Tiên"
+    }
+  ]
